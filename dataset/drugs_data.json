@@ -1,0 +1,5002 @@
+[
+  {
+    "kode_obat": "OB0001",
+    "nama_obat": "Pro Liv 52 Plus",
+    "kategori": "Generik",
+    "harga": 27378,
+    "used_for": "Gangguan Liver",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 96
+  },
+  {
+    "kode_obat": "OB0002",
+    "nama_obat": "Max Aspirin ER",
+    "kategori": "Paten",
+    "harga": 113261,
+    "used_for": "Stroke",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 92
+  },
+  {
+    "kode_obat": "OB0003",
+    "nama_obat": "Max Mylanta Advance",
+    "kategori": "Paten",
+    "harga": 115954,
+    "used_for": "Sakit Perut",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 63
+  },
+  {
+    "kode_obat": "OB0004",
+    "nama_obat": "Ultra Hepamerz ER",
+    "kategori": "Paten",
+    "harga": 12465,
+    "used_for": "Gangguan Liver",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 64
+  },
+  {
+    "kode_obat": "OB0005",
+    "nama_obat": "Pro Ibuprofen Forte",
+    "kategori": "Paten",
+    "harga": 125306,
+    "used_for": "Flu",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 82
+  },
+  {
+    "kode_obat": "OB0006",
+    "nama_obat": "Ultra Aspirin Forte",
+    "kategori": "Generik",
+    "harga": 95545,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 78
+  },
+  {
+    "kode_obat": "OB0007",
+    "nama_obat": "Bio Liv 52 Forte",
+    "kategori": "Paten",
+    "harga": 99732,
+    "used_for": "Gangguan Liver",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 72
+  },
+  {
+    "kode_obat": "OB0008",
+    "nama_obat": "Max Amlodipine AQ",
+    "kategori": "Generik",
+    "harga": 143987,
+    "used_for": "Hipertensi",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 84
+  },
+  {
+    "kode_obat": "OB0009",
+    "nama_obat": "Ultra Scabimite Forte",
+    "kategori": "Paten",
+    "harga": 113744,
+    "used_for": "Kudis",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 84
+  },
+  {
+    "kode_obat": "OB0010",
+    "nama_obat": "Pro Mylanta Forte",
+    "kategori": "Paten",
+    "harga": 141276,
+    "used_for": "Sakit Perut",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 56
+  },
+  {
+    "kode_obat": "OB0011",
+    "nama_obat": "Medi Losartan Plus",
+    "kategori": "Generik",
+    "harga": 98330,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 63
+  },
+  {
+    "kode_obat": "OB0012",
+    "nama_obat": "Bio Glipizide Advance",
+    "kategori": "Paten",
+    "harga": 70183,
+    "used_for": "Diabetes",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 81
+  },
+  {
+    "kode_obat": "OB0013",
+    "nama_obat": "Medi Lisinopril AQ",
+    "kategori": "Generik",
+    "harga": 73669,
+    "used_for": "Gagal Ginjal",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 71
+  },
+  {
+    "kode_obat": "OB0014",
+    "nama_obat": "Pro Ponstan AQ",
+    "kategori": "Generik",
+    "harga": 41831,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 85
+  },
+  {
+    "kode_obat": "OB0015",
+    "nama_obat": "Medi Omeprazole Plus",
+    "kategori": "Paten",
+    "harga": 103522,
+    "used_for": "Maag",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 89
+  },
+  {
+    "kode_obat": "OB0016",
+    "nama_obat": "Ultra Ventolin Forte",
+    "kategori": "Paten",
+    "harga": 133332,
+    "used_for": "Asma",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 95
+  },
+  {
+    "kode_obat": "OB0017",
+    "nama_obat": "Pro Ibuprofen ER",
+    "kategori": "Paten",
+    "harga": 44360,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0018",
+    "nama_obat": "Pro Cataflam ER",
+    "kategori": "Generik",
+    "harga": 90689,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 83
+  },
+  {
+    "kode_obat": "OB0019",
+    "nama_obat": "Pro Nitroglycerin Forte",
+    "kategori": "Generik",
+    "harga": 6571,
+    "used_for": "Serangan Jantung",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0020",
+    "nama_obat": "Bio Aspirin Forte",
+    "kategori": "Generik",
+    "harga": 140379,
+    "used_for": "Demam",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 72
+  },
+  {
+    "kode_obat": "OB0021",
+    "nama_obat": "Medi Nitroglycerin XR",
+    "kategori": "Generik",
+    "harga": 112562,
+    "used_for": "Serangan Jantung",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 93
+  },
+  {
+    "kode_obat": "OB0022",
+    "nama_obat": "Max Ibuprofen Forte",
+    "kategori": "Paten",
+    "harga": 70557,
+    "used_for": "Demam Berdarah",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 79
+  },
+  {
+    "kode_obat": "OB0023",
+    "nama_obat": "Neo Cataflam Forte",
+    "kategori": "Generik",
+    "harga": 137260,
+    "used_for": "Infeksi Gigi",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 74
+  },
+  {
+    "kode_obat": "OB0024",
+    "nama_obat": "Bio Clopidogrel AQ",
+    "kategori": "Paten",
+    "harga": 86248,
+    "used_for": "Serangan Jantung",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 50
+  },
+  {
+    "kode_obat": "OB0025",
+    "nama_obat": "Pro Hepamerz AQ",
+    "kategori": "Generik",
+    "harga": 93967,
+    "used_for": "Gangguan Liver",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 67
+  },
+  {
+    "kode_obat": "OB0026",
+    "nama_obat": "Ultra Ibuprofen XR",
+    "kategori": "Generik",
+    "harga": 75429,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 90
+  },
+  {
+    "kode_obat": "OB0027",
+    "nama_obat": "Bio Losartan AQ",
+    "kategori": "Paten",
+    "harga": 40272,
+    "used_for": "Hipertensi",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 92
+  },
+  {
+    "kode_obat": "OB0028",
+    "nama_obat": "Bio Ventolin XR",
+    "kategori": "Generik",
+    "harga": 100985,
+    "used_for": "Asma",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0029",
+    "nama_obat": "Medi Diclofenac Plus",
+    "kategori": "Generik",
+    "harga": 61473,
+    "used_for": "Patah Tulang",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 76
+  },
+  {
+    "kode_obat": "OB0030",
+    "nama_obat": "Medi Cataflam XR",
+    "kategori": "Generik",
+    "harga": 98759,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0031",
+    "nama_obat": "Pro Aspirin AQ",
+    "kategori": "Generik",
+    "harga": 60046,
+    "used_for": "Stroke",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 83
+  },
+  {
+    "kode_obat": "OB0032",
+    "nama_obat": "Bio Omeprazole Advance",
+    "kategori": "Generik",
+    "harga": 24733,
+    "used_for": "Maag",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 67
+  },
+  {
+    "kode_obat": "OB0033",
+    "nama_obat": "Ultra Aspirin AQ",
+    "kategori": "Generik",
+    "harga": 12752,
+    "used_for": "Demam Berdarah",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 76
+  },
+  {
+    "kode_obat": "OB0034",
+    "nama_obat": "Pro Ibuprofen Forte",
+    "kategori": "Generik",
+    "harga": 59193,
+    "used_for": "Demam Berdarah",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 88
+  },
+  {
+    "kode_obat": "OB0035",
+    "nama_obat": "Medi Amlodipine Plus",
+    "kategori": "Paten",
+    "harga": 44665,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 84
+  },
+  {
+    "kode_obat": "OB0036",
+    "nama_obat": "Bio Paracetamol Forte",
+    "kategori": "Generik",
+    "harga": 138151,
+    "used_for": "Demam",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 87
+  },
+  {
+    "kode_obat": "OB0037",
+    "nama_obat": "Pro Paracetamol Forte",
+    "kategori": "Paten",
+    "harga": 58020,
+    "used_for": "Demam",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 93
+  },
+  {
+    "kode_obat": "OB0038",
+    "nama_obat": "Medi Ibuprofen ER",
+    "kategori": "Paten",
+    "harga": 33720,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 90
+  },
+  {
+    "kode_obat": "OB0039",
+    "nama_obat": "Medi Aspirin XR",
+    "kategori": "Generik",
+    "harga": 113661,
+    "used_for": "Demam",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 85
+  },
+  {
+    "kode_obat": "OB0040",
+    "nama_obat": "Medi Paracetamol AQ",
+    "kategori": "Paten",
+    "harga": 20668,
+    "used_for": "Patah Tulang",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 55
+  },
+  {
+    "kode_obat": "OB0041",
+    "nama_obat": "Pro Aspirin Advance",
+    "kategori": "Generik",
+    "harga": 68308,
+    "used_for": "Demam Berdarah",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 87
+  },
+  {
+    "kode_obat": "OB0042",
+    "nama_obat": "Pro Paracetamol ER",
+    "kategori": "Generik",
+    "harga": 22730,
+    "used_for": "Demam",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 81
+  },
+  {
+    "kode_obat": "OB0043",
+    "nama_obat": "Ultra Clopidogrel XR",
+    "kategori": "Paten",
+    "harga": 45551,
+    "used_for": "Stroke",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0044",
+    "nama_obat": "Medi Aspirin Advance",
+    "kategori": "Paten",
+    "harga": 67287,
+    "used_for": "Stroke",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 63
+  },
+  {
+    "kode_obat": "OB0045",
+    "nama_obat": "Max Valacyclovir ER",
+    "kategori": "Paten",
+    "harga": 24369,
+    "used_for": "Herpes",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 89
+  },
+  {
+    "kode_obat": "OB0046",
+    "nama_obat": "Medi Aspirin XR",
+    "kategori": "Paten",
+    "harga": 79719,
+    "used_for": "Serangan Jantung",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 91
+  },
+  {
+    "kode_obat": "OB0047",
+    "nama_obat": "Medi Aspirin ER",
+    "kategori": "Generik",
+    "harga": 59731,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 86
+  },
+  {
+    "kode_obat": "OB0048",
+    "nama_obat": "Medi Ibuprofen Plus",
+    "kategori": "Generik",
+    "harga": 75411,
+    "used_for": "Demam Berdarah",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 63
+  },
+  {
+    "kode_obat": "OB0049",
+    "nama_obat": "Ultra Furosemide Advance",
+    "kategori": "Generik",
+    "harga": 29394,
+    "used_for": "Gagal Ginjal",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 50
+  },
+  {
+    "kode_obat": "OB0050",
+    "nama_obat": "Neo Ibuprofen ER",
+    "kategori": "Generik",
+    "harga": 83924,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 53
+  },
+  {
+    "kode_obat": "OB0051",
+    "nama_obat": "Neo Ursodiol AQ",
+    "kategori": "Paten",
+    "harga": 17068,
+    "used_for": "Gangguan Liver",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 74
+  },
+  {
+    "kode_obat": "OB0052",
+    "nama_obat": "Bio Sumatriptan ER",
+    "kategori": "Paten",
+    "harga": 10456,
+    "used_for": "Migrain",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0053",
+    "nama_obat": "Max Lisinopril Advance",
+    "kategori": "Generik",
+    "harga": 42842,
+    "used_for": "Gagal Ginjal",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 78
+  },
+  {
+    "kode_obat": "OB0054",
+    "nama_obat": "Ultra Ranitidine AQ",
+    "kategori": "Paten",
+    "harga": 21255,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0055",
+    "nama_obat": "Pro Valacyclovir Plus",
+    "kategori": "Generik",
+    "harga": 133134,
+    "used_for": "Herpes",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 50
+  },
+  {
+    "kode_obat": "OB0056",
+    "nama_obat": "Medi Valacyclovir XR",
+    "kategori": "Paten",
+    "harga": 44047,
+    "used_for": "Herpes",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 62
+  },
+  {
+    "kode_obat": "OB0057",
+    "nama_obat": "Neo Nurofen Forte",
+    "kategori": "Paten",
+    "harga": 92939,
+    "used_for": "Demam",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 54
+  },
+  {
+    "kode_obat": "OB0058",
+    "nama_obat": "Medi Azithromycin Forte",
+    "kategori": "Generik",
+    "harga": 17700,
+    "used_for": "Pneumonia",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 81
+  },
+  {
+    "kode_obat": "OB0059",
+    "nama_obat": "Bio Farbion 10 XR",
+    "kategori": "Generik",
+    "harga": 86006,
+    "used_for": "Herpes",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 86
+  },
+  {
+    "kode_obat": "OB0060",
+    "nama_obat": "Ultra Cetirizine Advance",
+    "kategori": "Generik",
+    "harga": 53122,
+    "used_for": "Flu",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 91
+  },
+  {
+    "kode_obat": "OB0061",
+    "nama_obat": "Bio Diclofenac Advance",
+    "kategori": "Paten",
+    "harga": 137495,
+    "used_for": "Patah Tulang",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0062",
+    "nama_obat": "Ultra Lisinopril AQ",
+    "kategori": "Paten",
+    "harga": 24234,
+    "used_for": "Hipertensi",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0063",
+    "nama_obat": "Pro Farbion 10 Advance",
+    "kategori": "Generik",
+    "harga": 111218,
+    "used_for": "Herpes",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0064",
+    "nama_obat": "Neo Nurofen Advance",
+    "kategori": "Paten",
+    "harga": 44998,
+    "used_for": "Demam",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 99
+  },
+  {
+    "kode_obat": "OB0065",
+    "nama_obat": "Bio Ponstan Advance",
+    "kategori": "Paten",
+    "harga": 5405,
+    "used_for": "Infeksi Gigi",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0066",
+    "nama_obat": "Bio Liv 52 XR",
+    "kategori": "Paten",
+    "harga": 126199,
+    "used_for": "Gangguan Liver",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0067",
+    "nama_obat": "Medi Ibuprofen ER",
+    "kategori": "Generik",
+    "harga": 105211,
+    "used_for": "Demam Berdarah",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0068",
+    "nama_obat": "Bio Nurofen AQ",
+    "kategori": "Generik",
+    "harga": 19990,
+    "used_for": "Demam",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 99
+  },
+  {
+    "kode_obat": "OB0069",
+    "nama_obat": "Pro Ponstan ER",
+    "kategori": "Generik",
+    "harga": 57831,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 62
+  },
+  {
+    "kode_obat": "OB0070",
+    "nama_obat": "Neo Ibuprofen ER",
+    "kategori": "Paten",
+    "harga": 96713,
+    "used_for": "Demam Berdarah",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 77
+  },
+  {
+    "kode_obat": "OB0071",
+    "nama_obat": "Neo Amlodipine Forte",
+    "kategori": "Paten",
+    "harga": 114458,
+    "used_for": "Hipertensi",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 95
+  },
+  {
+    "kode_obat": "OB0072",
+    "nama_obat": "Pro Sumatriptan XR",
+    "kategori": "Generik",
+    "harga": 108497,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 76
+  },
+  {
+    "kode_obat": "OB0073",
+    "nama_obat": "Medi Ranitidine ER",
+    "kategori": "Paten",
+    "harga": 125260,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 52
+  },
+  {
+    "kode_obat": "OB0074",
+    "nama_obat": "Max Ranitidine Plus",
+    "kategori": "Generik",
+    "harga": 40971,
+    "used_for": "Maag",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 54
+  },
+  {
+    "kode_obat": "OB0075",
+    "nama_obat": "Ultra Azithromycin ER",
+    "kategori": "Generik",
+    "harga": 37704,
+    "used_for": "Pneumonia",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0076",
+    "nama_obat": "Bio Scabimite Plus",
+    "kategori": "Generik",
+    "harga": 94457,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 54
+  },
+  {
+    "kode_obat": "OB0077",
+    "nama_obat": "Bio Omeprazole Plus",
+    "kategori": "Paten",
+    "harga": 57714,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 100
+  },
+  {
+    "kode_obat": "OB0078",
+    "nama_obat": "Neo Amlodipine Advance",
+    "kategori": "Paten",
+    "harga": 65159,
+    "used_for": "Hipertensi",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0079",
+    "nama_obat": "Pro Clopidogrel XR",
+    "kategori": "Generik",
+    "harga": 83297,
+    "used_for": "Serangan Jantung",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 59
+  },
+  {
+    "kode_obat": "OB0080",
+    "nama_obat": "Ultra Insulin Advance",
+    "kategori": "Generik",
+    "harga": 56353,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 91
+  },
+  {
+    "kode_obat": "OB0081",
+    "nama_obat": "Pro Ibuprofen ER",
+    "kategori": "Generik",
+    "harga": 44039,
+    "used_for": "Patah Tulang",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 91
+  },
+  {
+    "kode_obat": "OB0082",
+    "nama_obat": "Ultra Losartan XR",
+    "kategori": "Paten",
+    "harga": 67059,
+    "used_for": "Hipertensi",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0083",
+    "nama_obat": "Neo Ibuprofen XR",
+    "kategori": "Paten",
+    "harga": 100461,
+    "used_for": "Migrain",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 92
+  },
+  {
+    "kode_obat": "OB0084",
+    "nama_obat": "Ultra Paracetamol Plus",
+    "kategori": "Generik",
+    "harga": 28278,
+    "used_for": "Patah Tulang",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 78
+  },
+  {
+    "kode_obat": "OB0085",
+    "nama_obat": "Neo Ozen AQ",
+    "kategori": "Paten",
+    "harga": 116042,
+    "used_for": "Kudis",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 53
+  },
+  {
+    "kode_obat": "OB0086",
+    "nama_obat": "Neo Ponstan ER",
+    "kategori": "Generik",
+    "harga": 76396,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 88
+  },
+  {
+    "kode_obat": "OB0087",
+    "nama_obat": "Medi Ciprofloxacin Forte",
+    "kategori": "Generik",
+    "harga": 23969,
+    "used_for": "Pneumonia",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0088",
+    "nama_obat": "Max Paracetamol ER",
+    "kategori": "Generik",
+    "harga": 30588,
+    "used_for": "Demam Berdarah",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0089",
+    "nama_obat": "Pro Flixotide AQ",
+    "kategori": "Paten",
+    "harga": 70141,
+    "used_for": "Asma",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0090",
+    "nama_obat": "Neo Valacyclovir Plus",
+    "kategori": "Paten",
+    "harga": 148815,
+    "used_for": "Herpes",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 92
+  },
+  {
+    "kode_obat": "OB0091",
+    "nama_obat": "Medi Cataflam Forte",
+    "kategori": "Generik",
+    "harga": 134098,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0092",
+    "nama_obat": "Medi Zoter Advance",
+    "kategori": "Generik",
+    "harga": 40035,
+    "used_for": "Herpes",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0093",
+    "nama_obat": "Ultra Aspirin Forte",
+    "kategori": "Paten",
+    "harga": 96356,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 52
+  },
+  {
+    "kode_obat": "OB0094",
+    "nama_obat": "Ultra Furosemide AQ",
+    "kategori": "Paten",
+    "harga": 130107,
+    "used_for": "Gagal Ginjal",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 65
+  },
+  {
+    "kode_obat": "OB0095",
+    "nama_obat": "Neo Clopidogrel ER",
+    "kategori": "Paten",
+    "harga": 81687,
+    "used_for": "Serangan Jantung",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 79
+  },
+  {
+    "kode_obat": "OB0096",
+    "nama_obat": "Ultra Aspirin XR",
+    "kategori": "Paten",
+    "harga": 29862,
+    "used_for": "Demam Berdarah",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 50
+  },
+  {
+    "kode_obat": "OB0097",
+    "nama_obat": "Neo Cetirizine Plus",
+    "kategori": "Paten",
+    "harga": 57384,
+    "used_for": "Flu",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0098",
+    "nama_obat": "Pro Ozen AQ",
+    "kategori": "Paten",
+    "harga": 38414,
+    "used_for": "Kudis",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 67
+  },
+  {
+    "kode_obat": "OB0099",
+    "nama_obat": "Medi Amlodipine Advance",
+    "kategori": "Paten",
+    "harga": 65992,
+    "used_for": "Hipertensi",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 54
+  },
+  {
+    "kode_obat": "OB0100",
+    "nama_obat": "Bio Ibuprofen Advance",
+    "kategori": "Paten",
+    "harga": 49932,
+    "used_for": "Flu",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 62
+  },
+  {
+    "kode_obat": "OB0101",
+    "nama_obat": "Ultra Ibuprofen Plus",
+    "kategori": "Generik",
+    "harga": 27988,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 59
+  },
+  {
+    "kode_obat": "OB0102",
+    "nama_obat": "Ultra Azithromycin Forte",
+    "kategori": "Generik",
+    "harga": 90564,
+    "used_for": "Pneumonia",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0103",
+    "nama_obat": "Pro Paracetamol XR",
+    "kategori": "Generik",
+    "harga": 66162,
+    "used_for": "Demam",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 95
+  },
+  {
+    "kode_obat": "OB0104",
+    "nama_obat": "Medi Aspirin AQ",
+    "kategori": "Generik",
+    "harga": 19211,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 56
+  },
+  {
+    "kode_obat": "OB0105",
+    "nama_obat": "Medi Aspirin Plus",
+    "kategori": "Paten",
+    "harga": 66779,
+    "used_for": "Migrain",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 65
+  },
+  {
+    "kode_obat": "OB0106",
+    "nama_obat": "Neo Paracetamol Plus",
+    "kategori": "Generik",
+    "harga": 76623,
+    "used_for": "Demam",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 92
+  },
+  {
+    "kode_obat": "OB0107",
+    "nama_obat": "Max Gaviscon Advance",
+    "kategori": "Paten",
+    "harga": 88777,
+    "used_for": "Sakit Perut",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0108",
+    "nama_obat": "Medi Aspirin Advance",
+    "kategori": "Generik",
+    "harga": 20256,
+    "used_for": "Stroke",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 76
+  },
+  {
+    "kode_obat": "OB0109",
+    "nama_obat": "Ultra Cataflam Advance",
+    "kategori": "Generik",
+    "harga": 126613,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 91
+  },
+  {
+    "kode_obat": "OB0110",
+    "nama_obat": "Medi Clopidogrel Advance",
+    "kategori": "Generik",
+    "harga": 43498,
+    "used_for": "Serangan Jantung",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 56
+  },
+  {
+    "kode_obat": "OB0111",
+    "nama_obat": "Pro Aspirin Plus",
+    "kategori": "Generik",
+    "harga": 117182,
+    "used_for": "Demam",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 95
+  },
+  {
+    "kode_obat": "OB0112",
+    "nama_obat": "Max Antacil Advance",
+    "kategori": "Paten",
+    "harga": 10517,
+    "used_for": "Maag",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 57
+  },
+  {
+    "kode_obat": "OB0113",
+    "nama_obat": "Ultra Ponstan ER",
+    "kategori": "Generik",
+    "harga": 10266,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0114",
+    "nama_obat": "Max Clopidogrel Forte",
+    "kategori": "Paten",
+    "harga": 43319,
+    "used_for": "Stroke",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0115",
+    "nama_obat": "Max Paracetamol Forte",
+    "kategori": "Paten",
+    "harga": 27524,
+    "used_for": "Demam Berdarah",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 61
+  },
+  {
+    "kode_obat": "OB0116",
+    "nama_obat": "Bio Aspirin Plus",
+    "kategori": "Generik",
+    "harga": 92073,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 80
+  },
+  {
+    "kode_obat": "OB0117",
+    "nama_obat": "Max Loran Advance",
+    "kategori": "Paten",
+    "harga": 71033,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 87
+  },
+  {
+    "kode_obat": "OB0118",
+    "nama_obat": "Max Paracetamol Plus",
+    "kategori": "Paten",
+    "harga": 23825,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 100
+  },
+  {
+    "kode_obat": "OB0119",
+    "nama_obat": "Neo Scabimite ER",
+    "kategori": "Generik",
+    "harga": 118946,
+    "used_for": "Kudis",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 74
+  },
+  {
+    "kode_obat": "OB0120",
+    "nama_obat": "Pro Flixotide Plus",
+    "kategori": "Generik",
+    "harga": 136228,
+    "used_for": "Asma",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 96
+  },
+  {
+    "kode_obat": "OB0121",
+    "nama_obat": "Max Atorvastatin AQ",
+    "kategori": "Paten",
+    "harga": 38462,
+    "used_for": "Stroke",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 90
+  },
+  {
+    "kode_obat": "OB0122",
+    "nama_obat": "Medi Amoxicillin Forte",
+    "kategori": "Paten",
+    "harga": 80535,
+    "used_for": "Pneumonia",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 84
+  },
+  {
+    "kode_obat": "OB0123",
+    "nama_obat": "Ultra Nurofen AQ",
+    "kategori": "Paten",
+    "harga": 7540,
+    "used_for": "Demam",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 87
+  },
+  {
+    "kode_obat": "OB0124",
+    "nama_obat": "Pro Liv 52 Forte",
+    "kategori": "Paten",
+    "harga": 77411,
+    "used_for": "Gangguan Liver",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 63
+  },
+  {
+    "kode_obat": "OB0125",
+    "nama_obat": "Medi Omeprazole ER",
+    "kategori": "Paten",
+    "harga": 118784,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0126",
+    "nama_obat": "Pro Furosemide Forte",
+    "kategori": "Generik",
+    "harga": 78312,
+    "used_for": "Gagal Ginjal",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 94
+  },
+  {
+    "kode_obat": "OB0127",
+    "nama_obat": "Neo Panadol AQ",
+    "kategori": "Paten",
+    "harga": 75242,
+    "used_for": "Flu",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 55
+  },
+  {
+    "kode_obat": "OB0128",
+    "nama_obat": "Bio Metformin Advance",
+    "kategori": "Paten",
+    "harga": 100054,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 53
+  },
+  {
+    "kode_obat": "OB0129",
+    "nama_obat": "Pro Ibuprofen ER",
+    "kategori": "Generik",
+    "harga": 62635,
+    "used_for": "Demam Berdarah",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 91
+  },
+  {
+    "kode_obat": "OB0130",
+    "nama_obat": "Medi Panadol AQ",
+    "kategori": "Generik",
+    "harga": 115024,
+    "used_for": "Flu",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0131",
+    "nama_obat": "Ultra Epoetin XR",
+    "kategori": "Generik",
+    "harga": 21060,
+    "used_for": "Gagal Ginjal",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0132",
+    "nama_obat": "Ultra Scabimite AQ",
+    "kategori": "Paten",
+    "harga": 83253,
+    "used_for": "Kudis",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 54
+  },
+  {
+    "kode_obat": "OB0133",
+    "nama_obat": "Ultra Cataflam XR",
+    "kategori": "Paten",
+    "harga": 50832,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0134",
+    "nama_obat": "Neo Hepamerz XR",
+    "kategori": "Paten",
+    "harga": 149016,
+    "used_for": "Gangguan Liver",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 93
+  },
+  {
+    "kode_obat": "OB0135",
+    "nama_obat": "Ultra Paracetamol ER",
+    "kategori": "Paten",
+    "harga": 16264,
+    "used_for": "Demam Berdarah",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 74
+  },
+  {
+    "kode_obat": "OB0136",
+    "nama_obat": "Max Cetirizine AQ",
+    "kategori": "Paten",
+    "harga": 58052,
+    "used_for": "Flu",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 83
+  },
+  {
+    "kode_obat": "OB0137",
+    "nama_obat": "Ultra Amoxicillin Advance",
+    "kategori": "Paten",
+    "harga": 117434,
+    "used_for": "Pneumonia",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 81
+  },
+  {
+    "kode_obat": "OB0138",
+    "nama_obat": "Neo Ozen ER",
+    "kategori": "Generik",
+    "harga": 110231,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 64
+  },
+  {
+    "kode_obat": "OB0139",
+    "nama_obat": "Ultra Nitroglycerin ER",
+    "kategori": "Paten",
+    "harga": 110383,
+    "used_for": "Serangan Jantung",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0140",
+    "nama_obat": "Max Azithromycin XR",
+    "kategori": "Paten",
+    "harga": 56485,
+    "used_for": "Pneumonia",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 53
+  },
+  {
+    "kode_obat": "OB0141",
+    "nama_obat": "Medi Cataflam Plus",
+    "kategori": "Paten",
+    "harga": 62484,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 55
+  },
+  {
+    "kode_obat": "OB0142",
+    "nama_obat": "Max Azithromycin Plus",
+    "kategori": "Paten",
+    "harga": 109906,
+    "used_for": "Pneumonia",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 98
+  },
+  {
+    "kode_obat": "OB0143",
+    "nama_obat": "Medi Ponstan ER",
+    "kategori": "Generik",
+    "harga": 84823,
+    "used_for": "Infeksi Gigi",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 97
+  },
+  {
+    "kode_obat": "OB0144",
+    "nama_obat": "Ultra Ponstan ER",
+    "kategori": "Generik",
+    "harga": 81890,
+    "used_for": "Infeksi Gigi",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 85
+  },
+  {
+    "kode_obat": "OB0145",
+    "nama_obat": "Bio Ciprofloxacin Plus",
+    "kategori": "Paten",
+    "harga": 126409,
+    "used_for": "Pneumonia",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 87
+  },
+  {
+    "kode_obat": "OB0146",
+    "nama_obat": "Neo Flixotide AQ",
+    "kategori": "Generik",
+    "harga": 94151,
+    "used_for": "Asma",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 76
+  },
+  {
+    "kode_obat": "OB0147",
+    "nama_obat": "Pro Epoetin Advance",
+    "kategori": "Paten",
+    "harga": 62448,
+    "used_for": "Gagal Ginjal",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 65
+  },
+  {
+    "kode_obat": "OB0148",
+    "nama_obat": "Bio Mylanta ER",
+    "kategori": "Generik",
+    "harga": 140437,
+    "used_for": "Sakit Perut",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 94
+  },
+  {
+    "kode_obat": "OB0149",
+    "nama_obat": "Bio Nurofen Forte",
+    "kategori": "Generik",
+    "harga": 86192,
+    "used_for": "Demam",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 56
+  },
+  {
+    "kode_obat": "OB0150",
+    "nama_obat": "Max Aspirin ER",
+    "kategori": "Paten",
+    "harga": 72406,
+    "used_for": "Migrain",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 63
+  },
+  {
+    "kode_obat": "OB0151",
+    "nama_obat": "Ultra Ozen AQ",
+    "kategori": "Generik",
+    "harga": 93517,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 57
+  },
+  {
+    "kode_obat": "OB0152",
+    "nama_obat": "Bio Amlodipine XR",
+    "kategori": "Paten",
+    "harga": 62746,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 76
+  },
+  {
+    "kode_obat": "OB0153",
+    "nama_obat": "Neo Diclofenac Forte",
+    "kategori": "Paten",
+    "harga": 105921,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 87
+  },
+  {
+    "kode_obat": "OB0154",
+    "nama_obat": "Ultra Paracetamol Plus",
+    "kategori": "Paten",
+    "harga": 42353,
+    "used_for": "Patah Tulang",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 81
+  },
+  {
+    "kode_obat": "OB0155",
+    "nama_obat": "Pro Metformin Advance",
+    "kategori": "Paten",
+    "harga": 10715,
+    "used_for": "Diabetes",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 71
+  },
+  {
+    "kode_obat": "OB0156",
+    "nama_obat": "Medi Loran Advance",
+    "kategori": "Paten",
+    "harga": 94301,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0157",
+    "nama_obat": "Pro Glipizide XR",
+    "kategori": "Paten",
+    "harga": 21658,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 76
+  },
+  {
+    "kode_obat": "OB0158",
+    "nama_obat": "Max Aspirin Plus",
+    "kategori": "Generik",
+    "harga": 43205,
+    "used_for": "Serangan Jantung",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 62
+  },
+  {
+    "kode_obat": "OB0159",
+    "nama_obat": "Ultra Scabimite Forte",
+    "kategori": "Paten",
+    "harga": 62341,
+    "used_for": "Kudis",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 94
+  },
+  {
+    "kode_obat": "OB0160",
+    "nama_obat": "Pro Cataflam ER",
+    "kategori": "Generik",
+    "harga": 27806,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0161",
+    "nama_obat": "Bio Ranitidine Advance",
+    "kategori": "Paten",
+    "harga": 90392,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 89
+  },
+  {
+    "kode_obat": "OB0162",
+    "nama_obat": "Neo Ranitidine Plus",
+    "kategori": "Generik",
+    "harga": 5953,
+    "used_for": "Maag",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0163",
+    "nama_obat": "Medi Ibuprofen Forte",
+    "kategori": "Paten",
+    "harga": 40673,
+    "used_for": "Flu",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 59
+  },
+  {
+    "kode_obat": "OB0164",
+    "nama_obat": "Neo Amoxicillin XR",
+    "kategori": "Paten",
+    "harga": 134920,
+    "used_for": "Pneumonia",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 88
+  },
+  {
+    "kode_obat": "OB0165",
+    "nama_obat": "Max Ibuprofen Advance",
+    "kategori": "Generik",
+    "harga": 102237,
+    "used_for": "Flu",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 95
+  },
+  {
+    "kode_obat": "OB0166",
+    "nama_obat": "Ultra Clopidogrel XR",
+    "kategori": "Generik",
+    "harga": 97155,
+    "used_for": "Stroke",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 71
+  },
+  {
+    "kode_obat": "OB0167",
+    "nama_obat": "Medi Gaviscon Advance",
+    "kategori": "Generik",
+    "harga": 111191,
+    "used_for": "Sakit Perut",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 58
+  },
+  {
+    "kode_obat": "OB0168",
+    "nama_obat": "Pro Insulin XR",
+    "kategori": "Generik",
+    "harga": 50920,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 78
+  },
+  {
+    "kode_obat": "OB0169",
+    "nama_obat": "Medi Amlodipine Advance",
+    "kategori": "Paten",
+    "harga": 74864,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 95
+  },
+  {
+    "kode_obat": "OB0170",
+    "nama_obat": "Pro Flixotide AQ",
+    "kategori": "Generik",
+    "harga": 91556,
+    "used_for": "Asma",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 53
+  },
+  {
+    "kode_obat": "OB0171",
+    "nama_obat": "Medi Aspirin Advance",
+    "kategori": "Paten",
+    "harga": 94149,
+    "used_for": "Demam",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 90
+  },
+  {
+    "kode_obat": "OB0172",
+    "nama_obat": "Neo Ranitidine AQ",
+    "kategori": "Paten",
+    "harga": 17526,
+    "used_for": "Maag",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 57
+  },
+  {
+    "kode_obat": "OB0173",
+    "nama_obat": "Neo Sumatriptan Advance",
+    "kategori": "Paten",
+    "harga": 23177,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 52
+  },
+  {
+    "kode_obat": "OB0174",
+    "nama_obat": "Medi Amoxicillin Plus",
+    "kategori": "Generik",
+    "harga": 115170,
+    "used_for": "Pneumonia",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 94
+  },
+  {
+    "kode_obat": "OB0175",
+    "nama_obat": "Bio Lisinopril XR",
+    "kategori": "Generik",
+    "harga": 95979,
+    "used_for": "Hipertensi",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 93
+  },
+  {
+    "kode_obat": "OB0176",
+    "nama_obat": "Max Ciprofloxacin Forte",
+    "kategori": "Generik",
+    "harga": 124549,
+    "used_for": "Pneumonia",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 96
+  },
+  {
+    "kode_obat": "OB0177",
+    "nama_obat": "Pro Ursodiol AQ",
+    "kategori": "Paten",
+    "harga": 100727,
+    "used_for": "Gangguan Liver",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 59
+  },
+  {
+    "kode_obat": "OB0178",
+    "nama_obat": "Pro Cataflam XR",
+    "kategori": "Generik",
+    "harga": 69369,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0179",
+    "nama_obat": "Medi Buscopan Plus",
+    "kategori": "Paten",
+    "harga": 63959,
+    "used_for": "Sakit Perut",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 91
+  },
+  {
+    "kode_obat": "OB0180",
+    "nama_obat": "Neo Ponstan ER",
+    "kategori": "Paten",
+    "harga": 98101,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 61
+  },
+  {
+    "kode_obat": "OB0181",
+    "nama_obat": "Bio Diclofenac Advance",
+    "kategori": "Paten",
+    "harga": 85660,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0182",
+    "nama_obat": "Bio Azithromycin XR",
+    "kategori": "Paten",
+    "harga": 61325,
+    "used_for": "Pneumonia",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 84
+  },
+  {
+    "kode_obat": "OB0183",
+    "nama_obat": "Bio Aspirin Advance",
+    "kategori": "Generik",
+    "harga": 125952,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 81
+  },
+  {
+    "kode_obat": "OB0184",
+    "nama_obat": "Neo Ursodiol AQ",
+    "kategori": "Paten",
+    "harga": 49572,
+    "used_for": "Gangguan Liver",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 54
+  },
+  {
+    "kode_obat": "OB0185",
+    "nama_obat": "Ultra Liv 52 XR",
+    "kategori": "Generik",
+    "harga": 33759,
+    "used_for": "Gangguan Liver",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 87
+  },
+  {
+    "kode_obat": "OB0186",
+    "nama_obat": "Pro Paracetamol Forte",
+    "kategori": "Generik",
+    "harga": 30497,
+    "used_for": "Demam",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 80
+  },
+  {
+    "kode_obat": "OB0187",
+    "nama_obat": "Ultra Cataflam Forte",
+    "kategori": "Generik",
+    "harga": 7239,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 61
+  },
+  {
+    "kode_obat": "OB0188",
+    "nama_obat": "Pro Aspirin AQ",
+    "kategori": "Generik",
+    "harga": 142761,
+    "used_for": "Serangan Jantung",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 53
+  },
+  {
+    "kode_obat": "OB0189",
+    "nama_obat": "Medi Zoter AQ",
+    "kategori": "Paten",
+    "harga": 49899,
+    "used_for": "Herpes",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0190",
+    "nama_obat": "Ultra Azithromycin Forte",
+    "kategori": "Generik",
+    "harga": 127111,
+    "used_for": "Pneumonia",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0191",
+    "nama_obat": "Pro Metformin Forte",
+    "kategori": "Generik",
+    "harga": 119270,
+    "used_for": "Diabetes",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 86
+  },
+  {
+    "kode_obat": "OB0192",
+    "nama_obat": "Neo Panadol Forte",
+    "kategori": "Generik",
+    "harga": 26462,
+    "used_for": "Flu",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 84
+  },
+  {
+    "kode_obat": "OB0193",
+    "nama_obat": "Pro Clopidogrel Advance",
+    "kategori": "Paten",
+    "harga": 103630,
+    "used_for": "Stroke",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0194",
+    "nama_obat": "Medi Losartan AQ",
+    "kategori": "Generik",
+    "harga": 136456,
+    "used_for": "Hipertensi",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 65
+  },
+  {
+    "kode_obat": "OB0195",
+    "nama_obat": "Ultra Ranitidine ER",
+    "kategori": "Generik",
+    "harga": 101881,
+    "used_for": "Maag",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0196",
+    "nama_obat": "Medi Omeprazole ER",
+    "kategori": "Paten",
+    "harga": 111208,
+    "used_for": "Maag",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0197",
+    "nama_obat": "Neo Ciprofloxacin Advance",
+    "kategori": "Generik",
+    "harga": 33587,
+    "used_for": "Pneumonia",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 57
+  },
+  {
+    "kode_obat": "OB0198",
+    "nama_obat": "Neo Zoter ER",
+    "kategori": "Generik",
+    "harga": 143745,
+    "used_for": "Herpes",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 76
+  },
+  {
+    "kode_obat": "OB0199",
+    "nama_obat": "Neo Ibuprofen Forte",
+    "kategori": "Generik",
+    "harga": 22615,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 95
+  },
+  {
+    "kode_obat": "OB0200",
+    "nama_obat": "Max Antacil XR",
+    "kategori": "Generik",
+    "harga": 64680,
+    "used_for": "Maag",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 81
+  },
+  {
+    "kode_obat": "OB0201",
+    "nama_obat": "Ultra Clopidogrel AQ",
+    "kategori": "Generik",
+    "harga": 148488,
+    "used_for": "Serangan Jantung",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0202",
+    "nama_obat": "Bio Zoter Plus",
+    "kategori": "Generik",
+    "harga": 20702,
+    "used_for": "Herpes",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 53
+  },
+  {
+    "kode_obat": "OB0203",
+    "nama_obat": "Ultra Aspirin Forte",
+    "kategori": "Generik",
+    "harga": 82586,
+    "used_for": "Serangan Jantung",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 58
+  },
+  {
+    "kode_obat": "OB0204",
+    "nama_obat": "Bio Clopidogrel ER",
+    "kategori": "Generik",
+    "harga": 115762,
+    "used_for": "Serangan Jantung",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 80
+  },
+  {
+    "kode_obat": "OB0205",
+    "nama_obat": "Medi Ibuprofen AQ",
+    "kategori": "Paten",
+    "harga": 36925,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 85
+  },
+  {
+    "kode_obat": "OB0206",
+    "nama_obat": "Neo Ozen ER",
+    "kategori": "Generik",
+    "harga": 116245,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 98
+  },
+  {
+    "kode_obat": "OB0207",
+    "nama_obat": "Pro Epoetin Advance",
+    "kategori": "Generik",
+    "harga": 19406,
+    "used_for": "Gagal Ginjal",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 88
+  },
+  {
+    "kode_obat": "OB0208",
+    "nama_obat": "Bio Buscopan AQ",
+    "kategori": "Paten",
+    "harga": 51878,
+    "used_for": "Sakit Perut",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 87
+  },
+  {
+    "kode_obat": "OB0209",
+    "nama_obat": "Neo Paracetamol ER",
+    "kategori": "Paten",
+    "harga": 32220,
+    "used_for": "Patah Tulang",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 74
+  },
+  {
+    "kode_obat": "OB0210",
+    "nama_obat": "Pro Ibuprofen Advance",
+    "kategori": "Paten",
+    "harga": 125421,
+    "used_for": "Flu",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 59
+  },
+  {
+    "kode_obat": "OB0211",
+    "nama_obat": "Pro Lisinopril Plus",
+    "kategori": "Paten",
+    "harga": 20900,
+    "used_for": "Gagal Ginjal",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 57
+  },
+  {
+    "kode_obat": "OB0212",
+    "nama_obat": "Neo Clopidogrel Plus",
+    "kategori": "Generik",
+    "harga": 76516,
+    "used_for": "Serangan Jantung",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 63
+  },
+  {
+    "kode_obat": "OB0213",
+    "nama_obat": "Ultra Aspirin Forte",
+    "kategori": "Generik",
+    "harga": 95232,
+    "used_for": "Stroke",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 98
+  },
+  {
+    "kode_obat": "OB0214",
+    "nama_obat": "Max Aspirin ER",
+    "kategori": "Generik",
+    "harga": 143923,
+    "used_for": "Stroke",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0215",
+    "nama_obat": "Bio Cataflam AQ",
+    "kategori": "Generik",
+    "harga": 5548,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 72
+  },
+  {
+    "kode_obat": "OB0216",
+    "nama_obat": "Bio Paracetamol AQ",
+    "kategori": "Paten",
+    "harga": 99012,
+    "used_for": "Patah Tulang",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0217",
+    "nama_obat": "Max Ciprofloxacin XR",
+    "kategori": "Generik",
+    "harga": 77551,
+    "used_for": "Pneumonia",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 77
+  },
+  {
+    "kode_obat": "OB0218",
+    "nama_obat": "Max Insulin AQ",
+    "kategori": "Generik",
+    "harga": 137062,
+    "used_for": "Diabetes",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 89
+  },
+  {
+    "kode_obat": "OB0219",
+    "nama_obat": "Pro Ranitidine AQ",
+    "kategori": "Paten",
+    "harga": 110689,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 80
+  },
+  {
+    "kode_obat": "OB0220",
+    "nama_obat": "Bio Gaviscon ER",
+    "kategori": "Paten",
+    "harga": 45592,
+    "used_for": "Sakit Perut",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 50
+  },
+  {
+    "kode_obat": "OB0221",
+    "nama_obat": "Max Mylanta Advance",
+    "kategori": "Generik",
+    "harga": 37354,
+    "used_for": "Sakit Perut",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 64
+  },
+  {
+    "kode_obat": "OB0222",
+    "nama_obat": "Ultra Diclofenac Forte",
+    "kategori": "Paten",
+    "harga": 59604,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 71
+  },
+  {
+    "kode_obat": "OB0223",
+    "nama_obat": "Ultra Scabimite ER",
+    "kategori": "Paten",
+    "harga": 60220,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0224",
+    "nama_obat": "Pro Ibuprofen Plus",
+    "kategori": "Paten",
+    "harga": 130258,
+    "used_for": "Demam Berdarah",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 71
+  },
+  {
+    "kode_obat": "OB0225",
+    "nama_obat": "Pro Glipizide ER",
+    "kategori": "Generik",
+    "harga": 29755,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 86
+  },
+  {
+    "kode_obat": "OB0226",
+    "nama_obat": "Bio Clopidogrel AQ",
+    "kategori": "Generik",
+    "harga": 74931,
+    "used_for": "Stroke",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 62
+  },
+  {
+    "kode_obat": "OB0227",
+    "nama_obat": "Bio Furosemide XR",
+    "kategori": "Paten",
+    "harga": 122661,
+    "used_for": "Gagal Ginjal",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 86
+  },
+  {
+    "kode_obat": "OB0228",
+    "nama_obat": "Bio Antacil AQ",
+    "kategori": "Paten",
+    "harga": 146014,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 92
+  },
+  {
+    "kode_obat": "OB0229",
+    "nama_obat": "Neo Ibuprofen XR",
+    "kategori": "Generik",
+    "harga": 121726,
+    "used_for": "Patah Tulang",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 99
+  },
+  {
+    "kode_obat": "OB0230",
+    "nama_obat": "Bio Amoxicillin AQ",
+    "kategori": "Generik",
+    "harga": 111652,
+    "used_for": "Pneumonia",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 83
+  },
+  {
+    "kode_obat": "OB0231",
+    "nama_obat": "Neo Mylanta ER",
+    "kategori": "Paten",
+    "harga": 42704,
+    "used_for": "Sakit Perut",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 53
+  },
+  {
+    "kode_obat": "OB0232",
+    "nama_obat": "Pro Lisinopril Advance",
+    "kategori": "Paten",
+    "harga": 33017,
+    "used_for": "Gagal Ginjal",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0233",
+    "nama_obat": "Pro Zoter XR",
+    "kategori": "Generik",
+    "harga": 142234,
+    "used_for": "Herpes",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 90
+  },
+  {
+    "kode_obat": "OB0234",
+    "nama_obat": "Neo Antacil Forte",
+    "kategori": "Generik",
+    "harga": 5057,
+    "used_for": "Maag",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 80
+  },
+  {
+    "kode_obat": "OB0235",
+    "nama_obat": "Pro Losartan XR",
+    "kategori": "Paten",
+    "harga": 125277,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 50
+  },
+  {
+    "kode_obat": "OB0236",
+    "nama_obat": "Ultra Clopidogrel Advance",
+    "kategori": "Generik",
+    "harga": 107368,
+    "used_for": "Serangan Jantung",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 71
+  },
+  {
+    "kode_obat": "OB0237",
+    "nama_obat": "Bio Ventolin AQ",
+    "kategori": "Paten",
+    "harga": 83304,
+    "used_for": "Asma",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0238",
+    "nama_obat": "Bio Antacil ER",
+    "kategori": "Generik",
+    "harga": 120649,
+    "used_for": "Maag",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0239",
+    "nama_obat": "Pro Ibuprofen Forte",
+    "kategori": "Generik",
+    "harga": 17251,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 91
+  },
+  {
+    "kode_obat": "OB0240",
+    "nama_obat": "Max Insulin AQ",
+    "kategori": "Paten",
+    "harga": 44194,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 50
+  },
+  {
+    "kode_obat": "OB0241",
+    "nama_obat": "Ultra Ponstan XR",
+    "kategori": "Generik",
+    "harga": 122558,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0242",
+    "nama_obat": "Max Insulin ER",
+    "kategori": "Generik",
+    "harga": 52332,
+    "used_for": "Diabetes",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0243",
+    "nama_obat": "Max Valacyclovir Plus",
+    "kategori": "Generik",
+    "harga": 105184,
+    "used_for": "Herpes",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 97
+  },
+  {
+    "kode_obat": "OB0244",
+    "nama_obat": "Bio Ibuprofen Plus",
+    "kategori": "Generik",
+    "harga": 100199,
+    "used_for": "Flu",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 55
+  },
+  {
+    "kode_obat": "OB0245",
+    "nama_obat": "Neo Aspirin Advance",
+    "kategori": "Paten",
+    "harga": 94750,
+    "used_for": "Demam",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 85
+  },
+  {
+    "kode_obat": "OB0246",
+    "nama_obat": "Max Mylanta XR",
+    "kategori": "Paten",
+    "harga": 140074,
+    "used_for": "Sakit Perut",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 64
+  },
+  {
+    "kode_obat": "OB0247",
+    "nama_obat": "Ultra Losartan XR",
+    "kategori": "Paten",
+    "harga": 117079,
+    "used_for": "Hipertensi",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 100
+  },
+  {
+    "kode_obat": "OB0248",
+    "nama_obat": "Medi Paracetamol ER",
+    "kategori": "Paten",
+    "harga": 26918,
+    "used_for": "Demam Berdarah",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0249",
+    "nama_obat": "Max Lisinopril XR",
+    "kategori": "Generik",
+    "harga": 46751,
+    "used_for": "Gagal Ginjal",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 54
+  },
+  {
+    "kode_obat": "OB0250",
+    "nama_obat": "Neo Paracetamol Advance",
+    "kategori": "Generik",
+    "harga": 54564,
+    "used_for": "Patah Tulang",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 83
+  },
+  {
+    "kode_obat": "OB0251",
+    "nama_obat": "Max Ventolin ER",
+    "kategori": "Paten",
+    "harga": 80870,
+    "used_for": "Asma",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 83
+  },
+  {
+    "kode_obat": "OB0252",
+    "nama_obat": "Ultra Aspirin Advance",
+    "kategori": "Paten",
+    "harga": 54564,
+    "used_for": "Demam Berdarah",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 94
+  },
+  {
+    "kode_obat": "OB0253",
+    "nama_obat": "Max Ozen Plus",
+    "kategori": "Paten",
+    "harga": 47417,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0254",
+    "nama_obat": "Neo Ponstan Advance",
+    "kategori": "Generik",
+    "harga": 119653,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 80
+  },
+  {
+    "kode_obat": "OB0255",
+    "nama_obat": "Neo Amlodipine ER",
+    "kategori": "Paten",
+    "harga": 14716,
+    "used_for": "Hipertensi",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 87
+  },
+  {
+    "kode_obat": "OB0256",
+    "nama_obat": "Medi Ponstan Plus",
+    "kategori": "Generik",
+    "harga": 67965,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 84
+  },
+  {
+    "kode_obat": "OB0257",
+    "nama_obat": "Medi Ibuprofen ER",
+    "kategori": "Generik",
+    "harga": 140471,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0258",
+    "nama_obat": "Ultra Metformin AQ",
+    "kategori": "Generik",
+    "harga": 74638,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 94
+  },
+  {
+    "kode_obat": "OB0259",
+    "nama_obat": "Pro Ventolin Forte",
+    "kategori": "Generik",
+    "harga": 32337,
+    "used_for": "Asma",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 94
+  },
+  {
+    "kode_obat": "OB0260",
+    "nama_obat": "Max Lisinopril AQ",
+    "kategori": "Generik",
+    "harga": 121281,
+    "used_for": "Gagal Ginjal",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 50
+  },
+  {
+    "kode_obat": "OB0261",
+    "nama_obat": "Pro Loran Advance",
+    "kategori": "Paten",
+    "harga": 85340,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 85
+  },
+  {
+    "kode_obat": "OB0262",
+    "nama_obat": "Ultra Ibuprofen Forte",
+    "kategori": "Generik",
+    "harga": 129072,
+    "used_for": "Flu",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 67
+  },
+  {
+    "kode_obat": "OB0263",
+    "nama_obat": "Medi Furosemide ER",
+    "kategori": "Paten",
+    "harga": 139746,
+    "used_for": "Gagal Ginjal",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 61
+  },
+  {
+    "kode_obat": "OB0264",
+    "nama_obat": "Ultra Valacyclovir Plus",
+    "kategori": "Paten",
+    "harga": 102437,
+    "used_for": "Herpes",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 63
+  },
+  {
+    "kode_obat": "OB0265",
+    "nama_obat": "Ultra Ventolin AQ",
+    "kategori": "Paten",
+    "harga": 44365,
+    "used_for": "Asma",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0266",
+    "nama_obat": "Pro Nurofen XR",
+    "kategori": "Generik",
+    "harga": 72512,
+    "used_for": "Demam",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 95
+  },
+  {
+    "kode_obat": "OB0267",
+    "nama_obat": "Pro Ciprofloxacin XR",
+    "kategori": "Paten",
+    "harga": 39057,
+    "used_for": "Pneumonia",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 93
+  },
+  {
+    "kode_obat": "OB0268",
+    "nama_obat": "Medi Zoter AQ",
+    "kategori": "Paten",
+    "harga": 103283,
+    "used_for": "Herpes",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 58
+  },
+  {
+    "kode_obat": "OB0269",
+    "nama_obat": "Max Cataflam Advance",
+    "kategori": "Generik",
+    "harga": 84630,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 79
+  },
+  {
+    "kode_obat": "OB0270",
+    "nama_obat": "Medi Clopidogrel Forte",
+    "kategori": "Generik",
+    "harga": 137878,
+    "used_for": "Serangan Jantung",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0271",
+    "nama_obat": "Medi Flixotide Forte",
+    "kategori": "Paten",
+    "harga": 56853,
+    "used_for": "Asma",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 61
+  },
+  {
+    "kode_obat": "OB0272",
+    "nama_obat": "Medi Aspirin XR",
+    "kategori": "Paten",
+    "harga": 141803,
+    "used_for": "Serangan Jantung",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 83
+  },
+  {
+    "kode_obat": "OB0273",
+    "nama_obat": "Neo Cataflam AQ",
+    "kategori": "Generik",
+    "harga": 125284,
+    "used_for": "Infeksi Gigi",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 62
+  },
+  {
+    "kode_obat": "OB0274",
+    "nama_obat": "Max Epoetin ER",
+    "kategori": "Generik",
+    "harga": 96922,
+    "used_for": "Gagal Ginjal",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 96
+  },
+  {
+    "kode_obat": "OB0275",
+    "nama_obat": "Medi Clopidogrel Plus",
+    "kategori": "Generik",
+    "harga": 66596,
+    "used_for": "Serangan Jantung",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 93
+  },
+  {
+    "kode_obat": "OB0276",
+    "nama_obat": "Max Insulin AQ",
+    "kategori": "Paten",
+    "harga": 33733,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 71
+  },
+  {
+    "kode_obat": "OB0277",
+    "nama_obat": "Pro Gaviscon Forte",
+    "kategori": "Generik",
+    "harga": 59405,
+    "used_for": "Sakit Perut",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 79
+  },
+  {
+    "kode_obat": "OB0278",
+    "nama_obat": "Ultra Ibuprofen XR",
+    "kategori": "Generik",
+    "harga": 95464,
+    "used_for": "Patah Tulang",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0279",
+    "nama_obat": "Medi Nurofen ER",
+    "kategori": "Paten",
+    "harga": 99330,
+    "used_for": "Demam",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 79
+  },
+  {
+    "kode_obat": "OB0280",
+    "nama_obat": "Bio Salbutamol XR",
+    "kategori": "Paten",
+    "harga": 68723,
+    "used_for": "Asma",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 65
+  },
+  {
+    "kode_obat": "OB0281",
+    "nama_obat": "Pro Cataflam Plus",
+    "kategori": "Generik",
+    "harga": 82196,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 72
+  },
+  {
+    "kode_obat": "OB0282",
+    "nama_obat": "Bio Farbion 10 AQ",
+    "kategori": "Generik",
+    "harga": 42436,
+    "used_for": "Herpes",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 95
+  },
+  {
+    "kode_obat": "OB0283",
+    "nama_obat": "Medi Panadol Forte",
+    "kategori": "Paten",
+    "harga": 120273,
+    "used_for": "Flu",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 74
+  },
+  {
+    "kode_obat": "OB0284",
+    "nama_obat": "Medi Ozen Forte",
+    "kategori": "Generik",
+    "harga": 59697,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 90
+  },
+  {
+    "kode_obat": "OB0285",
+    "nama_obat": "Neo Gaviscon ER",
+    "kategori": "Generik",
+    "harga": 113487,
+    "used_for": "Sakit Perut",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 72
+  },
+  {
+    "kode_obat": "OB0286",
+    "nama_obat": "Bio Zoter ER",
+    "kategori": "Generik",
+    "harga": 103070,
+    "used_for": "Herpes",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 65
+  },
+  {
+    "kode_obat": "OB0287",
+    "nama_obat": "Max Lisinopril AQ",
+    "kategori": "Generik",
+    "harga": 9697,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 63
+  },
+  {
+    "kode_obat": "OB0288",
+    "nama_obat": "Medi Ibuprofen AQ",
+    "kategori": "Generik",
+    "harga": 118188,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 67
+  },
+  {
+    "kode_obat": "OB0289",
+    "nama_obat": "Pro Scabimite Plus",
+    "kategori": "Generik",
+    "harga": 69268,
+    "used_for": "Kudis",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 53
+  },
+  {
+    "kode_obat": "OB0290",
+    "nama_obat": "Bio Azithromycin AQ",
+    "kategori": "Paten",
+    "harga": 45449,
+    "used_for": "Pneumonia",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 58
+  },
+  {
+    "kode_obat": "OB0291",
+    "nama_obat": "Medi Mylanta ER",
+    "kategori": "Paten",
+    "harga": 9828,
+    "used_for": "Sakit Perut",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 55
+  },
+  {
+    "kode_obat": "OB0292",
+    "nama_obat": "Pro Ponstan Forte",
+    "kategori": "Generik",
+    "harga": 15173,
+    "used_for": "Infeksi Gigi",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 82
+  },
+  {
+    "kode_obat": "OB0293",
+    "nama_obat": "Neo Epoetin Forte",
+    "kategori": "Paten",
+    "harga": 138212,
+    "used_for": "Gagal Ginjal",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 55
+  },
+  {
+    "kode_obat": "OB0294",
+    "nama_obat": "Medi Cataflam Plus",
+    "kategori": "Paten",
+    "harga": 42838,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 82
+  },
+  {
+    "kode_obat": "OB0295",
+    "nama_obat": "Neo Ponstan Plus",
+    "kategori": "Generik",
+    "harga": 130811,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 82
+  },
+  {
+    "kode_obat": "OB0296",
+    "nama_obat": "Neo Aspirin Plus",
+    "kategori": "Paten",
+    "harga": 75979,
+    "used_for": "Migrain",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 71
+  },
+  {
+    "kode_obat": "OB0297",
+    "nama_obat": "Bio Farbion 10 Advance",
+    "kategori": "Generik",
+    "harga": 114621,
+    "used_for": "Herpes",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 78
+  },
+  {
+    "kode_obat": "OB0298",
+    "nama_obat": "Ultra Lisinopril Plus",
+    "kategori": "Paten",
+    "harga": 142607,
+    "used_for": "Gagal Ginjal",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0299",
+    "nama_obat": "Neo Aspirin Forte",
+    "kategori": "Generik",
+    "harga": 41825,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0300",
+    "nama_obat": "Neo Paracetamol Advance",
+    "kategori": "Generik",
+    "harga": 125806,
+    "used_for": "Demam",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 82
+  },
+  {
+    "kode_obat": "OB0301",
+    "nama_obat": "Neo Aspirin ER",
+    "kategori": "Paten",
+    "harga": 84075,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 78
+  },
+  {
+    "kode_obat": "OB0302",
+    "nama_obat": "Ultra Amoxicillin Plus",
+    "kategori": "Generik",
+    "harga": 119472,
+    "used_for": "Pneumonia",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 89
+  },
+  {
+    "kode_obat": "OB0303",
+    "nama_obat": "Bio Cataflam Forte",
+    "kategori": "Generik",
+    "harga": 78906,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 70
+  },
+  {
+    "kode_obat": "OB0304",
+    "nama_obat": "Ultra Losartan ER",
+    "kategori": "Paten",
+    "harga": 50880,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 92
+  },
+  {
+    "kode_obat": "OB0305",
+    "nama_obat": "Max Ozen Forte",
+    "kategori": "Generik",
+    "harga": 80990,
+    "used_for": "Kudis",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 94
+  },
+  {
+    "kode_obat": "OB0306",
+    "nama_obat": "Max Ponstan ER",
+    "kategori": "Paten",
+    "harga": 108798,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 82
+  },
+  {
+    "kode_obat": "OB0307",
+    "nama_obat": "Pro Scabimite Forte",
+    "kategori": "Generik",
+    "harga": 78947,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 56
+  },
+  {
+    "kode_obat": "OB0308",
+    "nama_obat": "Bio Glipizide ER",
+    "kategori": "Paten",
+    "harga": 17104,
+    "used_for": "Diabetes",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 67
+  },
+  {
+    "kode_obat": "OB0309",
+    "nama_obat": "Max Ibuprofen Forte",
+    "kategori": "Paten",
+    "harga": 16675,
+    "used_for": "Flu",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 61
+  },
+  {
+    "kode_obat": "OB0310",
+    "nama_obat": "Ultra Antacil Advance",
+    "kategori": "Paten",
+    "harga": 76976,
+    "used_for": "Maag",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 94
+  },
+  {
+    "kode_obat": "OB0311",
+    "nama_obat": "Pro Ventolin Forte",
+    "kategori": "Paten",
+    "harga": 140729,
+    "used_for": "Asma",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 100
+  },
+  {
+    "kode_obat": "OB0312",
+    "nama_obat": "Max Sumatriptan Forte",
+    "kategori": "Generik",
+    "harga": 140765,
+    "used_for": "Migrain",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0313",
+    "nama_obat": "Bio Amlodipine ER",
+    "kategori": "Generik",
+    "harga": 130734,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 88
+  },
+  {
+    "kode_obat": "OB0314",
+    "nama_obat": "Medi Mylanta ER",
+    "kategori": "Paten",
+    "harga": 133930,
+    "used_for": "Sakit Perut",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 82
+  },
+  {
+    "kode_obat": "OB0315",
+    "nama_obat": "Neo Buscopan ER",
+    "kategori": "Generik",
+    "harga": 68718,
+    "used_for": "Sakit Perut",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 84
+  },
+  {
+    "kode_obat": "OB0316",
+    "nama_obat": "Max Clopidogrel AQ",
+    "kategori": "Paten",
+    "harga": 101386,
+    "used_for": "Serangan Jantung",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 76
+  },
+  {
+    "kode_obat": "OB0317",
+    "nama_obat": "Ultra Paracetamol Forte",
+    "kategori": "Generik",
+    "harga": 68678,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 90
+  },
+  {
+    "kode_obat": "OB0318",
+    "nama_obat": "Pro Glipizide Advance",
+    "kategori": "Paten",
+    "harga": 116414,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0319",
+    "nama_obat": "Medi Mylanta AQ",
+    "kategori": "Generik",
+    "harga": 149150,
+    "used_for": "Sakit Perut",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 83
+  },
+  {
+    "kode_obat": "OB0320",
+    "nama_obat": "Pro Aspirin Plus",
+    "kategori": "Paten",
+    "harga": 86110,
+    "used_for": "Demam",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0321",
+    "nama_obat": "Bio Nurofen XR",
+    "kategori": "Generik",
+    "harga": 27494,
+    "used_for": "Demam",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0322",
+    "nama_obat": "Max Ursodiol Advance",
+    "kategori": "Generik",
+    "harga": 102391,
+    "used_for": "Gangguan Liver",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 52
+  },
+  {
+    "kode_obat": "OB0323",
+    "nama_obat": "Medi Farbion 10 XR",
+    "kategori": "Paten",
+    "harga": 132411,
+    "used_for": "Herpes",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 88
+  },
+  {
+    "kode_obat": "OB0324",
+    "nama_obat": "Neo Aspirin ER",
+    "kategori": "Paten",
+    "harga": 35126,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 88
+  },
+  {
+    "kode_obat": "OB0325",
+    "nama_obat": "Neo Ibuprofen Advance",
+    "kategori": "Paten",
+    "harga": 135228,
+    "used_for": "Patah Tulang",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0326",
+    "nama_obat": "Neo Cataflam AQ",
+    "kategori": "Generik",
+    "harga": 92198,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 77
+  },
+  {
+    "kode_obat": "OB0327",
+    "nama_obat": "Neo Scabimite XR",
+    "kategori": "Paten",
+    "harga": 87260,
+    "used_for": "Kudis",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 76
+  },
+  {
+    "kode_obat": "OB0328",
+    "nama_obat": "Pro Loran Forte",
+    "kategori": "Generik",
+    "harga": 97953,
+    "used_for": "Kudis",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 55
+  },
+  {
+    "kode_obat": "OB0329",
+    "nama_obat": "Ultra Ibuprofen Advance",
+    "kategori": "Paten",
+    "harga": 93904,
+    "used_for": "Demam Berdarah",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 71
+  },
+  {
+    "kode_obat": "OB0330",
+    "nama_obat": "Neo Epoetin Forte",
+    "kategori": "Paten",
+    "harga": 65209,
+    "used_for": "Gagal Ginjal",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0331",
+    "nama_obat": "Bio Sumatriptan Forte",
+    "kategori": "Generik",
+    "harga": 88574,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 87
+  },
+  {
+    "kode_obat": "OB0332",
+    "nama_obat": "Pro Epoetin ER",
+    "kategori": "Generik",
+    "harga": 62649,
+    "used_for": "Gagal Ginjal",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 62
+  },
+  {
+    "kode_obat": "OB0333",
+    "nama_obat": "Neo Lisinopril Forte",
+    "kategori": "Paten",
+    "harga": 134999,
+    "used_for": "Hipertensi",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 65
+  },
+  {
+    "kode_obat": "OB0334",
+    "nama_obat": "Max Lisinopril Plus",
+    "kategori": "Paten",
+    "harga": 126112,
+    "used_for": "Gagal Ginjal",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 93
+  },
+  {
+    "kode_obat": "OB0335",
+    "nama_obat": "Bio Metformin Plus",
+    "kategori": "Generik",
+    "harga": 143052,
+    "used_for": "Diabetes",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0336",
+    "nama_obat": "Max Sumatriptan ER",
+    "kategori": "Generik",
+    "harga": 83016,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 74
+  },
+  {
+    "kode_obat": "OB0337",
+    "nama_obat": "Bio Paracetamol XR",
+    "kategori": "Generik",
+    "harga": 40605,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 84
+  },
+  {
+    "kode_obat": "OB0338",
+    "nama_obat": "Neo Panadol Forte",
+    "kategori": "Paten",
+    "harga": 45816,
+    "used_for": "Flu",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 99
+  },
+  {
+    "kode_obat": "OB0339",
+    "nama_obat": "Ultra Ibuprofen Plus",
+    "kategori": "Generik",
+    "harga": 11708,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 71
+  },
+  {
+    "kode_obat": "OB0340",
+    "nama_obat": "Pro Amoxicillin Advance",
+    "kategori": "Paten",
+    "harga": 15434,
+    "used_for": "Pneumonia",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0341",
+    "nama_obat": "Medi Ventolin Plus",
+    "kategori": "Paten",
+    "harga": 20492,
+    "used_for": "Asma",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 67
+  },
+  {
+    "kode_obat": "OB0342",
+    "nama_obat": "Medi Epoetin ER",
+    "kategori": "Generik",
+    "harga": 132366,
+    "used_for": "Gagal Ginjal",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 64
+  },
+  {
+    "kode_obat": "OB0343",
+    "nama_obat": "Neo Antacil XR",
+    "kategori": "Paten",
+    "harga": 51939,
+    "used_for": "Maag",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0344",
+    "nama_obat": "Bio Azithromycin Forte",
+    "kategori": "Paten",
+    "harga": 109053,
+    "used_for": "Pneumonia",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 61
+  },
+  {
+    "kode_obat": "OB0345",
+    "nama_obat": "Bio Ibuprofen Advance",
+    "kategori": "Paten",
+    "harga": 115785,
+    "used_for": "Flu",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 54
+  },
+  {
+    "kode_obat": "OB0346",
+    "nama_obat": "Bio Metformin AQ",
+    "kategori": "Generik",
+    "harga": 47361,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 54
+  },
+  {
+    "kode_obat": "OB0347",
+    "nama_obat": "Neo Salbutamol Forte",
+    "kategori": "Generik",
+    "harga": 69372,
+    "used_for": "Asma",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 62
+  },
+  {
+    "kode_obat": "OB0348",
+    "nama_obat": "Bio Losartan ER",
+    "kategori": "Generik",
+    "harga": 13160,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0349",
+    "nama_obat": "Max Ibuprofen Forte",
+    "kategori": "Generik",
+    "harga": 19621,
+    "used_for": "Migrain",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 76
+  },
+  {
+    "kode_obat": "OB0350",
+    "nama_obat": "Max Paracetamol Plus",
+    "kategori": "Paten",
+    "harga": 61336,
+    "used_for": "Demam Berdarah",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 83
+  },
+  {
+    "kode_obat": "OB0351",
+    "nama_obat": "Pro Loran ER",
+    "kategori": "Generik",
+    "harga": 148905,
+    "used_for": "Kudis",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 90
+  },
+  {
+    "kode_obat": "OB0352",
+    "nama_obat": "Bio Lisinopril Plus",
+    "kategori": "Generik",
+    "harga": 79669,
+    "used_for": "Gagal Ginjal",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 78
+  },
+  {
+    "kode_obat": "OB0353",
+    "nama_obat": "Medi Clopidogrel Advance",
+    "kategori": "Paten",
+    "harga": 111736,
+    "used_for": "Stroke",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0354",
+    "nama_obat": "Pro Ranitidine AQ",
+    "kategori": "Paten",
+    "harga": 43932,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 70
+  },
+  {
+    "kode_obat": "OB0355",
+    "nama_obat": "Pro Cataflam ER",
+    "kategori": "Generik",
+    "harga": 135076,
+    "used_for": "Infeksi Gigi",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 79
+  },
+  {
+    "kode_obat": "OB0356",
+    "nama_obat": "Ultra Sumatriptan XR",
+    "kategori": "Generik",
+    "harga": 57555,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0357",
+    "nama_obat": "Medi Amoxicillin Plus",
+    "kategori": "Paten",
+    "harga": 137169,
+    "used_for": "Pneumonia",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0358",
+    "nama_obat": "Medi Ibuprofen Forte",
+    "kategori": "Paten",
+    "harga": 74983,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 58
+  },
+  {
+    "kode_obat": "OB0359",
+    "nama_obat": "Neo Ibuprofen Plus",
+    "kategori": "Generik",
+    "harga": 37368,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 99
+  },
+  {
+    "kode_obat": "OB0360",
+    "nama_obat": "Neo Clopidogrel XR",
+    "kategori": "Paten",
+    "harga": 125795,
+    "used_for": "Stroke",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 80
+  },
+  {
+    "kode_obat": "OB0361",
+    "nama_obat": "Bio Gaviscon AQ",
+    "kategori": "Generik",
+    "harga": 65634,
+    "used_for": "Sakit Perut",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 87
+  },
+  {
+    "kode_obat": "OB0362",
+    "nama_obat": "Max Paracetamol AQ",
+    "kategori": "Generik",
+    "harga": 17366,
+    "used_for": "Patah Tulang",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 74
+  },
+  {
+    "kode_obat": "OB0363",
+    "nama_obat": "Medi Ciprofloxacin AQ",
+    "kategori": "Paten",
+    "harga": 8141,
+    "used_for": "Pneumonia",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 64
+  },
+  {
+    "kode_obat": "OB0364",
+    "nama_obat": "Neo Furosemide AQ",
+    "kategori": "Paten",
+    "harga": 65539,
+    "used_for": "Gagal Ginjal",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0365",
+    "nama_obat": "Bio Antacil Advance",
+    "kategori": "Generik",
+    "harga": 100310,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 74
+  },
+  {
+    "kode_obat": "OB0366",
+    "nama_obat": "Bio Liv 52 Forte",
+    "kategori": "Generik",
+    "harga": 19937,
+    "used_for": "Gangguan Liver",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 77
+  },
+  {
+    "kode_obat": "OB0367",
+    "nama_obat": "Medi Zoter ER",
+    "kategori": "Paten",
+    "harga": 63955,
+    "used_for": "Herpes",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 62
+  },
+  {
+    "kode_obat": "OB0368",
+    "nama_obat": "Medi Aspirin Plus",
+    "kategori": "Generik",
+    "harga": 69315,
+    "used_for": "Serangan Jantung",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 62
+  },
+  {
+    "kode_obat": "OB0369",
+    "nama_obat": "Pro Sumatriptan ER",
+    "kategori": "Paten",
+    "harga": 11724,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0370",
+    "nama_obat": "Medi Antacil Forte",
+    "kategori": "Paten",
+    "harga": 82476,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 63
+  },
+  {
+    "kode_obat": "OB0371",
+    "nama_obat": "Neo Aspirin AQ",
+    "kategori": "Generik",
+    "harga": 40645,
+    "used_for": "Serangan Jantung",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 90
+  },
+  {
+    "kode_obat": "OB0372",
+    "nama_obat": "Pro Omeprazole ER",
+    "kategori": "Generik",
+    "harga": 18320,
+    "used_for": "Maag",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0373",
+    "nama_obat": "Neo Aspirin Plus",
+    "kategori": "Generik",
+    "harga": 146615,
+    "used_for": "Stroke",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0374",
+    "nama_obat": "Max Antacil XR",
+    "kategori": "Generik",
+    "harga": 84365,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 92
+  },
+  {
+    "kode_obat": "OB0375",
+    "nama_obat": "Pro Losartan ER",
+    "kategori": "Paten",
+    "harga": 14985,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 93
+  },
+  {
+    "kode_obat": "OB0376",
+    "nama_obat": "Ultra Hepamerz Plus",
+    "kategori": "Paten",
+    "harga": 117376,
+    "used_for": "Gangguan Liver",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 98
+  },
+  {
+    "kode_obat": "OB0377",
+    "nama_obat": "Medi Ozen ER",
+    "kategori": "Generik",
+    "harga": 139130,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0378",
+    "nama_obat": "Pro Aspirin AQ",
+    "kategori": "Paten",
+    "harga": 119497,
+    "used_for": "Serangan Jantung",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 55
+  },
+  {
+    "kode_obat": "OB0379",
+    "nama_obat": "Pro Aspirin Forte",
+    "kategori": "Paten",
+    "harga": 113236,
+    "used_for": "Demam",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 77
+  },
+  {
+    "kode_obat": "OB0380",
+    "nama_obat": "Neo Farbion 10 XR",
+    "kategori": "Generik",
+    "harga": 104640,
+    "used_for": "Herpes",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0381",
+    "nama_obat": "Ultra Ibuprofen Plus",
+    "kategori": "Generik",
+    "harga": 16368,
+    "used_for": "Flu",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0382",
+    "nama_obat": "Neo Ibuprofen Forte",
+    "kategori": "Generik",
+    "harga": 18739,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 99
+  },
+  {
+    "kode_obat": "OB0383",
+    "nama_obat": "Medi Mylanta AQ",
+    "kategori": "Paten",
+    "harga": 102647,
+    "used_for": "Sakit Perut",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 62
+  },
+  {
+    "kode_obat": "OB0384",
+    "nama_obat": "Max Metformin Forte",
+    "kategori": "Paten",
+    "harga": 68838,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0385",
+    "nama_obat": "Bio Valacyclovir ER",
+    "kategori": "Paten",
+    "harga": 77389,
+    "used_for": "Herpes",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 93
+  },
+  {
+    "kode_obat": "OB0386",
+    "nama_obat": "Bio Ponstan AQ",
+    "kategori": "Generik",
+    "harga": 88814,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0387",
+    "nama_obat": "Ultra Cataflam XR",
+    "kategori": "Paten",
+    "harga": 22191,
+    "used_for": "Infeksi Gigi",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 70
+  },
+  {
+    "kode_obat": "OB0388",
+    "nama_obat": "Neo Clopidogrel Plus",
+    "kategori": "Generik",
+    "harga": 84393,
+    "used_for": "Stroke",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 65
+  },
+  {
+    "kode_obat": "OB0389",
+    "nama_obat": "Medi Glipizide Plus",
+    "kategori": "Generik",
+    "harga": 24325,
+    "used_for": "Diabetes",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 67
+  },
+  {
+    "kode_obat": "OB0390",
+    "nama_obat": "Medi Omeprazole Plus",
+    "kategori": "Generik",
+    "harga": 103198,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 53
+  },
+  {
+    "kode_obat": "OB0391",
+    "nama_obat": "Medi Hepamerz XR",
+    "kategori": "Paten",
+    "harga": 147500,
+    "used_for": "Gangguan Liver",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 93
+  },
+  {
+    "kode_obat": "OB0392",
+    "nama_obat": "Bio Aspirin ER",
+    "kategori": "Paten",
+    "harga": 98854,
+    "used_for": "Stroke",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 94
+  },
+  {
+    "kode_obat": "OB0393",
+    "nama_obat": "Neo Nurofen AQ",
+    "kategori": "Paten",
+    "harga": 103833,
+    "used_for": "Demam",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 82
+  },
+  {
+    "kode_obat": "OB0394",
+    "nama_obat": "Ultra Insulin Advance",
+    "kategori": "Paten",
+    "harga": 80411,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 74
+  },
+  {
+    "kode_obat": "OB0395",
+    "nama_obat": "Ultra Buscopan AQ",
+    "kategori": "Generik",
+    "harga": 134659,
+    "used_for": "Sakit Perut",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 59
+  },
+  {
+    "kode_obat": "OB0396",
+    "nama_obat": "Neo Aspirin Advance",
+    "kategori": "Paten",
+    "harga": 8428,
+    "used_for": "Migrain",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 90
+  },
+  {
+    "kode_obat": "OB0397",
+    "nama_obat": "Neo Omeprazole Forte",
+    "kategori": "Generik",
+    "harga": 16912,
+    "used_for": "Maag",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 99
+  },
+  {
+    "kode_obat": "OB0398",
+    "nama_obat": "Bio Insulin Plus",
+    "kategori": "Paten",
+    "harga": 35494,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 70
+  },
+  {
+    "kode_obat": "OB0399",
+    "nama_obat": "Bio Salbutamol AQ",
+    "kategori": "Generik",
+    "harga": 84339,
+    "used_for": "Asma",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 82
+  },
+  {
+    "kode_obat": "OB0400",
+    "nama_obat": "Pro Lisinopril Plus",
+    "kategori": "Paten",
+    "harga": 86517,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0401",
+    "nama_obat": "Max Gaviscon XR",
+    "kategori": "Generik",
+    "harga": 113626,
+    "used_for": "Sakit Perut",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 98
+  },
+  {
+    "kode_obat": "OB0402",
+    "nama_obat": "Max Ponstan Forte",
+    "kategori": "Paten",
+    "harga": 38232,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 60
+  },
+  {
+    "kode_obat": "OB0403",
+    "nama_obat": "Ultra Nitroglycerin Advance",
+    "kategori": "Paten",
+    "harga": 49975,
+    "used_for": "Serangan Jantung",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 58
+  },
+  {
+    "kode_obat": "OB0404",
+    "nama_obat": "Max Metformin Forte",
+    "kategori": "Generik",
+    "harga": 131046,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 95
+  },
+  {
+    "kode_obat": "OB0405",
+    "nama_obat": "Neo Ibuprofen ER",
+    "kategori": "Generik",
+    "harga": 39973,
+    "used_for": "Demam Berdarah",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 100
+  },
+  {
+    "kode_obat": "OB0406",
+    "nama_obat": "Ultra Buscopan XR",
+    "kategori": "Paten",
+    "harga": 123127,
+    "used_for": "Sakit Perut",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 89
+  },
+  {
+    "kode_obat": "OB0407",
+    "nama_obat": "Neo Amoxicillin Forte",
+    "kategori": "Paten",
+    "harga": 38232,
+    "used_for": "Pneumonia",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 88
+  },
+  {
+    "kode_obat": "OB0408",
+    "nama_obat": "Max Lisinopril Advance",
+    "kategori": "Paten",
+    "harga": 31009,
+    "used_for": "Hipertensi",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 64
+  },
+  {
+    "kode_obat": "OB0409",
+    "nama_obat": "Bio Buscopan Advance",
+    "kategori": "Generik",
+    "harga": 109950,
+    "used_for": "Sakit Perut",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 63
+  },
+  {
+    "kode_obat": "OB0410",
+    "nama_obat": "Pro Aspirin AQ",
+    "kategori": "Generik",
+    "harga": 80458,
+    "used_for": "Demam",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 100
+  },
+  {
+    "kode_obat": "OB0411",
+    "nama_obat": "Bio Ponstan Forte",
+    "kategori": "Paten",
+    "harga": 19383,
+    "used_for": "Infeksi Gigi",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0412",
+    "nama_obat": "Ultra Cetirizine ER",
+    "kategori": "Paten",
+    "harga": 131687,
+    "used_for": "Flu",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 50
+  },
+  {
+    "kode_obat": "OB0413",
+    "nama_obat": "Medi Paracetamol AQ",
+    "kategori": "Paten",
+    "harga": 11254,
+    "used_for": "Demam Berdarah",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 98
+  },
+  {
+    "kode_obat": "OB0414",
+    "nama_obat": "Bio Azithromycin Advance",
+    "kategori": "Generik",
+    "harga": 95775,
+    "used_for": "Pneumonia",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 54
+  },
+  {
+    "kode_obat": "OB0415",
+    "nama_obat": "Max Ibuprofen Forte",
+    "kategori": "Generik",
+    "harga": 55130,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 98
+  },
+  {
+    "kode_obat": "OB0416",
+    "nama_obat": "Ultra Clopidogrel Forte",
+    "kategori": "Generik",
+    "harga": 105733,
+    "used_for": "Serangan Jantung",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 88
+  },
+  {
+    "kode_obat": "OB0417",
+    "nama_obat": "Neo Ozen ER",
+    "kategori": "Generik",
+    "harga": 13430,
+    "used_for": "Kudis",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 77
+  },
+  {
+    "kode_obat": "OB0418",
+    "nama_obat": "Neo Paracetamol ER",
+    "kategori": "Paten",
+    "harga": 143600,
+    "used_for": "Patah Tulang",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 98
+  },
+  {
+    "kode_obat": "OB0419",
+    "nama_obat": "Ultra Buscopan XR",
+    "kategori": "Generik",
+    "harga": 41862,
+    "used_for": "Sakit Perut",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 89
+  },
+  {
+    "kode_obat": "OB0420",
+    "nama_obat": "Bio Amlodipine XR",
+    "kategori": "Paten",
+    "harga": 120116,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 97
+  },
+  {
+    "kode_obat": "OB0421",
+    "nama_obat": "Bio Aspirin Advance",
+    "kategori": "Paten",
+    "harga": 38557,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 88
+  },
+  {
+    "kode_obat": "OB0422",
+    "nama_obat": "Bio Nitroglycerin Plus",
+    "kategori": "Generik",
+    "harga": 22799,
+    "used_for": "Serangan Jantung",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 96
+  },
+  {
+    "kode_obat": "OB0423",
+    "nama_obat": "Bio Antacil Forte",
+    "kategori": "Generik",
+    "harga": 22894,
+    "used_for": "Maag",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 99
+  },
+  {
+    "kode_obat": "OB0424",
+    "nama_obat": "Ultra Aspirin Forte",
+    "kategori": "Generik",
+    "harga": 140899,
+    "used_for": "Demam",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 74
+  },
+  {
+    "kode_obat": "OB0425",
+    "nama_obat": "Bio Insulin AQ",
+    "kategori": "Paten",
+    "harga": 29271,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 59
+  },
+  {
+    "kode_obat": "OB0426",
+    "nama_obat": "Max Salbutamol Plus",
+    "kategori": "Paten",
+    "harga": 124505,
+    "used_for": "Asma",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 87
+  },
+  {
+    "kode_obat": "OB0427",
+    "nama_obat": "Max Clopidogrel XR",
+    "kategori": "Paten",
+    "harga": 14030,
+    "used_for": "Stroke",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 99
+  },
+  {
+    "kode_obat": "OB0428",
+    "nama_obat": "Medi Ibuprofen Advance",
+    "kategori": "Generik",
+    "harga": 110210,
+    "used_for": "Flu",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 57
+  },
+  {
+    "kode_obat": "OB0429",
+    "nama_obat": "Neo Metformin Plus",
+    "kategori": "Generik",
+    "harga": 121729,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 89
+  },
+  {
+    "kode_obat": "OB0430",
+    "nama_obat": "Bio Paracetamol XR",
+    "kategori": "Generik",
+    "harga": 126034,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 100
+  },
+  {
+    "kode_obat": "OB0431",
+    "nama_obat": "Ultra Epoetin Forte",
+    "kategori": "Paten",
+    "harga": 7836,
+    "used_for": "Gagal Ginjal",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 64
+  },
+  {
+    "kode_obat": "OB0432",
+    "nama_obat": "Pro Scabimite AQ",
+    "kategori": "Paten",
+    "harga": 68242,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 78
+  },
+  {
+    "kode_obat": "OB0433",
+    "nama_obat": "Medi Antacil Forte",
+    "kategori": "Paten",
+    "harga": 67778,
+    "used_for": "Maag",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 65
+  },
+  {
+    "kode_obat": "OB0434",
+    "nama_obat": "Ultra Nurofen XR",
+    "kategori": "Generik",
+    "harga": 46791,
+    "used_for": "Demam",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 59
+  },
+  {
+    "kode_obat": "OB0435",
+    "nama_obat": "Pro Aspirin Advance",
+    "kategori": "Paten",
+    "harga": 8316,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 62
+  },
+  {
+    "kode_obat": "OB0436",
+    "nama_obat": "Pro Paracetamol AQ",
+    "kategori": "Paten",
+    "harga": 137016,
+    "used_for": "Demam",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 59
+  },
+  {
+    "kode_obat": "OB0437",
+    "nama_obat": "Neo Mylanta Advance",
+    "kategori": "Generik",
+    "harga": 84442,
+    "used_for": "Sakit Perut",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0438",
+    "nama_obat": "Max Scabimite XR",
+    "kategori": "Generik",
+    "harga": 20948,
+    "used_for": "Kudis",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0439",
+    "nama_obat": "Pro Zoter Plus",
+    "kategori": "Paten",
+    "harga": 146237,
+    "used_for": "Herpes",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 77
+  },
+  {
+    "kode_obat": "OB0440",
+    "nama_obat": "Max Paracetamol XR",
+    "kategori": "Paten",
+    "harga": 51846,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 100
+  },
+  {
+    "kode_obat": "OB0441",
+    "nama_obat": "Ultra Salbutamol Plus",
+    "kategori": "Paten",
+    "harga": 46307,
+    "used_for": "Asma",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 52
+  },
+  {
+    "kode_obat": "OB0442",
+    "nama_obat": "Medi Ranitidine Plus",
+    "kategori": "Paten",
+    "harga": 64367,
+    "used_for": "Maag",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 79
+  },
+  {
+    "kode_obat": "OB0443",
+    "nama_obat": "Max Gaviscon Plus",
+    "kategori": "Paten",
+    "harga": 32294,
+    "used_for": "Sakit Perut",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0444",
+    "nama_obat": "Pro Nurofen Forte",
+    "kategori": "Generik",
+    "harga": 10729,
+    "used_for": "Demam",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 95
+  },
+  {
+    "kode_obat": "OB0445",
+    "nama_obat": "Medi Antacil Forte",
+    "kategori": "Paten",
+    "harga": 19452,
+    "used_for": "Maag",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0446",
+    "nama_obat": "Ultra Ibuprofen Advance",
+    "kategori": "Paten",
+    "harga": 142536,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 65
+  },
+  {
+    "kode_obat": "OB0447",
+    "nama_obat": "Ultra Sumatriptan ER",
+    "kategori": "Generik",
+    "harga": 7376,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 70
+  },
+  {
+    "kode_obat": "OB0448",
+    "nama_obat": "Ultra Mylanta ER",
+    "kategori": "Paten",
+    "harga": 81180,
+    "used_for": "Sakit Perut",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 67
+  },
+  {
+    "kode_obat": "OB0449",
+    "nama_obat": "Bio Mylanta ER",
+    "kategori": "Generik",
+    "harga": 14804,
+    "used_for": "Sakit Perut",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 66
+  },
+  {
+    "kode_obat": "OB0450",
+    "nama_obat": "Neo Valacyclovir Advance",
+    "kategori": "Paten",
+    "harga": 114604,
+    "used_for": "Herpes",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 99
+  },
+  {
+    "kode_obat": "OB0451",
+    "nama_obat": "Max Ponstan Forte",
+    "kategori": "Generik",
+    "harga": 62142,
+    "used_for": "Infeksi Gigi",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0452",
+    "nama_obat": "Pro Furosemide AQ",
+    "kategori": "Paten",
+    "harga": 126628,
+    "used_for": "Gagal Ginjal",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 79
+  },
+  {
+    "kode_obat": "OB0453",
+    "nama_obat": "Medi Ponstan XR",
+    "kategori": "Generik",
+    "harga": 105040,
+    "used_for": "Infeksi Gigi",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0454",
+    "nama_obat": "Ultra Mylanta Forte",
+    "kategori": "Paten",
+    "harga": 138859,
+    "used_for": "Sakit Perut",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 56
+  },
+  {
+    "kode_obat": "OB0455",
+    "nama_obat": "Ultra Ventolin Advance",
+    "kategori": "Generik",
+    "harga": 147184,
+    "used_for": "Asma",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 91
+  },
+  {
+    "kode_obat": "OB0456",
+    "nama_obat": "Bio Ursodiol XR",
+    "kategori": "Generik",
+    "harga": 55555,
+    "used_for": "Gangguan Liver",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0457",
+    "nama_obat": "Neo Buscopan Forte",
+    "kategori": "Generik",
+    "harga": 60980,
+    "used_for": "Sakit Perut",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 83
+  },
+  {
+    "kode_obat": "OB0458",
+    "nama_obat": "Neo Aspirin Plus",
+    "kategori": "Generik",
+    "harga": 51952,
+    "used_for": "Migrain",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 81
+  },
+  {
+    "kode_obat": "OB0459",
+    "nama_obat": "Ultra Aspirin ER",
+    "kategori": "Generik",
+    "harga": 131574,
+    "used_for": "Demam",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 82
+  },
+  {
+    "kode_obat": "OB0460",
+    "nama_obat": "Neo Atorvastatin Plus",
+    "kategori": "Generik",
+    "harga": 124927,
+    "used_for": "Stroke",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 83
+  },
+  {
+    "kode_obat": "OB0461",
+    "nama_obat": "Bio Paracetamol AQ",
+    "kategori": "Generik",
+    "harga": 90455,
+    "used_for": "Patah Tulang",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 86
+  },
+  {
+    "kode_obat": "OB0462",
+    "nama_obat": "Pro Diclofenac Plus",
+    "kategori": "Generik",
+    "harga": 123312,
+    "used_for": "Patah Tulang",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 51
+  },
+  {
+    "kode_obat": "OB0463",
+    "nama_obat": "Ultra Antacil XR",
+    "kategori": "Generik",
+    "harga": 45244,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0464",
+    "nama_obat": "Pro Ranitidine ER",
+    "kategori": "Generik",
+    "harga": 87013,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 93
+  },
+  {
+    "kode_obat": "OB0465",
+    "nama_obat": "Medi Lisinopril Forte",
+    "kategori": "Paten",
+    "harga": 64657,
+    "used_for": "Gagal Ginjal",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 72
+  },
+  {
+    "kode_obat": "OB0466",
+    "nama_obat": "Pro Ventolin XR",
+    "kategori": "Generik",
+    "harga": 93579,
+    "used_for": "Asma",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 84
+  },
+  {
+    "kode_obat": "OB0467",
+    "nama_obat": "Max Amlodipine Plus",
+    "kategori": "Generik",
+    "harga": 85511,
+    "used_for": "Hipertensi",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 72
+  },
+  {
+    "kode_obat": "OB0468",
+    "nama_obat": "Max Nurofen Forte",
+    "kategori": "Paten",
+    "harga": 15111,
+    "used_for": "Demam",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 63
+  },
+  {
+    "kode_obat": "OB0469",
+    "nama_obat": "Pro Paracetamol AQ",
+    "kategori": "Generik",
+    "harga": 72730,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 91
+  },
+  {
+    "kode_obat": "OB0470",
+    "nama_obat": "Ultra Ranitidine AQ",
+    "kategori": "Paten",
+    "harga": 139682,
+    "used_for": "Maag",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 77
+  },
+  {
+    "kode_obat": "OB0471",
+    "nama_obat": "Bio Cataflam ER",
+    "kategori": "Generik",
+    "harga": 62445,
+    "used_for": "Infeksi Gigi",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 54
+  },
+  {
+    "kode_obat": "OB0472",
+    "nama_obat": "Bio Zoter Plus",
+    "kategori": "Generik",
+    "harga": 95020,
+    "used_for": "Herpes",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 61
+  },
+  {
+    "kode_obat": "OB0473",
+    "nama_obat": "Pro Losartan Plus",
+    "kategori": "Generik",
+    "harga": 119906,
+    "used_for": "Hipertensi",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 77
+  },
+  {
+    "kode_obat": "OB0474",
+    "nama_obat": "Max Ibuprofen ER",
+    "kategori": "Paten",
+    "harga": 45458,
+    "used_for": "Demam Berdarah",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 81
+  },
+  {
+    "kode_obat": "OB0475",
+    "nama_obat": "Max Lisinopril Plus",
+    "kategori": "Paten",
+    "harga": 22755,
+    "used_for": "Hipertensi",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0476",
+    "nama_obat": "Ultra Ibuprofen AQ",
+    "kategori": "Generik",
+    "harga": 19514,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 57
+  },
+  {
+    "kode_obat": "OB0477",
+    "nama_obat": "Neo Aspirin XR",
+    "kategori": "Paten",
+    "harga": 111463,
+    "used_for": "Demam",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 94
+  },
+  {
+    "kode_obat": "OB0478",
+    "nama_obat": "Neo Sumatriptan AQ",
+    "kategori": "Paten",
+    "harga": 81163,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 86
+  },
+  {
+    "kode_obat": "OB0479",
+    "nama_obat": "Ultra Insulin XR",
+    "kategori": "Paten",
+    "harga": 14747,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 69
+  },
+  {
+    "kode_obat": "OB0480",
+    "nama_obat": "Max Aspirin XR",
+    "kategori": "Generik",
+    "harga": 55348,
+    "used_for": "Migrain",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 86
+  },
+  {
+    "kode_obat": "OB0481",
+    "nama_obat": "Medi Loran XR",
+    "kategori": "Generik",
+    "harga": 44055,
+    "used_for": "Kudis",
+    "dosis": "1000mg",
+    "signatura": "2x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0482",
+    "nama_obat": "Bio Salbutamol Advance",
+    "kategori": "Generik",
+    "harga": 23190,
+    "used_for": "Asma",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 93
+  },
+  {
+    "kode_obat": "OB0483",
+    "nama_obat": "Medi Liv 52 Plus",
+    "kategori": "Generik",
+    "harga": 139060,
+    "used_for": "Gangguan Liver",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 99
+  },
+  {
+    "kode_obat": "OB0484",
+    "nama_obat": "Neo Ozen ER",
+    "kategori": "Generik",
+    "harga": 112715,
+    "used_for": "Kudis",
+    "dosis": "250mg",
+    "signatura": "3x1",
+    "stok": 56
+  },
+  {
+    "kode_obat": "OB0485",
+    "nama_obat": "Medi Diclofenac AQ",
+    "kategori": "Paten",
+    "harga": 64610,
+    "used_for": "Patah Tulang",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 55
+  },
+  {
+    "kode_obat": "OB0486",
+    "nama_obat": "Ultra Paracetamol Forte",
+    "kategori": "Paten",
+    "harga": 45763,
+    "used_for": "Patah Tulang",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 84
+  },
+  {
+    "kode_obat": "OB0487",
+    "nama_obat": "Bio Sumatriptan Advance",
+    "kategori": "Generik",
+    "harga": 77686,
+    "used_for": "Migrain",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 82
+  },
+  {
+    "kode_obat": "OB0488",
+    "nama_obat": "Max Ibuprofen Plus",
+    "kategori": "Generik",
+    "harga": 32517,
+    "used_for": "Flu",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 77
+  },
+  {
+    "kode_obat": "OB0489",
+    "nama_obat": "Pro Clopidogrel Advance",
+    "kategori": "Paten",
+    "harga": 107508,
+    "used_for": "Serangan Jantung",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 64
+  },
+  {
+    "kode_obat": "OB0490",
+    "nama_obat": "Bio Insulin Advance",
+    "kategori": "Generik",
+    "harga": 134987,
+    "used_for": "Diabetes",
+    "dosis": "500mg",
+    "signatura": "2x1",
+    "stok": 78
+  },
+  {
+    "kode_obat": "OB0491",
+    "nama_obat": "Bio Ibuprofen XR",
+    "kategori": "Generik",
+    "harga": 103492,
+    "used_for": "Patah Tulang",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 68
+  },
+  {
+    "kode_obat": "OB0492",
+    "nama_obat": "Max Amoxicillin Plus",
+    "kategori": "Generik",
+    "harga": 100742,
+    "used_for": "Pneumonia",
+    "dosis": "1000mg",
+    "signatura": "1x1",
+    "stok": 90
+  },
+  {
+    "kode_obat": "OB0493",
+    "nama_obat": "Pro Buscopan XR",
+    "kategori": "Generik",
+    "harga": 120679,
+    "used_for": "Sakit Perut",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 73
+  },
+  {
+    "kode_obat": "OB0494",
+    "nama_obat": "Pro Ozen Plus",
+    "kategori": "Generik",
+    "harga": 97998,
+    "used_for": "Kudis",
+    "dosis": "250mg",
+    "signatura": "2x1",
+    "stok": 78
+  },
+  {
+    "kode_obat": "OB0495",
+    "nama_obat": "Medi Mylanta Plus",
+    "kategori": "Generik",
+    "harga": 115682,
+    "used_for": "Sakit Perut",
+    "dosis": "500mg",
+    "signatura": "3x1",
+    "stok": 78
+  },
+  {
+    "kode_obat": "OB0496",
+    "nama_obat": "Ultra Zoter Advance",
+    "kategori": "Generik",
+    "harga": 24617,
+    "used_for": "Herpes",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 76
+  },
+  {
+    "kode_obat": "OB0497",
+    "nama_obat": "Pro Lisinopril Advance",
+    "kategori": "Paten",
+    "harga": 91283,
+    "used_for": "Gagal Ginjal",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 78
+  },
+  {
+    "kode_obat": "OB0498",
+    "nama_obat": "Bio Aspirin Advance",
+    "kategori": "Generik",
+    "harga": 59295,
+    "used_for": "Demam",
+    "dosis": "1000mg",
+    "signatura": "3x1",
+    "stok": 75
+  },
+  {
+    "kode_obat": "OB0499",
+    "nama_obat": "Max Atorvastatin ER",
+    "kategori": "Paten",
+    "harga": 147300,
+    "used_for": "Stroke",
+    "dosis": "500mg",
+    "signatura": "1x1",
+    "stok": 79
+  },
+  {
+    "kode_obat": "OB0500",
+    "nama_obat": "Medi Insulin Forte",
+    "kategori": "Generik",
+    "harga": 47465,
+    "used_for": "Diabetes",
+    "dosis": "250mg",
+    "signatura": "1x1",
+    "stok": 51
+  }
+]

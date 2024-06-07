@@ -1,0 +1,1838 @@
+[
+  {
+    "document_id": "D0001",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "drg. Rina Yuliarti, M.TI.",
+    "no_telp": "088237899665",
+    "email": "drg_rinayuliarti_m_ti_@gmail.com",
+    "alamat": "Gg. Monginsidi No. 69\nBandar Lampung, Jawa Tengah 43989",
+    "gender": "Perempuan",
+    "tanggal_lahir": "22/12/1984",
+    "jadwal_praktek": {
+      "Jumat": "9:00 - 13:00",
+      "Selasa": "11:00 - 18:00"
+    },
+    "no_lisensi_praktek": 524775,
+    "rating": 3
+  },
+  {
+    "document_id": "D0002",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Bagus Megantara",
+    "no_telp": "086314452823",
+    "email": "bagusmegantara@gmail.com",
+    "alamat": "Gg. Rajawali Barat No. 735\nTangerang, Jawa Timur 69415",
+    "gender": "Perempuan",
+    "tanggal_lahir": "13/09/1982",
+    "jadwal_praktek": {
+      "Jumat": "9:00 - 15:00",
+      "Kamis": "9:00 - 17:00",
+      "Selasa": "9:00 - 15:00",
+      "Rabu": "12:00 - 16:00"
+    },
+    "no_lisensi_praktek": 239600,
+    "rating": 4
+  },
+  {
+    "document_id": "D0003",
+    "type": "Dokter",
+    "spesialis": "Jantung",
+    "nama": "Karta Nurdiyanti",
+    "no_telp": "086221675221",
+    "email": "kartanurdiyanti@gmail.com",
+    "alamat": "Gg. Rajawali Barat No. 60\nPrabumulih, SR 25423",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "10/12/1985",
+    "jadwal_praktek": {
+      "Kamis": "10:00 - 15:00",
+      "Jumat": "12:00 - 17:00",
+      "Selasa": "11:00 - 14:00",
+      "Senin": "11:00 - 15:00"
+    },
+    "no_lisensi_praktek": 535658,
+    "rating": 4
+  },
+  {
+    "document_id": "D0004",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "R. Ella Hariyah, M.Ak",
+    "no_telp": "084229355862",
+    "email": "r_ellahariyah_m_ak@gmail.com",
+    "alamat": "Gang Kiaracondong No. 09\nMojokerto, PA 61912",
+    "gender": "Perempuan",
+    "tanggal_lahir": "18/07/1985",
+    "jadwal_praktek": {
+      "Selasa": "9:00 - 13:00",
+      "Jumat": "11:00 - 13:00",
+      "Senin": "11:00 - 13:00"
+    },
+    "no_lisensi_praktek": 854776,
+    "rating": 2
+  },
+  {
+    "document_id": "D0005",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Dina Siregar, S.E.",
+    "no_telp": "089593356253",
+    "email": "dinasiregar_s_e_@gmail.com",
+    "alamat": "Jalan Wonoayu No. 635\nSemarang, NT 37914",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "18/12/1974",
+    "jadwal_praktek": {
+      "Kamis": "11:00 - 17:00",
+      "Selasa": "10:00 - 17:00",
+      "Senin": "9:00 - 15:00"
+    },
+    "no_lisensi_praktek": 378167,
+    "rating": 5
+  },
+  {
+    "document_id": "D0006",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "Cut Sadina Mahendra, S.Farm",
+    "no_telp": "083576811320",
+    "email": "cutsadinamahendra_s_farm@gmail.com",
+    "alamat": "Gg. Kutai No. 702\nKotamobagu, MA 78510",
+    "gender": "Perempuan",
+    "tanggal_lahir": "20/03/1986",
+    "jadwal_praktek": {
+      "Kamis": "10:00 - 16:00",
+      "Rabu": "12:00 - 16:00",
+      "Senin": "9:00 - 17:00"
+    },
+    "no_lisensi_praktek": 971123,
+    "rating": 4
+  },
+  {
+    "document_id": "D0007",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Tgk. Wani Nainggolan",
+    "no_telp": "081712654612",
+    "email": "tgk_waninainggolan@gmail.com",
+    "alamat": "Gang Astana Anyar No. 3\nSamarinda, KB 34712",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "12/06/1973",
+    "jadwal_praktek": {
+      "Kamis": "12:00 - 15:00",
+      "Jumat": "12:00 - 13:00"
+    },
+    "no_lisensi_praktek": 993706,
+    "rating": 2
+  },
+  {
+    "document_id": "D0008",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Mursita Maheswara",
+    "no_telp": "087404753584",
+    "email": "mursitamaheswara@gmail.com",
+    "alamat": "Gg. Rajawali Barat No. 619\nTual, SU 59282",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "24/12/1978",
+    "jadwal_praktek": {
+      "Rabu": "12:00 - 15:00",
+      "Kamis": "9:00 - 18:00",
+      "Selasa": "9:00 - 18:00",
+      "Jumat": "12:00 - 18:00"
+    },
+    "no_lisensi_praktek": 284235,
+    "rating": 3
+  },
+  {
+    "document_id": "D0009",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Amelia Utami, S.E.",
+    "no_telp": "08231346978",
+    "email": "ameliautami_s_e_@gmail.com",
+    "alamat": "Gang Moch. Toha No. 181\nPalu, SN 40461",
+    "gender": "Perempuan",
+    "tanggal_lahir": "13/04/1978",
+    "jadwal_praktek": {
+      "Senin": "9:00 - 15:00",
+      "Kamis": "11:00 - 17:00"
+    },
+    "no_lisensi_praktek": 877277,
+    "rating": 4
+  },
+  {
+    "document_id": "D0010",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "Umi Yuniar",
+    "no_telp": "088738628017",
+    "email": "umiyuniar@gmail.com",
+    "alamat": "Gang Ronggowarsito No. 19\nBekasi, AC 09265",
+    "gender": "Perempuan",
+    "tanggal_lahir": "21/05/1982",
+    "jadwal_praktek": {
+      "Kamis": "10:00 - 17:00",
+      "Jumat": "11:00 - 16:00"
+    },
+    "no_lisensi_praktek": 822529,
+    "rating": 1
+  },
+  {
+    "document_id": "D0011",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Rudi Kurniawan",
+    "no_telp": "084072532757",
+    "email": "rudikurniawan@gmail.com",
+    "alamat": "Jl. H.J Maemunah No. 0\nBengkulu, YO 88014",
+    "gender": "Perempuan",
+    "tanggal_lahir": "29/01/1980",
+    "jadwal_praktek": {
+      "Selasa": "12:00 - 16:00",
+      "Rabu": "11:00 - 17:00",
+      "Senin": "11:00 - 13:00",
+      "Kamis": "10:00 - 13:00",
+      "Jumat": "12:00 - 16:00"
+    },
+    "no_lisensi_praktek": 249277,
+    "rating": 3
+  },
+  {
+    "document_id": "D0012",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Salwa Andriani, M.Kom.",
+    "no_telp": "081472563755",
+    "email": "salwaandriani_m_kom_@gmail.com",
+    "alamat": "Gang Ahmad Yani No. 4\nBandung, SN 27998",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "05/10/1980",
+    "jadwal_praktek": {
+      "Jumat": "12:00 - 18:00",
+      "Senin": "10:00 - 16:00"
+    },
+    "no_lisensi_praktek": 564480,
+    "rating": 1
+  },
+  {
+    "document_id": "D0013",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Hartana Astuti",
+    "no_telp": "08437164158",
+    "email": "hartanaastuti@gmail.com",
+    "alamat": "Jalan Veteran No. 80\nPrabumulih, Sulawesi Tenggara 21161",
+    "gender": "Perempuan",
+    "tanggal_lahir": "14/02/1989",
+    "jadwal_praktek": {
+      "Selasa": "11:00 - 15:00",
+      "Rabu": "9:00 - 13:00",
+      "Senin": "12:00 - 13:00",
+      "Kamis": "11:00 - 15:00",
+      "Jumat": "9:00 - 14:00"
+    },
+    "no_lisensi_praktek": 238130,
+    "rating": 5
+  },
+  {
+    "document_id": "D0014",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Tgk. Murti Permata, M.Ak",
+    "no_telp": "089213402411",
+    "email": "tgk_murtipermata_m_ak@gmail.com",
+    "alamat": "Jalan Peta No. 03\nMadiun, Kalimantan Timur 31424",
+    "gender": "Perempuan",
+    "tanggal_lahir": "18/07/1976",
+    "jadwal_praktek": {
+      "Senin": "11:00 - 16:00",
+      "Rabu": "12:00 - 15:00",
+      "Selasa": "10:00 - 16:00"
+    },
+    "no_lisensi_praktek": 764359,
+    "rating": 3
+  },
+  {
+    "document_id": "D0015",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Hasan Jailani",
+    "no_telp": "082937872203",
+    "email": "hasanjailani@gmail.com",
+    "alamat": "Gg. Kutisari Selatan No. 663\nDumai, MU 46029",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "24/06/1971",
+    "jadwal_praktek": {
+      "Rabu": "10:00 - 16:00",
+      "Kamis": "9:00 - 17:00"
+    },
+    "no_lisensi_praktek": 781852,
+    "rating": 3
+  },
+  {
+    "document_id": "D0016",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Usyi Halimah",
+    "no_telp": "08654162450",
+    "email": "usyihalimah@gmail.com",
+    "alamat": "Jl. Ir. H. Djuanda No. 535\nTebingtinggi, KT 21238",
+    "gender": "Perempuan",
+    "tanggal_lahir": "04/03/1981",
+    "jadwal_praktek": {
+      "Jumat": "11:00 - 18:00",
+      "Selasa": "9:00 - 17:00",
+      "Senin": "9:00 - 17:00"
+    },
+    "no_lisensi_praktek": 213767,
+    "rating": 3
+  },
+  {
+    "document_id": "D0017",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Dipa Najmudin, S.T.",
+    "no_telp": "08505004210",
+    "email": "dipanajmudin_s_t_@gmail.com",
+    "alamat": "Gg. Antapani Lama No. 051\nMataram, BT 55880",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "15/06/1975",
+    "jadwal_praktek": {
+      "Kamis": "9:00 - 18:00",
+      "Rabu": "9:00 - 13:00",
+      "Selasa": "11:00 - 18:00"
+    },
+    "no_lisensi_praktek": 606211,
+    "rating": 3
+  },
+  {
+    "document_id": "D0018",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Septi Suryatmi",
+    "no_telp": "088829029132",
+    "email": "septisuryatmi@gmail.com",
+    "alamat": "Jalan Rawamangun No. 91\nBatam, PA 18844",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "02/05/1972",
+    "jadwal_praktek": {
+      "Jumat": "9:00 - 17:00",
+      "Rabu": "12:00 - 18:00",
+      "Selasa": "12:00 - 13:00"
+    },
+    "no_lisensi_praktek": 259370,
+    "rating": 1
+  },
+  {
+    "document_id": "D0019",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Wardi Yolanda, S.Pd",
+    "no_telp": "086708453982",
+    "email": "wardiyolanda_s_pd@gmail.com",
+    "alamat": "Gang KH Amin Jasuta No. 308\nKendari, SS 73573",
+    "gender": "Perempuan",
+    "tanggal_lahir": "27/05/1971",
+    "jadwal_praktek": {
+      "Senin": "11:00 - 18:00",
+      "Jumat": "12:00 - 13:00",
+      "Selasa": "12:00 - 16:00",
+      "Rabu": "12:00 - 17:00"
+    },
+    "no_lisensi_praktek": 781498,
+    "rating": 1
+  },
+  {
+    "document_id": "D0020",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "Wirda Waskita",
+    "no_telp": "084715366085",
+    "email": "wirdawaskita@gmail.com",
+    "alamat": "Gg. Tebet Barat Dalam No. 115\nTomohon, JT 54793",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "23/02/1974",
+    "jadwal_praktek": {
+      "Senin": "11:00 - 15:00",
+      "Selasa": "12:00 - 16:00"
+    },
+    "no_lisensi_praktek": 299453,
+    "rating": 1
+  },
+  {
+    "document_id": "D0021",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "Darsirah Sitompul",
+    "no_telp": "08998437297",
+    "email": "darsirahsitompul@gmail.com",
+    "alamat": "Gang Pelajar Pejuang No. 84\nKota Administrasi Jakarta Pusat, NT 76664",
+    "gender": "Perempuan",
+    "tanggal_lahir": "27/11/1965",
+    "jadwal_praktek": {
+      "Jumat": "11:00 - 14:00",
+      "Selasa": "12:00 - 16:00"
+    },
+    "no_lisensi_praktek": 387351,
+    "rating": 3
+  },
+  {
+    "document_id": "D0022",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Anita Permata",
+    "no_telp": "08907542901",
+    "email": "anitapermata@gmail.com",
+    "alamat": "Jalan Sukabumi No. 811\nLangsa, KT 03723",
+    "gender": "Perempuan",
+    "tanggal_lahir": "28/04/1988",
+    "jadwal_praktek": {
+      "Selasa": "9:00 - 16:00",
+      "Rabu": "9:00 - 15:00"
+    },
+    "no_lisensi_praktek": 650263,
+    "rating": 1
+  },
+  {
+    "document_id": "D0023",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "dr. Leo Saefullah, M.Pd",
+    "no_telp": "089685798784",
+    "email": "dr_leosaefullah_m_pd@gmail.com",
+    "alamat": "Jalan Kutai No. 580\nPadangpanjang, Sumatera Selatan 83394",
+    "gender": "Perempuan",
+    "tanggal_lahir": "09/06/1965",
+    "jadwal_praktek": {
+      "Senin": "12:00 - 14:00",
+      "Selasa": "10:00 - 15:00",
+      "Jumat": "10:00 - 16:00"
+    },
+    "no_lisensi_praktek": 129245,
+    "rating": 2
+  },
+  {
+    "document_id": "D0024",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Usman Novitasari",
+    "no_telp": "08353666486",
+    "email": "usmannovitasari@gmail.com",
+    "alamat": "Jl. Jend. Sudirman No. 109\nPagaralam, BE 38989",
+    "gender": "Perempuan",
+    "tanggal_lahir": "14/12/1986",
+    "jadwal_praktek": {
+      "Senin": "9:00 - 17:00",
+      "Kamis": "12:00 - 15:00",
+      "Selasa": "11:00 - 18:00",
+      "Jumat": "10:00 - 18:00",
+      "Rabu": "10:00 - 18:00"
+    },
+    "no_lisensi_praktek": 504696,
+    "rating": 3
+  },
+  {
+    "document_id": "D0025",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "Hj. Samiah Pradipta, S.T.",
+    "no_telp": "0832799610",
+    "email": "hj_samiahpradipta_s_t_@gmail.com",
+    "alamat": "Gang Joyoboyo No. 945\nBandar Lampung, KI 61787",
+    "gender": "Perempuan",
+    "tanggal_lahir": "10/04/1989",
+    "jadwal_praktek": {
+      "Selasa": "12:00 - 13:00",
+      "Rabu": "9:00 - 18:00",
+      "Jumat": "11:00 - 16:00",
+      "Kamis": "9:00 - 18:00"
+    },
+    "no_lisensi_praktek": 475730,
+    "rating": 5
+  },
+  {
+    "document_id": "D0026",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Kunthara Hastuti",
+    "no_telp": "088935457834",
+    "email": "kuntharahastuti@gmail.com",
+    "alamat": "Gang Indragiri No. 207\nSukabumi, BA 38418",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "04/11/1982",
+    "jadwal_praktek": {
+      "Kamis": "9:00 - 15:00",
+      "Senin": "12:00 - 15:00",
+      "Rabu": "12:00 - 17:00",
+      "Jumat": "9:00 - 14:00"
+    },
+    "no_lisensi_praktek": 651604,
+    "rating": 3
+  },
+  {
+    "document_id": "D0027",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Martani Sihombing",
+    "no_telp": "089498204698",
+    "email": "martanisihombing@gmail.com",
+    "alamat": "Jl. Ciwastra No. 90\nTidore Kepulauan, Banten 80467",
+    "gender": "Perempuan",
+    "tanggal_lahir": "03/09/1976",
+    "jadwal_praktek": {
+      "Senin": "12:00 - 14:00",
+      "Rabu": "9:00 - 13:00"
+    },
+    "no_lisensi_praktek": 484069,
+    "rating": 1
+  },
+  {
+    "document_id": "D0028",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "Putri Pratama",
+    "no_telp": "084834158583",
+    "email": "putripratama@gmail.com",
+    "alamat": "Jalan Wonoayu No. 9\nBau-Bau, Sulawesi Utara 89252",
+    "gender": "Perempuan",
+    "tanggal_lahir": "05/01/1965",
+    "jadwal_praktek": {
+      "Selasa": "12:00 - 18:00",
+      "Rabu": "12:00 - 15:00"
+    },
+    "no_lisensi_praktek": 428466,
+    "rating": 3
+  },
+  {
+    "document_id": "D0029",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Tgk. Wani Nuraini, S.IP",
+    "no_telp": "089109706702",
+    "email": "tgk_waninuraini_s_ip@gmail.com",
+    "alamat": "Gang PHH. Mustofa No. 9\nPariaman, Kalimantan Timur 61670",
+    "gender": "Perempuan",
+    "tanggal_lahir": "17/06/1980",
+    "jadwal_praktek": {
+      "Rabu": "11:00 - 17:00",
+      "Kamis": "9:00 - 17:00",
+      "Jumat": "10:00 - 14:00",
+      "Senin": "12:00 - 17:00"
+    },
+    "no_lisensi_praktek": 969016,
+    "rating": 1
+  },
+  {
+    "document_id": "D0030",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Hj. Mutia Suryono",
+    "no_telp": "084200243757",
+    "email": "hj_mutiasuryono@gmail.com",
+    "alamat": "Jalan Gardujati No. 9\nSukabumi, Lampung 48166",
+    "gender": "Perempuan",
+    "tanggal_lahir": "19/09/1984",
+    "jadwal_praktek": {
+      "Kamis": "12:00 - 18:00",
+      "Selasa": "9:00 - 16:00",
+      "Rabu": "11:00 - 16:00"
+    },
+    "no_lisensi_praktek": 802570,
+    "rating": 4
+  },
+  {
+    "document_id": "D0031",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "Yuni Zulkarnain",
+    "no_telp": "085288686401",
+    "email": "yunizulkarnain@gmail.com",
+    "alamat": "Gg. Lembong No. 30\nMedan, JA 77894",
+    "gender": "Perempuan",
+    "tanggal_lahir": "16/11/1975",
+    "jadwal_praktek": {
+      "Rabu": "10:00 - 16:00",
+      "Senin": "10:00 - 14:00",
+      "Jumat": "12:00 - 18:00",
+      "Selasa": "11:00 - 13:00",
+      "Kamis": "9:00 - 16:00"
+    },
+    "no_lisensi_praktek": 429235,
+    "rating": 5
+  },
+  {
+    "document_id": "D0032",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "Laksana Tarihoran",
+    "no_telp": "088070962955",
+    "email": "laksanatarihoran@gmail.com",
+    "alamat": "Jalan Sukabumi No. 435\nBekasi, Papua 64597",
+    "gender": "Perempuan",
+    "tanggal_lahir": "17/04/1967",
+    "jadwal_praktek": {
+      "Jumat": "9:00 - 15:00",
+      "Selasa": "11:00 - 13:00",
+      "Kamis": "11:00 - 16:00"
+    },
+    "no_lisensi_praktek": 369175,
+    "rating": 4
+  },
+  {
+    "document_id": "D0033",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "Tgk. Puti Natsir, S.E.I",
+    "no_telp": "08353102798",
+    "email": "tgk_putinatsir_s_e_i@gmail.com",
+    "alamat": "Jalan Ir. H. Djuanda No. 6\nYogyakarta, Kepulauan Bangka Belitung 78163",
+    "gender": "Perempuan",
+    "tanggal_lahir": "28/01/1966",
+    "jadwal_praktek": {
+      "Rabu": "10:00 - 16:00",
+      "Senin": "10:00 - 14:00",
+      "Selasa": "11:00 - 17:00",
+      "Jumat": "10:00 - 14:00",
+      "Kamis": "9:00 - 14:00"
+    },
+    "no_lisensi_praktek": 911083,
+    "rating": 2
+  },
+  {
+    "document_id": "D0034",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Salimah Permata, S.Psi",
+    "no_telp": "084149568406",
+    "email": "salimahpermata_s_psi@gmail.com",
+    "alamat": "Gg. Dipenogoro No. 80\nBanjar, DKI Jakarta 47412",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "02/05/1975",
+    "jadwal_praktek": {
+      "Kamis": "9:00 - 13:00",
+      "Jumat": "12:00 - 15:00",
+      "Selasa": "11:00 - 16:00"
+    },
+    "no_lisensi_praktek": 914448,
+    "rating": 2
+  },
+  {
+    "document_id": "D0035",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Rina Yulianti",
+    "no_telp": "087550890912",
+    "email": "rinayulianti@gmail.com",
+    "alamat": "Jalan Gardujati No. 3\nPalembang, MA 16100",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "18/12/1974",
+    "jadwal_praktek": {
+      "Rabu": "12:00 - 18:00",
+      "Senin": "11:00 - 16:00",
+      "Jumat": "10:00 - 16:00",
+      "Selasa": "10:00 - 13:00",
+      "Kamis": "10:00 - 18:00"
+    },
+    "no_lisensi_praktek": 735820,
+    "rating": 2
+  },
+  {
+    "document_id": "D0036",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "KH. Purwanto Rajasa, S.Ked",
+    "no_telp": "081748962445",
+    "email": "kh_purwantorajasa_s_ked@gmail.com",
+    "alamat": "Jalan Pacuan Kuda No. 93\nManado, JA 30072",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "27/08/1981",
+    "jadwal_praktek": {
+      "Rabu": "12:00 - 13:00",
+      "Jumat": "11:00 - 13:00",
+      "Selasa": "11:00 - 17:00"
+    },
+    "no_lisensi_praktek": 128123,
+    "rating": 1
+  },
+  {
+    "document_id": "D0037",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Kartika Anggraini",
+    "no_telp": "083685077906",
+    "email": "kartikaanggraini@gmail.com",
+    "alamat": "Jalan Cihampelas No. 140\nMeulaboh, Jambi 55069",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "16/04/1970",
+    "jadwal_praktek": {
+      "Kamis": "11:00 - 16:00",
+      "Rabu": "9:00 - 15:00",
+      "Senin": "12:00 - 13:00",
+      "Jumat": "12:00 - 18:00"
+    },
+    "no_lisensi_praktek": 778800,
+    "rating": 4
+  },
+  {
+    "document_id": "D0038",
+    "type": "Dokter",
+    "spesialis": "Jantung",
+    "nama": "Candrakanta Tampubolon",
+    "no_telp": "083668843713",
+    "email": "candrakantatampubolon@gmail.com",
+    "alamat": "Gg. Erlangga No. 9\nBanjar, SB 41020",
+    "gender": "Perempuan",
+    "tanggal_lahir": "29/07/1968",
+    "jadwal_praktek": {
+      "Rabu": "12:00 - 18:00",
+      "Selasa": "12:00 - 15:00",
+      "Jumat": "12:00 - 16:00"
+    },
+    "no_lisensi_praktek": 857710,
+    "rating": 4
+  },
+  {
+    "document_id": "D0039",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "Martani Prasasta",
+    "no_telp": "088725846652",
+    "email": "martaniprasasta@gmail.com",
+    "alamat": "Gg. Veteran No. 930\nKotamobagu, BE 89984",
+    "gender": "Perempuan",
+    "tanggal_lahir": "08/02/1985",
+    "jadwal_praktek": {
+      "Rabu": "10:00 - 13:00",
+      "Jumat": "11:00 - 15:00",
+      "Senin": "12:00 - 17:00",
+      "Selasa": "12:00 - 17:00",
+      "Kamis": "11:00 - 15:00"
+    },
+    "no_lisensi_praktek": 657329,
+    "rating": 1
+  },
+  {
+    "document_id": "D0040",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Danuja Firmansyah, S.E.I",
+    "no_telp": "088811511379",
+    "email": "danujafirmansyah_s_e_i@gmail.com",
+    "alamat": "Gg. Rungkut Industri No. 39\nSukabumi, Nusa Tenggara Barat 83246",
+    "gender": "Perempuan",
+    "tanggal_lahir": "21/12/1980",
+    "jadwal_praktek": {
+      "Senin": "12:00 - 13:00",
+      "Jumat": "11:00 - 16:00",
+      "Rabu": "10:00 - 16:00",
+      "Kamis": "10:00 - 14:00"
+    },
+    "no_lisensi_praktek": 409256,
+    "rating": 5
+  },
+  {
+    "document_id": "D0041",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "Tami Oktaviani",
+    "no_telp": "081878785864",
+    "email": "tamioktaviani@gmail.com",
+    "alamat": "Jalan Sentot Alibasa No. 993\nPontianak, JA 23344",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "26/07/1987",
+    "jadwal_praktek": {
+      "Senin": "10:00 - 15:00",
+      "Jumat": "10:00 - 18:00",
+      "Kamis": "12:00 - 18:00",
+      "Selasa": "12:00 - 16:00",
+      "Rabu": "10:00 - 18:00"
+    },
+    "no_lisensi_praktek": 798665,
+    "rating": 3
+  },
+  {
+    "document_id": "D0042",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Queen Kusumo",
+    "no_telp": "081518853743",
+    "email": "queenkusumo@gmail.com",
+    "alamat": "Gang Gegerkalong Hilir No. 621\nBitung, KB 39785",
+    "gender": "Perempuan",
+    "tanggal_lahir": "24/06/1980",
+    "jadwal_praktek": {
+      "Rabu": "10:00 - 14:00",
+      "Jumat": "9:00 - 14:00",
+      "Selasa": "12:00 - 14:00"
+    },
+    "no_lisensi_praktek": 931012,
+    "rating": 4
+  },
+  {
+    "document_id": "D0043",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Prayogo Mansur, M.TI.",
+    "no_telp": "084785192611",
+    "email": "prayogomansur_m_ti_@gmail.com",
+    "alamat": "Gang H.J Maemunah No. 5\nCilegon, PA 65276",
+    "gender": "Perempuan",
+    "tanggal_lahir": "19/11/1984",
+    "jadwal_praktek": {
+      "Senin": "12:00 - 16:00",
+      "Rabu": "9:00 - 17:00",
+      "Kamis": "10:00 - 14:00"
+    },
+    "no_lisensi_praktek": 211595,
+    "rating": 3
+  },
+  {
+    "document_id": "D0044",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Gamanto Anggraini, S.I.Kom",
+    "no_telp": "083128367646",
+    "email": "gamantoanggraini_s_i_kom@gmail.com",
+    "alamat": "Jl. Cikutra Barat No. 68\nMeulaboh, Gorontalo 27594",
+    "gender": "Perempuan",
+    "tanggal_lahir": "11/07/1975",
+    "jadwal_praktek": {
+      "Jumat": "11:00 - 17:00",
+      "Rabu": "11:00 - 14:00",
+      "Kamis": "12:00 - 17:00",
+      "Senin": "12:00 - 18:00"
+    },
+    "no_lisensi_praktek": 350557,
+    "rating": 5
+  },
+  {
+    "document_id": "D0045",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Edi Wibowo",
+    "no_telp": "084044868073",
+    "email": "ediwibowo@gmail.com",
+    "alamat": "Jl. Ciwastra No. 498\nPagaralam, AC 96255",
+    "gender": "Perempuan",
+    "tanggal_lahir": "17/03/1975",
+    "jadwal_praktek": {
+      "Selasa": "9:00 - 13:00",
+      "Rabu": "11:00 - 16:00",
+      "Kamis": "9:00 - 13:00",
+      "Senin": "9:00 - 16:00"
+    },
+    "no_lisensi_praktek": 596863,
+    "rating": 1
+  },
+  {
+    "document_id": "D0046",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "T. Cahyadi Puspita, S.Pt",
+    "no_telp": "084342389142",
+    "email": "t_cahyadipuspita_s_pt@gmail.com",
+    "alamat": "Gang Rungkut Industri No. 39\nKota Administrasi Jakarta Timur, Sulawesi Tengah 14479",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "14/04/1975",
+    "jadwal_praktek": {
+      "Jumat": "10:00 - 17:00",
+      "Selasa": "12:00 - 15:00",
+      "Kamis": "11:00 - 14:00",
+      "Senin": "10:00 - 14:00",
+      "Rabu": "12:00 - 15:00"
+    },
+    "no_lisensi_praktek": 990131,
+    "rating": 4
+  },
+  {
+    "document_id": "D0047",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Kayun Megantara, S.Sos",
+    "no_telp": "087475121889",
+    "email": "kayunmegantara_s_sos@gmail.com",
+    "alamat": "Jalan Yos Sudarso No. 37\nSungai Penuh, GO 82747",
+    "gender": "Perempuan",
+    "tanggal_lahir": "25/07/1979",
+    "jadwal_praktek": {
+      "Selasa": "10:00 - 14:00",
+      "Jumat": "10:00 - 18:00"
+    },
+    "no_lisensi_praktek": 983260,
+    "rating": 4
+  },
+  {
+    "document_id": "D0048",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Maryanto Gunawan",
+    "no_telp": "089388888499",
+    "email": "maryantogunawan@gmail.com",
+    "alamat": "Gg. Stasiun Wonokromo No. 200\nSingkawang, AC 63839",
+    "gender": "Perempuan",
+    "tanggal_lahir": "14/04/1966",
+    "jadwal_praktek": {
+      "Selasa": "11:00 - 16:00",
+      "Jumat": "12:00 - 17:00"
+    },
+    "no_lisensi_praktek": 204156,
+    "rating": 1
+  },
+  {
+    "document_id": "D0049",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Devi Wasita",
+    "no_telp": "08566947220",
+    "email": "deviwasita@gmail.com",
+    "alamat": "Gg. M.T Haryono No. 137\nBogor, Kalimantan Timur 11994",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "17/12/1971",
+    "jadwal_praktek": {
+      "Rabu": "10:00 - 17:00",
+      "Selasa": "11:00 - 14:00",
+      "Jumat": "10:00 - 13:00"
+    },
+    "no_lisensi_praktek": 761927,
+    "rating": 3
+  },
+  {
+    "document_id": "D0050",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Gada Aryani, M.Kom.",
+    "no_telp": "081679929992",
+    "email": "gadaaryani_m_kom_@gmail.com",
+    "alamat": "Jalan Pasirkoja No. 510\nKupang, Papua Barat 60350",
+    "gender": "Perempuan",
+    "tanggal_lahir": "12/06/1983",
+    "jadwal_praktek": {
+      "Jumat": "10:00 - 18:00",
+      "Kamis": "9:00 - 15:00",
+      "Rabu": "12:00 - 14:00"
+    },
+    "no_lisensi_praktek": 339279,
+    "rating": 5
+  },
+  {
+    "document_id": "D0051",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Iriana Sirait",
+    "no_telp": "081132585912",
+    "email": "irianasirait@gmail.com",
+    "alamat": "Jalan Kutai No. 5\nBontang, Maluku 20440",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "24/10/1968",
+    "jadwal_praktek": {
+      "Kamis": "9:00 - 13:00",
+      "Jumat": "9:00 - 16:00",
+      "Selasa": "10:00 - 17:00",
+      "Rabu": "9:00 - 17:00"
+    },
+    "no_lisensi_praktek": 592921,
+    "rating": 2
+  },
+  {
+    "document_id": "D0052",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "Ir. Ivan Anggraini, S.E.I",
+    "no_telp": "084334864307",
+    "email": "ir_ivananggraini_s_e_i@gmail.com",
+    "alamat": "Jl. Rumah Sakit No. 8\nBalikpapan, Bengkulu 01269",
+    "gender": "Perempuan",
+    "tanggal_lahir": "24/02/1980",
+    "jadwal_praktek": {
+      "Rabu": "12:00 - 17:00",
+      "Kamis": "12:00 - 18:00",
+      "Jumat": "11:00 - 17:00",
+      "Selasa": "12:00 - 18:00"
+    },
+    "no_lisensi_praktek": 517046,
+    "rating": 5
+  },
+  {
+    "document_id": "D0053",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "Safina Safitri, S.Farm",
+    "no_telp": "084159592522",
+    "email": "safinasafitri_s_farm@gmail.com",
+    "alamat": "Gang Joyoboyo No. 6\nBima, SB 31656",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "09/06/1981",
+    "jadwal_praktek": {
+      "Kamis": "9:00 - 17:00",
+      "Senin": "12:00 - 13:00",
+      "Rabu": "11:00 - 17:00"
+    },
+    "no_lisensi_praktek": 270725,
+    "rating": 3
+  },
+  {
+    "document_id": "D0054",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Salwa Novitasari",
+    "no_telp": "089499064888",
+    "email": "salwanovitasari@gmail.com",
+    "alamat": "Jalan Cikutra Timur No. 3\nSawahlunto, Bali 27876",
+    "gender": "Perempuan",
+    "tanggal_lahir": "27/05/1977",
+    "jadwal_praktek": {
+      "Senin": "11:00 - 16:00",
+      "Selasa": "9:00 - 16:00",
+      "Jumat": "10:00 - 18:00",
+      "Rabu": "10:00 - 14:00",
+      "Kamis": "9:00 - 18:00"
+    },
+    "no_lisensi_praktek": 413731,
+    "rating": 4
+  },
+  {
+    "document_id": "D0055",
+    "type": "Dokter",
+    "spesialis": "Jantung",
+    "nama": "Taufan Wasita",
+    "no_telp": "087419305717",
+    "email": "taufanwasita@gmail.com",
+    "alamat": "Gang Soekarno Hatta No. 628\nTernate, Gorontalo 92199",
+    "gender": "Perempuan",
+    "tanggal_lahir": "12/07/1970",
+    "jadwal_praktek": {
+      "Jumat": "12:00 - 13:00",
+      "Selasa": "11:00 - 17:00",
+      "Kamis": "10:00 - 13:00"
+    },
+    "no_lisensi_praktek": 213266,
+    "rating": 1
+  },
+  {
+    "document_id": "D0056",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "drg. Umay Sihotang",
+    "no_telp": "086380062578",
+    "email": "drg_umaysihotang@gmail.com",
+    "alamat": "Jalan Jamika No. 19\nGorontalo, SR 01852",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "03/06/1970",
+    "jadwal_praktek": {
+      "Selasa": "11:00 - 18:00",
+      "Kamis": "12:00 - 14:00"
+    },
+    "no_lisensi_praktek": 287174,
+    "rating": 5
+  },
+  {
+    "document_id": "D0057",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Aswani Hariyah",
+    "no_telp": "086404500640",
+    "email": "aswanihariyah@gmail.com",
+    "alamat": "Jl. Sukajadi No. 5\nKendari, RI 23220",
+    "gender": "Perempuan",
+    "tanggal_lahir": "17/02/1978",
+    "jadwal_praktek": {
+      "Selasa": "12:00 - 16:00",
+      "Rabu": "9:00 - 18:00"
+    },
+    "no_lisensi_praktek": 600638,
+    "rating": 5
+  },
+  {
+    "document_id": "D0058",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Wulan Nasyiah, S.H.",
+    "no_telp": "081371016258",
+    "email": "wulannasyiah_s_h_@gmail.com",
+    "alamat": "Jl. Cihampelas No. 32\nMojokerto, Papua 78121",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "25/07/1971",
+    "jadwal_praktek": {
+      "Kamis": "11:00 - 17:00",
+      "Selasa": "10:00 - 17:00",
+      "Rabu": "12:00 - 14:00"
+    },
+    "no_lisensi_praktek": 611818,
+    "rating": 1
+  },
+  {
+    "document_id": "D0059",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Cahya Farida",
+    "no_telp": "085145386412",
+    "email": "cahyafarida@gmail.com",
+    "alamat": "Jalan Soekarno Hatta No. 6\nBanjar, Kalimantan Selatan 22138",
+    "gender": "Perempuan",
+    "tanggal_lahir": "08/07/1969",
+    "jadwal_praktek": {
+      "Kamis": "12:00 - 17:00",
+      "Rabu": "10:00 - 16:00",
+      "Selasa": "10:00 - 17:00",
+      "Jumat": "11:00 - 18:00"
+    },
+    "no_lisensi_praktek": 423886,
+    "rating": 2
+  },
+  {
+    "document_id": "D0060",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "Sutan Himawan Farida, M.Pd",
+    "no_telp": "084838393354",
+    "email": "sutanhimawanfarida_m_pd@gmail.com",
+    "alamat": "Gang R.E Martadinata No. 86\nSawahlunto, Kalimantan Selatan 38441",
+    "gender": "Perempuan",
+    "tanggal_lahir": "29/06/1975",
+    "jadwal_praktek": {
+      "Rabu": "9:00 - 18:00",
+      "Selasa": "12:00 - 14:00",
+      "Jumat": "9:00 - 17:00",
+      "Senin": "10:00 - 17:00"
+    },
+    "no_lisensi_praktek": 899209,
+    "rating": 4
+  },
+  {
+    "document_id": "D0061",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "drg. Nurul Firgantoro",
+    "no_telp": "084529541271",
+    "email": "drg_nurulfirgantoro@gmail.com",
+    "alamat": "Jalan W.R. Supratman No. 474\nPalangkaraya, PB 12156",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "10/09/1983",
+    "jadwal_praktek": {
+      "Rabu": "10:00 - 16:00",
+      "Senin": "11:00 - 14:00",
+      "Selasa": "9:00 - 18:00"
+    },
+    "no_lisensi_praktek": 341996,
+    "rating": 2
+  },
+  {
+    "document_id": "D0062",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Dalima Hutapea",
+    "no_telp": "084349957566",
+    "email": "dalimahutapea@gmail.com",
+    "alamat": "Gang Abdul Muis No. 586\nMedan, MU 53735",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "06/11/1985",
+    "jadwal_praktek": {
+      "Selasa": "9:00 - 17:00",
+      "Kamis": "12:00 - 16:00",
+      "Senin": "11:00 - 18:00",
+      "Jumat": "11:00 - 15:00",
+      "Rabu": "11:00 - 16:00"
+    },
+    "no_lisensi_praktek": 153491,
+    "rating": 3
+  },
+  {
+    "document_id": "D0063",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Jamalia Saefullah",
+    "no_telp": "081377589459",
+    "email": "jamaliasaefullah@gmail.com",
+    "alamat": "Gang Merdeka No. 890\nMagelang, JA 03364",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "29/08/1963",
+    "jadwal_praktek": {
+      "Senin": "9:00 - 17:00",
+      "Jumat": "10:00 - 13:00",
+      "Selasa": "12:00 - 14:00"
+    },
+    "no_lisensi_praktek": 685877,
+    "rating": 2
+  },
+  {
+    "document_id": "D0064",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "Ina Rahayu",
+    "no_telp": "084582327357",
+    "email": "inarahayu@gmail.com",
+    "alamat": "Gg. Lembong No. 776\nSibolga, Sulawesi Tenggara 62589",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "30/12/1972",
+    "jadwal_praktek": {
+      "Rabu": "12:00 - 16:00",
+      "Kamis": "12:00 - 17:00",
+      "Jumat": "11:00 - 14:00"
+    },
+    "no_lisensi_praktek": 368575,
+    "rating": 1
+  },
+  {
+    "document_id": "D0065",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Adiarja Saragih",
+    "no_telp": "081626222915",
+    "email": "adiarjasaragih@gmail.com",
+    "alamat": "Gg. Setiabudhi No. 27\nGorontalo, Jawa Barat 06079",
+    "gender": "Perempuan",
+    "tanggal_lahir": "30/05/1976",
+    "jadwal_praktek": {
+      "Jumat": "12:00 - 18:00",
+      "Rabu": "9:00 - 16:00",
+      "Senin": "12:00 - 13:00"
+    },
+    "no_lisensi_praktek": 713883,
+    "rating": 5
+  },
+  {
+    "document_id": "D0066",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "Sakura Utama, M.TI.",
+    "no_telp": "087045519651",
+    "email": "sakurautama_m_ti_@gmail.com",
+    "alamat": "Jalan M.H Thamrin No. 669\nKota Administrasi Jakarta Pusat, Gorontalo 17126",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "07/08/1984",
+    "jadwal_praktek": {
+      "Jumat": "10:00 - 15:00",
+      "Kamis": "11:00 - 18:00",
+      "Rabu": "10:00 - 15:00",
+      "Selasa": "11:00 - 16:00"
+    },
+    "no_lisensi_praktek": 410361,
+    "rating": 3
+  },
+  {
+    "document_id": "D0067",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "Sarah Laksmiwati",
+    "no_telp": "083231775489",
+    "email": "sarahlaksmiwati@gmail.com",
+    "alamat": "Gang Suryakencana No. 2\nSalatiga, Papua Barat 34334",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "27/03/1983",
+    "jadwal_praktek": {
+      "Senin": "9:00 - 13:00",
+      "Kamis": "9:00 - 17:00",
+      "Jumat": "10:00 - 15:00"
+    },
+    "no_lisensi_praktek": 619960,
+    "rating": 4
+  },
+  {
+    "document_id": "D0068",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Lalita Astuti",
+    "no_telp": "084483340100",
+    "email": "lalitaastuti@gmail.com",
+    "alamat": "Gg. Raya Setiabudhi No. 9\nDenpasar, Aceh 42536",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "07/09/1973",
+    "jadwal_praktek": {
+      "Senin": "12:00 - 15:00",
+      "Jumat": "12:00 - 13:00",
+      "Selasa": "10:00 - 17:00",
+      "Rabu": "12:00 - 15:00"
+    },
+    "no_lisensi_praktek": 643257,
+    "rating": 3
+  },
+  {
+    "document_id": "D0069",
+    "type": "Dokter",
+    "spesialis": "Jantung",
+    "nama": "Bagus Mustofa, S.E.",
+    "no_telp": "084525046018",
+    "email": "bagusmustofa_s_e_@gmail.com",
+    "alamat": "Jl. Peta No. 6\nParepare, Lampung 80664",
+    "gender": "Perempuan",
+    "tanggal_lahir": "08/04/1984",
+    "jadwal_praktek": {
+      "Senin": "11:00 - 15:00",
+      "Kamis": "12:00 - 16:00",
+      "Jumat": "9:00 - 16:00"
+    },
+    "no_lisensi_praktek": 919530,
+    "rating": 2
+  },
+  {
+    "document_id": "D0070",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "Sutan Garda Kusumo, S.E.",
+    "no_telp": "088025452319",
+    "email": "sutangardakusumo_s_e_@gmail.com",
+    "alamat": "Gang Moch. Toha No. 266\nSalatiga, Kalimantan Utara 32193",
+    "gender": "Perempuan",
+    "tanggal_lahir": "10/10/1965",
+    "jadwal_praktek": {
+      "Rabu": "12:00 - 18:00",
+      "Selasa": "11:00 - 18:00",
+      "Senin": "12:00 - 13:00",
+      "Kamis": "10:00 - 14:00",
+      "Jumat": "9:00 - 18:00"
+    },
+    "no_lisensi_praktek": 494534,
+    "rating": 1
+  },
+  {
+    "document_id": "D0071",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Lanjar Pratiwi",
+    "no_telp": "082032594094",
+    "email": "lanjarpratiwi@gmail.com",
+    "alamat": "Jl. Ciumbuleuit No. 6\nBatam, Kalimantan Barat 48315",
+    "gender": "Perempuan",
+    "tanggal_lahir": "02/08/1971",
+    "jadwal_praktek": {
+      "Kamis": "11:00 - 15:00",
+      "Senin": "12:00 - 13:00",
+      "Selasa": "11:00 - 14:00"
+    },
+    "no_lisensi_praktek": 455997,
+    "rating": 3
+  },
+  {
+    "document_id": "D0072",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Drs. Rini Gunawan",
+    "no_telp": "084897316690",
+    "email": "drs_rinigunawan@gmail.com",
+    "alamat": "Jalan Soekarno Hatta No. 7\nJayapura, PA 45758",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "14/06/1975",
+    "jadwal_praktek": {
+      "Kamis": "10:00 - 17:00",
+      "Rabu": "9:00 - 13:00",
+      "Jumat": "12:00 - 14:00",
+      "Selasa": "11:00 - 14:00",
+      "Senin": "12:00 - 17:00"
+    },
+    "no_lisensi_praktek": 614446,
+    "rating": 3
+  },
+  {
+    "document_id": "D0073",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "Betania Suryatmi",
+    "no_telp": "089404365926",
+    "email": "betaniasuryatmi@gmail.com",
+    "alamat": "Jl. Asia Afrika No. 7\nManado, Kepulauan Bangka Belitung 61751",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "29/05/1983",
+    "jadwal_praktek": {
+      "Senin": "10:00 - 16:00",
+      "Jumat": "11:00 - 18:00",
+      "Kamis": "11:00 - 15:00",
+      "Selasa": "11:00 - 14:00"
+    },
+    "no_lisensi_praktek": 716653,
+    "rating": 3
+  },
+  {
+    "document_id": "D0074",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "KH. Dagel Yuniar",
+    "no_telp": "08361503967",
+    "email": "kh_dagelyuniar@gmail.com",
+    "alamat": "Gg. Surapati No. 96\nYogyakarta, JI 76097",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "08/02/1965",
+    "jadwal_praktek": {
+      "Selasa": "11:00 - 15:00",
+      "Rabu": "10:00 - 18:00"
+    },
+    "no_lisensi_praktek": 226345,
+    "rating": 3
+  },
+  {
+    "document_id": "D0075",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Rendy Farida, M.Farm",
+    "no_telp": "088216835319",
+    "email": "rendyfarida_m_farm@gmail.com",
+    "alamat": "Gang BKR No. 8\nBlitar, RI 37335",
+    "gender": "Perempuan",
+    "tanggal_lahir": "17/01/1970",
+    "jadwal_praktek": {
+      "Jumat": "11:00 - 16:00",
+      "Selasa": "11:00 - 15:00",
+      "Senin": "12:00 - 17:00",
+      "Rabu": "9:00 - 13:00"
+    },
+    "no_lisensi_praktek": 219451,
+    "rating": 3
+  },
+  {
+    "document_id": "D0076",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "Anita Utami",
+    "no_telp": "085721947420",
+    "email": "anitautami@gmail.com",
+    "alamat": "Gang Otto Iskandardinata No. 217\nAmbon, Jawa Timur 50906",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "06/09/1987",
+    "jadwal_praktek": {
+      "Rabu": "12:00 - 13:00",
+      "Jumat": "11:00 - 17:00",
+      "Selasa": "9:00 - 16:00"
+    },
+    "no_lisensi_praktek": 282425,
+    "rating": 2
+  },
+  {
+    "document_id": "D0077",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "Vivi Sihotang",
+    "no_telp": "087057580135",
+    "email": "vivisihotang@gmail.com",
+    "alamat": "Gang Kebonjati No. 5\nBinjai, LA 23692",
+    "gender": "Perempuan",
+    "tanggal_lahir": "11/08/1981",
+    "jadwal_praktek": {
+      "Senin": "12:00 - 18:00",
+      "Rabu": "10:00 - 17:00",
+      "Jumat": "11:00 - 18:00",
+      "Kamis": "9:00 - 16:00",
+      "Selasa": "10:00 - 18:00"
+    },
+    "no_lisensi_praktek": 597112,
+    "rating": 3
+  },
+  {
+    "document_id": "D0078",
+    "type": "Dokter",
+    "spesialis": "Mata",
+    "nama": "Mulyono Nashiruddin",
+    "no_telp": "08929519281",
+    "email": "mulyononashiruddin@gmail.com",
+    "alamat": "Jl. Antapani Lama No. 45\nBatam, Sulawesi Barat 53654",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "27/10/1983",
+    "jadwal_praktek": {
+      "Kamis": "11:00 - 15:00",
+      "Selasa": "11:00 - 16:00",
+      "Rabu": "11:00 - 17:00"
+    },
+    "no_lisensi_praktek": 764432,
+    "rating": 3
+  },
+  {
+    "document_id": "D0079",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "Cayadi Yuniar",
+    "no_telp": "085490949910",
+    "email": "cayadiyuniar@gmail.com",
+    "alamat": "Gang Peta No. 16\nSungai Penuh, Kalimantan Timur 32637",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "30/11/1972",
+    "jadwal_praktek": {
+      "Selasa": "9:00 - 15:00",
+      "Jumat": "10:00 - 16:00",
+      "Kamis": "12:00 - 15:00"
+    },
+    "no_lisensi_praktek": 646336,
+    "rating": 3
+  },
+  {
+    "document_id": "D0080",
+    "type": "Dokter",
+    "spesialis": "Jantung",
+    "nama": "Nalar Usada, S.I.Kom",
+    "no_telp": "088896773457",
+    "email": "nalarusada_s_i_kom@gmail.com",
+    "alamat": "Gg. Dr. Djunjunan No. 2\nPagaralam, Bali 76409",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "07/01/1985",
+    "jadwal_praktek": {
+      "Rabu": "12:00 - 15:00",
+      "Kamis": "9:00 - 13:00",
+      "Senin": "11:00 - 15:00",
+      "Jumat": "11:00 - 14:00"
+    },
+    "no_lisensi_praktek": 755572,
+    "rating": 2
+  },
+  {
+    "document_id": "D0081",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "drg. Luwes Halim",
+    "no_telp": "081888135204",
+    "email": "drg_luweshalim@gmail.com",
+    "alamat": "Gang Veteran No. 2\nBinjai, Kalimantan Selatan 74685",
+    "gender": "Perempuan",
+    "tanggal_lahir": "17/07/1963",
+    "jadwal_praktek": {
+      "Kamis": "10:00 - 18:00",
+      "Selasa": "10:00 - 16:00"
+    },
+    "no_lisensi_praktek": 939828,
+    "rating": 4
+  },
+  {
+    "document_id": "D0082",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "dr. Galang Palastri, S.Ked",
+    "no_telp": "083286045897",
+    "email": "dr_galangpalastri_s_ked@gmail.com",
+    "alamat": "Gg. Merdeka No. 0\nPalu, Sulawesi Utara 72623",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "27/02/1972",
+    "jadwal_praktek": {
+      "Jumat": "10:00 - 16:00",
+      "Selasa": "10:00 - 16:00"
+    },
+    "no_lisensi_praktek": 739481,
+    "rating": 5
+  },
+  {
+    "document_id": "D0083",
+    "type": "Dokter",
+    "spesialis": "Internis Dalam",
+    "nama": "Tasnim Maulana",
+    "no_telp": "085704211317",
+    "email": "tasnimmaulana@gmail.com",
+    "alamat": "Gang Raya Setiabudhi No. 068\nPalembang, Riau 09213",
+    "gender": "Perempuan",
+    "tanggal_lahir": "13/07/1967",
+    "jadwal_praktek": {
+      "Senin": "11:00 - 16:00",
+      "Selasa": "12:00 - 16:00",
+      "Jumat": "10:00 - 18:00"
+    },
+    "no_lisensi_praktek": 876550,
+    "rating": 2
+  },
+  {
+    "document_id": "D0084",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "dr. Harto Firgantoro",
+    "no_telp": "08811503847",
+    "email": "dr_hartofirgantoro@gmail.com",
+    "alamat": "Jl. Suniaraja No. 30\nTidore Kepulauan, Aceh 15137",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "26/01/1976",
+    "jadwal_praktek": {
+      "Jumat": "10:00 - 16:00",
+      "Selasa": "10:00 - 16:00",
+      "Senin": "11:00 - 18:00",
+      "Rabu": "10:00 - 16:00",
+      "Kamis": "9:00 - 17:00"
+    },
+    "no_lisensi_praktek": 823235,
+    "rating": 1
+  },
+  {
+    "document_id": "D0085",
+    "type": "Dokter",
+    "spesialis": "Jantung",
+    "nama": "Syahrini Nasyidah",
+    "no_telp": "083719948274",
+    "email": "syahrininasyidah@gmail.com",
+    "alamat": "Jl. Sukabumi No. 587\nKota Administrasi Jakarta Selatan, Papua 25555",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "03/06/1984",
+    "jadwal_praktek": {
+      "Kamis": "11:00 - 18:00",
+      "Rabu": "10:00 - 18:00",
+      "Senin": "12:00 - 14:00",
+      "Selasa": "11:00 - 13:00",
+      "Jumat": "10:00 - 18:00"
+    },
+    "no_lisensi_praktek": 453589,
+    "rating": 4
+  },
+  {
+    "document_id": "D0086",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "drg. Siti Utami, S.H.",
+    "no_telp": "087676849954",
+    "email": "drg_sitiutami_s_h_@gmail.com",
+    "alamat": "Gang Pasirkoja No. 63\nJambi, YO 85378",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "01/10/1981",
+    "jadwal_praktek": {
+      "Rabu": "9:00 - 14:00",
+      "Senin": "12:00 - 16:00",
+      "Kamis": "11:00 - 13:00"
+    },
+    "no_lisensi_praktek": 544681,
+    "rating": 2
+  },
+  {
+    "document_id": "D0087",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Puput Tarihoran, M.Farm",
+    "no_telp": "088478840775",
+    "email": "puputtarihoran_m_farm@gmail.com",
+    "alamat": "Jl. Dipatiukur No. 39\nSalatiga, Aceh 21014",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "24/12/1966",
+    "jadwal_praktek": {
+      "Selasa": "10:00 - 17:00",
+      "Senin": "12:00 - 13:00",
+      "Kamis": "9:00 - 15:00"
+    },
+    "no_lisensi_praktek": 208703,
+    "rating": 1
+  },
+  {
+    "document_id": "D0088",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Vivi Setiawan",
+    "no_telp": "088698773771",
+    "email": "vivisetiawan@gmail.com",
+    "alamat": "Gang H.J Maemunah No. 103\nAmbon, SS 40769",
+    "gender": "Perempuan",
+    "tanggal_lahir": "21/08/1988",
+    "jadwal_praktek": {
+      "Rabu": "12:00 - 17:00",
+      "Kamis": "10:00 - 13:00",
+      "Jumat": "11:00 - 17:00",
+      "Senin": "9:00 - 17:00",
+      "Selasa": "10:00 - 15:00"
+    },
+    "no_lisensi_praktek": 216487,
+    "rating": 4
+  },
+  {
+    "document_id": "D0089",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Kalim Simanjuntak",
+    "no_telp": "085496148681",
+    "email": "kalimsimanjuntak@gmail.com",
+    "alamat": "Gang Sadang Serang No. 3\nPalopo, PB 11352",
+    "gender": "Perempuan",
+    "tanggal_lahir": "25/08/1983",
+    "jadwal_praktek": {
+      "Kamis": "10:00 - 14:00",
+      "Senin": "11:00 - 16:00",
+      "Rabu": "11:00 - 14:00",
+      "Selasa": "9:00 - 13:00"
+    },
+    "no_lisensi_praktek": 416035,
+    "rating": 1
+  },
+  {
+    "document_id": "D0090",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "R.M. Warsita Wahyudin, S.T.",
+    "no_telp": "083848314400",
+    "email": "r_m_warsitawahyudin_s_t_@gmail.com",
+    "alamat": "Jalan Rungkut Industri No. 03\nPasuruan, DKI Jakarta 22824",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "20/08/1966",
+    "jadwal_praktek": {
+      "Rabu": "10:00 - 18:00",
+      "Kamis": "9:00 - 14:00",
+      "Selasa": "9:00 - 16:00"
+    },
+    "no_lisensi_praktek": 471731,
+    "rating": 2
+  },
+  {
+    "document_id": "D0091",
+    "type": "Dokter",
+    "spesialis": "Jantung",
+    "nama": "Najam Narpati, S.Kom",
+    "no_telp": "089630861127",
+    "email": "najamnarpati_s_kom@gmail.com",
+    "alamat": "Gang Soekarno Hatta No. 219\nYogyakarta, MU 90189",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "31/01/1978",
+    "jadwal_praktek": {
+      "Jumat": "10:00 - 16:00",
+      "Kamis": "12:00 - 18:00",
+      "Senin": "9:00 - 16:00",
+      "Rabu": "10:00 - 15:00"
+    },
+    "no_lisensi_praktek": 363058,
+    "rating": 5
+  },
+  {
+    "document_id": "D0092",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Gilang Novitasari",
+    "no_telp": "085040240731",
+    "email": "gilangnovitasari@gmail.com",
+    "alamat": "Jalan Gegerkalong Hilir No. 5\nLhokseumawe, SB 27279",
+    "gender": "Perempuan",
+    "tanggal_lahir": "10/02/1980",
+    "jadwal_praktek": {
+      "Selasa": "9:00 - 15:00",
+      "Jumat": "11:00 - 17:00"
+    },
+    "no_lisensi_praktek": 297623,
+    "rating": 4
+  },
+  {
+    "document_id": "D0093",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Rangga Nuraini",
+    "no_telp": "084745001831",
+    "email": "rangganuraini@gmail.com",
+    "alamat": "Jalan Wonoayu No. 07\nDumai, Maluku Utara 68834",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "30/07/1971",
+    "jadwal_praktek": {
+      "Jumat": "10:00 - 18:00",
+      "Rabu": "10:00 - 13:00"
+    },
+    "no_lisensi_praktek": 140183,
+    "rating": 1
+  },
+  {
+    "document_id": "D0094",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Makuta Mayasari",
+    "no_telp": "089858599460",
+    "email": "makutamayasari@gmail.com",
+    "alamat": "Jl. H.J Maemunah No. 571\nPadangpanjang, BT 34468",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "25/02/1976",
+    "jadwal_praktek": {
+      "Rabu": "10:00 - 18:00",
+      "Kamis": "10:00 - 14:00"
+    },
+    "no_lisensi_praktek": 355963,
+    "rating": 1
+  },
+  {
+    "document_id": "D0095",
+    "type": "Dokter",
+    "spesialis": "Umum",
+    "nama": "Tgk. Karsana Hidayanto, M.Farm",
+    "no_telp": "087749644941",
+    "email": "tgk_karsanahidayanto_m_farm@gmail.com",
+    "alamat": "Jalan Setiabudhi No. 891\nSabang, DKI Jakarta 84134",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "06/06/1987",
+    "jadwal_praktek": {
+      "Jumat": "9:00 - 13:00",
+      "Rabu": "10:00 - 15:00",
+      "Kamis": "11:00 - 14:00",
+      "Senin": "12:00 - 18:00",
+      "Selasa": "12:00 - 18:00"
+    },
+    "no_lisensi_praktek": 289795,
+    "rating": 3
+  },
+  {
+    "document_id": "D0096",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Prabu Hasanah",
+    "no_telp": "087886979425",
+    "email": "prabuhasanah@gmail.com",
+    "alamat": "Jl. Otto Iskandardinata No. 17\nPrabumulih, Kalimantan Barat 05623",
+    "gender": "Perempuan",
+    "tanggal_lahir": "27/01/1987",
+    "jadwal_praktek": {
+      "Senin": "11:00 - 17:00",
+      "Rabu": "10:00 - 13:00"
+    },
+    "no_lisensi_praktek": 733838,
+    "rating": 2
+  },
+  {
+    "document_id": "D0097",
+    "type": "Dokter",
+    "spesialis": "Kulit",
+    "nama": "Nugraha Widiastuti, S.IP",
+    "no_telp": "087626108295",
+    "email": "nugrahawidiastuti_s_ip@gmail.com",
+    "alamat": "Gg. Dipenogoro No. 683\nTegal, Kalimantan Utara 54894",
+    "gender": "Perempuan",
+    "tanggal_lahir": "25/03/1974",
+    "jadwal_praktek": {
+      "Kamis": "11:00 - 13:00",
+      "Jumat": "12:00 - 15:00",
+      "Rabu": "11:00 - 15:00",
+      "Senin": "11:00 - 18:00"
+    },
+    "no_lisensi_praktek": 289105,
+    "rating": 3
+  },
+  {
+    "document_id": "D0098",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Tgk. Ridwan Andriani",
+    "no_telp": "087682178005",
+    "email": "tgk_ridwanandriani@gmail.com",
+    "alamat": "Jl. Cihampelas No. 032\nBalikpapan, KR 59580",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "19/11/1975",
+    "jadwal_praktek": {
+      "Selasa": "12:00 - 15:00",
+      "Kamis": "10:00 - 18:00",
+      "Rabu": "10:00 - 16:00"
+    },
+    "no_lisensi_praktek": 547267,
+    "rating": 5
+  },
+  {
+    "document_id": "D0099",
+    "type": "Dokter",
+    "spesialis": "Tulang",
+    "nama": "Drs. Ami Kusmawati, S.Gz",
+    "no_telp": "081826144298",
+    "email": "drs_amikusmawati_s_gz@gmail.com",
+    "alamat": "Gg. Cempaka No. 7\nAmbon, Kalimantan Tengah 50799",
+    "gender": "Perempuan",
+    "tanggal_lahir": "29/11/1963",
+    "jadwal_praktek": {
+      "Selasa": "10:00 - 16:00",
+      "Rabu": "11:00 - 14:00"
+    },
+    "no_lisensi_praktek": 653150,
+    "rating": 4
+  },
+  {
+    "document_id": "D0100",
+    "type": "Dokter",
+    "spesialis": "Gigi",
+    "nama": "Dr. Jasmin Simanjuntak, S.I.Kom",
+    "no_telp": "085851352538",
+    "email": "dr_jasminsimanjuntak_s_i_kom@gmail.com",
+    "alamat": "Jalan Gedebage Selatan No. 324\nBandung, Kalimantan Tengah 55936",
+    "gender": "Laki-Laki",
+    "tanggal_lahir": "19/09/1963",
+    "jadwal_praktek": {
+      "Selasa": "11:00 - 16:00",
+      "Rabu": "11:00 - 17:00",
+      "Jumat": "10:00 - 14:00"
+    },
+    "no_lisensi_praktek": 595793,
+    "rating": 2
+  }
+]
