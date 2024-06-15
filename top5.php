@@ -139,6 +139,7 @@
     $diagnosisMedications = [];
     $diagnosisCounts = [];
     $medicationFrequencies = [];
+
     foreach ($records as $record) {
         if (isset($record['diagnosa']) && isset($record['resep_obat'])) {
             $diagnoses = $record['diagnosa'];
@@ -311,6 +312,7 @@
                                     });
                                 </script>
                             </div>
+                            <div class="card-footer">Total Diagnoses: <?php echo json_encode(array_sum(array_values($medicationFrequencies[$diagnosisName]))); ?></div>
                         </div>
                     </div>
 
