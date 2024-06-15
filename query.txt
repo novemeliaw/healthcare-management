@@ -1,0 +1,36 @@
+# Total dokter yg menangani igd -> ri/rj
+MATCH (d:Dokter)-[:MENANGANI]->(i:IGD)-[:BERLANJUT_KE]->(b)
+WHERE b:RawatInap OR b:RawatJalan
+RETURN d.name AS doctor_name, 
+       d.doc_id AS doctor_id,
+       count(*) AS total_cases
+ORDER BY total_cases
+
+# count doctor by its follow up dri igd (for rawat inap and rawat jalan)
+MATCH (d:Dokter)-[:MENANGANI]->(i:IGD)-[:BERLANJUT_KE]->(b)
+WHERE b:RawatInap OR b:RawatJalan
+RETURN d.name AS doctor_name, 
+       d.doc_id AS doctor_id,
+       count(CASE WHEN b:RawatInap THEN 1 ELSE NULL END) AS rawat_inap_count,
+       count(CASE WHEN b:RawatJalan THEN 1 ELSE NULL END) AS rawat_jalan_count
+ORDER BY doctor_name
+
+# readmission 
+MATCH (d:Dokter)-[:MENANGANI]->(i:IGD)-[:BERLANJUT_KE]->(b)
+WHERE b:RawatInap OR b:RawatJalan
+WITH d, b
+OPTIONAL MATCH (p:Pasien)-[:MELAKUKAN]->(:IGD)-[:BERLANJUT_KE]->(b2:RawatJalan)
+WHERE b2.tanggal_jam > b.tanggal_jam + duration({days: 7}) AND p.patient_id = b.patient_id AND b:RawatJalan
+WITH d, 
+     count(CASE WHEN b:RawatInap THEN 1 ELSE NULL END) AS rawat_inap_count,
+     count(CASE WHEN b:RawatJalan THEN 1 ELSE NULL END) AS rawat_jalan_count,
+     count(DISTINCT b) AS total_cases,
+     count(DISTINCT b2) AS readmission_count
+RETURN d.name AS doctor_name, 
+       d.doc_id AS doctor_id,
+       rawat_inap_count, 
+       rawat_jalan_count, 
+       readmission_count
+ORDER BY doctor_name
+
+MATCH (d:Pasien)-[:MELAKUKAN]->(i:IGD)-[:BERLANJUT_KE]->(ri:RawatInap) RETURN distinct count(d) (count)
