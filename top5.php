@@ -240,19 +240,37 @@
                             var monthlyData = <?php echo json_encode($monthlyData); ?>;
                             var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
                             var datasets = [];
+                            // Array of predefined colors for borders
+                            var borderColors = [
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(192, 75, 192, 1)',
+                                'rgba(192, 192, 75, 1)',
+                                'rgba(75, 75, 192, 1)',
+                                'rgba(192, 75, 75, 1)',
+                                'rgba(75, 192, 75, 1)'
+                                // Add more colors as needed
+                            ];
+                            var colorIndex = 0;
+
                             for (var diagnosis in monthlyData) {
                                 var data = new Array(12).fill(0);
                                 monthlyData[diagnosis].forEach(function(item) {
                                     data[item._id.month - 1] = item.count;
                                 });
+
+                                // Get the next color in the array
+                                var borderColor = borderColors[colorIndex % borderColors.length];
+                                colorIndex++;
+
                                 datasets.push({
                                     label: diagnosis,
                                     data: data,
                                     fill: false,
-                                    borderColor: 'rgba(75, 192, 192, 1)',
+                                    borderColor: borderColor,
                                     tension: 0.1
                                 });
                             }
+
                             var ctx = document.getElementById('diagnosisChart').getContext('2d');
                             var diagnosisChart = new Chart(ctx, {
                                 type: 'line',
@@ -279,8 +297,33 @@
                     <div class="card-footer">Total Diagnoses: <?php echo $totalDiagnoses; ?></div>
                 </div>
             </div>
+
         </div>
         <div class="row">
+            <?php
+            // Define an array of border colors
+            $borderColors = [
+                'rgba(75, 192, 192, 1)',
+                'rgba(192, 75, 192, 1)',
+                'rgba(192, 192, 75, 1)',
+                'rgba(75, 75, 192, 1)',
+                'rgba(192, 75, 75, 1)',
+                'rgba(75, 192, 75, 1)'
+                // Add more colors as needed
+            ];
+            $backgroundColors = [
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(192, 75, 192, 0.2)',
+                'rgba(192, 192, 75, 0.2)',
+                'rgba(75, 75, 192, 0.2)',
+                'rgba(192, 75, 75, 0.2)',
+                'rgba(75, 192, 75, 0.2)'
+                // Add more colors as needed
+            ];
+
+            $colorIndex = 0; // Initialize color index
+            ?>
+
             <?php foreach ($diagnosisCounts as $diagnosisName => $count) : ?>
                 <?php if (isset($diagnosisMedications[$diagnosisName])) : ?>
                     <div class="col-md-4">
@@ -297,9 +340,10 @@
                                             datasets: [{
                                                 label: 'Count',
                                                 data: <?php echo json_encode(array_values($medicationFrequencies[$diagnosisName])); ?>,
-                                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                                                borderColor: 'rgba(75, 192, 192, 1)',
+                                                backgroundColor: '<?php echo $backgroundColors[$colorIndex % count($backgroundColors)]; ?>',
+                                                borderColor: '<?php echo $borderColors[$colorIndex % count($borderColors)]; ?>', // Set border color dynamically
                                                 borderWidth: 1
+
                                             }]
                                         },
                                         options: {
@@ -315,10 +359,13 @@
                             <div class="card-footer">Total Diagnoses: <?php echo json_encode(array_sum(array_values($medicationFrequencies[$diagnosisName]))); ?></div>
                         </div>
                     </div>
-
+                    <?php
+                    $colorIndex++; // Increment color index for next iteration
+                    ?>
                 <?php endif; ?>
             <?php endforeach; ?>
         </div>
+
     </div>
 
     <!-- Bootstrap JS -->
