@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Data Analysis</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
-
 
 <body>
     <?php
@@ -18,8 +16,15 @@
 
     // Get the selected year from dropdown or default to current year
     $selectedYear = $_GET['year'] ?? date("Y");
-    $startOfYear = $selectedYear . "-01-01 00:00:00";
-    $endOfYear = $selectedYear . "-12-31 23:59:59";
+    $isAllYears = $selectedYear === 'All';
+
+    if ($isAllYears) {
+        $startOfYear = "1900-01-01 00:00:00"; // Assuming no data before 1900
+        $endOfYear = "2100-12-31 23:59:59"; // Assuming no data after 2100
+    } else {
+        $startOfYear = $selectedYear . "-01-01 00:00:00";
+        $endOfYear = $selectedYear . "-12-31 23:59:59";
+    }
 
     // Fetch all medications with their counts
     $medicationsCursor = $igdCollection->aggregate([
@@ -42,15 +47,6 @@
 
     // Calculate total medications count
     $totalMedications = array_sum(array_column($topMedications, 'count'));
-
-
-
-
-
-
-
-
-
 
     $diagnosesCursor = $igdCollection->aggregate([
         ['$match' => [
@@ -85,7 +81,6 @@
         return $diagnosis['_id'];
     }, $topDiagnoses);
 
-
     // Fetch monthly data for top diagnoses
     $monthlyData = [];
     $top5DiagnosisNames = [];
@@ -111,20 +106,9 @@
             ['$sort' => ['_id.month' => 1]]
         ]);
 
-        // Store the contents of the monthly data cursor in an array
         $monthlyDataArray = iterator_to_array($monthlyDataCursor);
-
         $monthlyData[$diagnosis['value']] = $monthlyDataArray;
     }
-
-
-
-
-
-
-
-
-
 
     // Fetch all records for the selected year
     $recordsCursor = $igdCollection->find([
@@ -135,7 +119,6 @@
     ]);
 
     $records = iterator_to_array($recordsCursor);
-    // Create an associative array to hold diagnosis to medication mapping
     $diagnosisMedications = [];
     $diagnosisCounts = [];
     $medicationFrequencies = [];
@@ -148,7 +131,7 @@
             foreach ($diagnoses as $index => $diagnosis) {
                 $count++;
                 $diagnosisName = $diagnosis;
-                if (in_array($diagnosisName, $top5DiagnosisNames)) {  // Only process top 5 diagnoses
+                if (in_array($diagnosisName, $top5DiagnosisNames)) {
                     if (!isset($diagnosisCounts[$diagnosisName])) {
                         $diagnosisCounts[$diagnosisName] = 0;
                     }
@@ -174,12 +157,8 @@
             }
         }
     }
-
-    // Sort diagnoses by count descending
     arsort($diagnosisCounts);
     ?>
-
-
 
     <div class="container mt-5">
         <h1 class="mb-3">Medical Data Analysis for Year: <?php echo htmlspecialchars($selectedYear); ?></h1>
@@ -188,7 +167,7 @@
             <div class="mb-3">
                 <label for="year" class="form-label">Select Year:</label>
                 <select class="form-select" name="year" id="year" onchange="this.form.submit()">
-                    <!-- Generate year options dynamically or hard-code -->
+                    <option value="All" <?php if ($selectedYear === 'All') echo 'selected'; ?>>All</option>
                     <?php for ($year = 2019; $year <= date("Y"); $year++) : ?>
                         <option value="<?php echo $year; ?>" <?php if ($year == $selectedYear) echo 'selected'; ?>>
                             <?php echo $year; ?>
@@ -240,7 +219,6 @@
                             var monthlyData = <?php echo json_encode($monthlyData); ?>;
                             var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
                             var datasets = [];
-                            // Array of predefined colors for borders
                             var borderColors = [
                                 'rgba(75, 192, 192, 1)',
                                 'rgba(192, 75, 192, 1)',
@@ -248,7 +226,6 @@
                                 'rgba(75, 75, 192, 1)',
                                 'rgba(192, 75, 75, 1)',
                                 'rgba(75, 192, 75, 1)'
-                                // Add more colors as needed
                             ];
                             var colorIndex = 0;
 
@@ -258,7 +235,6 @@
                                     data[item._id.month - 1] = item.count;
                                 });
 
-                                // Get the next color in the array
                                 var borderColor = borderColors[colorIndex % borderColors.length];
                                 colorIndex++;
 
@@ -297,11 +273,10 @@
                     <div class="card-footer">Total Diagnoses: <?php echo $totalDiagnoses; ?></div>
                 </div>
             </div>
-
         </div>
+
         <div class="row">
             <?php
-            // Define an array of border colors
             $borderColors = [
                 'rgba(75, 192, 192, 1)',
                 'rgba(192, 75, 192, 1)',
@@ -309,7 +284,6 @@
                 'rgba(75, 75, 192, 1)',
                 'rgba(192, 75, 75, 1)',
                 'rgba(75, 192, 75, 1)'
-                // Add more colors as needed
             ];
             $backgroundColors = [
                 'rgba(75, 192, 192, 0.2)',
@@ -318,10 +292,9 @@
                 'rgba(75, 75, 192, 0.2)',
                 'rgba(192, 75, 75, 0.2)',
                 'rgba(75, 192, 75, 0.2)'
-                // Add more colors as needed
             ];
 
-            $colorIndex = 0; // Initialize color index
+            $colorIndex = 0;
             ?>
 
             <?php foreach ($diagnosisCounts as $diagnosisName => $count) : ?>
@@ -341,9 +314,8 @@
                                                 label: 'Count',
                                                 data: <?php echo json_encode(array_values($medicationFrequencies[$diagnosisName])); ?>,
                                                 backgroundColor: '<?php echo $backgroundColors[$colorIndex % count($backgroundColors)]; ?>',
-                                                borderColor: '<?php echo $borderColors[$colorIndex % count($borderColors)]; ?>', // Set border color dynamically
+                                                borderColor: '<?php echo $borderColors[$colorIndex % count($borderColors)]; ?>',
                                                 borderWidth: 1
-
                                             }]
                                         },
                                         options: {
@@ -360,15 +332,13 @@
                         </div>
                     </div>
                     <?php
-                    $colorIndex++; // Increment color index for next iteration
+                    $colorIndex++;
                     ?>
                 <?php endif; ?>
             <?php endforeach; ?>
         </div>
-
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
