@@ -34,3 +34,8 @@ RETURN d.name AS doctor_name,
 ORDER BY doctor_name
 
 MATCH (d:Pasien)-[:MELAKUKAN]->(i:IGD)-[:BERLANJUT_KE]->(ri:RawatInap) RETURN distinct count(d) (count)
+
+# count all 
+MATCH (d:Dokter)-[:MENANGANI]->(i)
+WHERE i:RawatInap OR i:RawatJalan OR i:IGD
+RETURN d.name, count(d)
