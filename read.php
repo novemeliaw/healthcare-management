@@ -25,7 +25,7 @@ function checkReturnWithinOneWeek($igdCollection, $nama_pasien, $startOfYear, $e
 
     for ($i = 0; $i < count($dates) - 1; $i++) {
         $interval = $dates[$i]->diff($dates[$i + 1]);
-        if ($interval->days <= 7) {
+        if ($interval->days < 7) {
             return true;
         }
     }
