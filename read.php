@@ -1,6 +1,11 @@
 <?php
 require 'connect.php';
 
+// Function to convert BSONDocument to array
+function bsonToArray($bson) {
+    return json_decode(json_encode($bson), true);
+}
+
 // Function to check if the same person comes back within one week and return all instances
 function getReturnWithinOneWeekInstances($igdCollection, $nama_pasien, $startOfYear, $endOfYear)
 {
@@ -16,7 +21,10 @@ function getReturnWithinOneWeekInstances($igdCollection, $nama_pasien, $startOfY
     foreach ($cursor as $document) {
         $dates[] = [
             'date' => new DateTime($document['tanggal_jam']),
-            'doctor' => $document['doctor_in_charge']
+            'doctor' => $document['doctor_in_charge'],
+            'type' => $document['type'] ?? '',
+            'diagnosa' => bsonToArray($document['diagnosa'] ?? []),
+            'resep_obat' => bsonToArray($document['resep_obat'] ?? [])
         ];
     }
 
@@ -33,12 +41,18 @@ function getReturnWithinOneWeekInstances($igdCollection, $nama_pasien, $startOfY
             $instances[] = [
                 'nama_pasien' => $nama_pasien,
                 'doctor_in_charge' => $dates[$i]['doctor'],
-                'tanggal_jam' => $dates[$i]['date']->format('Y-m-d H:i:s')
+                'tanggal_jam' => $dates[$i]['date']->format('Y-m-d H:i:s'),
+                'type' => $dates[$i]['type'],
+                'diagnosa' => $dates[$i]['diagnosa'],
+                'resep_obat' => $dates[$i]['resep_obat']
             ];
             $instances[] = [
                 'nama_pasien' => $nama_pasien,
                 'doctor_in_charge' => $dates[$i + 1]['doctor'],
-                'tanggal_jam' => $dates[$i + 1]['date']->format('Y-m-d H:i:s')
+                'tanggal_jam' => $dates[$i + 1]['date']->format('Y-m-d H:i:s'),
+                'type' => $dates[$i + 1]['type'],
+                'diagnosa' => $dates[$i + 1]['diagnosa'],
+                'resep_obat' => $dates[$i + 1]['resep_obat']
             ];
         }
     }
@@ -80,7 +94,7 @@ foreach ($distinctPatients as $nama_pasien) {
 
 <body>
     <div class="container mt-5">
-        <h2 class="mb-4">Patients Returning Within One Week in Year <?php echo $selectedYear; ?></h2>
+        <h2 class="mb-4">Patients Returning Within One Week in Year <?php echo htmlspecialchars($selectedYear, ENT_QUOTES, 'UTF-8'); ?></h2>
         <form method="post" class="mb-4">
             <div class="form-group">
                 <label for="year">Select Year:</label>
@@ -104,6 +118,7 @@ foreach ($distinctPatients as $nama_pasien) {
                         <th>Nama Pasien</th>
                         <th>Doctor in Charge</th>
                         <th>Tanggal Jam</th>
+                        <th>Details</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -112,14 +127,79 @@ foreach ($distinctPatients as $nama_pasien) {
                             <td><?php echo htmlspecialchars($result['nama_pasien'], ENT_QUOTES, 'UTF-8'); ?></td>
                             <td><?php echo htmlspecialchars($result['doctor_in_charge'], ENT_QUOTES, 'UTF-8'); ?></td>
                             <td><?php echo htmlspecialchars($result['tanggal_jam'], ENT_QUOTES, 'UTF-8'); ?></td>
+                            <td>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#infoModal" 
+                                data-type='<?php echo json_encode($result['type']); ?>' 
+                                data-diagnosa='<?php echo json_encode($result['diagnosa']); ?>' 
+                                data-resep_obat='<?php echo json_encode($result['resep_obat']); ?>'>
+                                Details
+                            </button>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
         <?php endif; ?>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Patient Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Type:</strong> <span id="modalType"></span></p>
+                    <p><strong>Diagnosa:</strong> <br> <span id="modalDiagnosa"></span></p>
+                    <p><strong>Resep Obat:</strong> <br> <span id="modalResepObat"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#infoModal').on('show.bs.modal', function(event) {
+                var button = $(event.relatedTarget);
+                
+                // Retrieve data attributes from the button
+                var type = button.data('type');
+                var diagnosa = button.data('diagnosa');
+                var resep_obat = button.data('resep_obat');
+
+                // Prepare HTML content for modal
+                var diagnosaStr = "";
+                for (var key in diagnosa) {
+                    if (diagnosa.hasOwnProperty(key)) {
+                        diagnosaStr += key + ": " + diagnosa[key] + "<br>";
+                    }
+                }
+
+                var resepObatStr = "";
+                resep_obat.forEach(function(obat) {
+                    resepObatStr += "Kode Obat: " + obat.kode_obat + "<br>";
+                    resepObatStr += "Nama Obat: " + obat.nama_obat + "<br>";
+                    resepObatStr += "Dosis: " + obat.dosis + "<br>";
+                    resepObatStr += "Signatura: " + obat.signatura + "<br><br>";
+                });
+
+                // Update modal content
+                var modal = $(this);
+                modal.find('#modalType').html(type);
+                modal.find('#modalDiagnosa').html(diagnosaStr);
+                modal.find('#modalResepObat').html(resepObatStr);
+            });
+        });
+    </script>
 </body>
 
 </html>
