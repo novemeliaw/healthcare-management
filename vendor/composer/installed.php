@@ -47,9 +47,15 @@
             'dev_requirement' => false,
         ),
         'mongodb/mongodb' => array(
+<<<<<<< HEAD
             'pretty_version' => '1.19.1',
             'version' => '1.19.1.0',
             'reference' => 'afe425b629075fa597fa2d5645045cb20dc93d95',
+=======
+            'pretty_version' => '1.19.0',
+            'version' => '1.19.0.0',
+            'reference' => 'cbc8104c0b2c32b7cf572ff759324c872e8dc63a',
+>>>>>>> alvin
             'type' => 'library',
             'install_path' => __DIR__ . '/../mongodb/mongodb',
             'aliases' => array(),

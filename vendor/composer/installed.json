@@ -23,7 +23,11 @@
             },
             "time": "2023-12-20T15:40:13+00:00",
             "type": "library",
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "files": [
                     "src/functions_include.php"
@@ -122,7 +126,11 @@
             },
             "time": "2023-12-04T06:14:50+00:00",
             "type": "library",
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "psr-4": {
                     "Laudis\\Neo4j\\": "src/"
@@ -182,7 +190,11 @@
             },
             "time": "2022-01-04T23:33:30+00:00",
             "type": "library",
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "psr-4": {
                     "Laudis\\TypedEnum\\": "src/"
@@ -207,6 +219,7 @@
         },
         {
             "name": "mongodb/mongodb",
+<<<<<<< HEAD
             "version": "1.19.1",
             "version_normalized": "1.19.1.0",
             "source": {
@@ -218,6 +231,19 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/afe425b629075fa597fa2d5645045cb20dc93d95",
                 "reference": "afe425b629075fa597fa2d5645045cb20dc93d95",
+=======
+            "version": "1.19.0",
+            "version_normalized": "1.19.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mongodb/mongo-php-library.git",
+                "reference": "cbc8104c0b2c32b7cf572ff759324c872e8dc63a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/cbc8104c0b2c32b7cf572ff759324c872e8dc63a",
+                "reference": "cbc8104c0b2c32b7cf572ff759324c872e8dc63a",
+>>>>>>> alvin
                 "shasum": ""
             },
             "require": {
@@ -232,19 +258,31 @@
             },
             "require-dev": {
                 "doctrine/coding-standard": "^12.0",
+<<<<<<< HEAD
                 "rector/rector": "^1.1",
+=======
+                "rector/rector": "^0.19",
+>>>>>>> alvin
                 "squizlabs/php_codesniffer": "^3.7",
                 "symfony/phpunit-bridge": "^5.2",
                 "vimeo/psalm": "^5.13"
             },
+<<<<<<< HEAD
             "time": "2024-06-13T14:30:04+00:00",
+=======
+            "time": "2024-05-10T19:49:08+00:00",
+>>>>>>> alvin
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.x-dev"
                 }
             },
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "files": [
                     "src/functions.php"
@@ -281,7 +319,11 @@
             ],
             "support": {
                 "issues": "https://github.com/mongodb/mongo-php-library/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/mongodb/mongo-php-library/tree/1.19.1"
+=======
+                "source": "https://github.com/mongodb/mongo-php-library/tree/1.19.0"
+>>>>>>> alvin
             },
             "install-path": "../mongodb/mongodb"
         },
@@ -330,7 +372,11 @@
                 "class": "Http\\Discovery\\Composer\\Plugin",
                 "plugin-optional": true
             },
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "psr-4": {
                     "Http\\Discovery\\": "src/"
@@ -407,7 +453,11 @@
             },
             "time": "2024-03-07T13:22:09+00:00",
             "type": "library",
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "files": [
                     "src/filters.php"
@@ -465,7 +515,11 @@
                     "dev-master": "1.0.x-dev"
                 }
             },
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "psr-4": {
                     "Psr\\Http\\Client\\": "src/"
@@ -520,7 +574,11 @@
                     "dev-master": "1.0.x-dev"
                 }
             },
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "psr-4": {
                     "Psr\\Http\\Message\\": "src/"
@@ -577,7 +635,11 @@
                     "dev-master": "1.1.x-dev"
                 }
             },
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "psr-4": {
                     "Psr\\Http\\Message\\": "src/"
@@ -633,7 +695,11 @@
                     "dev-master": "3.x-dev"
                 }
             },
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "psr-4": {
                     "Psr\\Log\\": "src"
@@ -686,7 +752,11 @@
                     "dev-master": "3.0.x-dev"
                 }
             },
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "psr-4": {
                     "Psr\\SimpleCache\\": "src/"
@@ -745,7 +815,11 @@
             },
             "time": "2022-11-29T16:17:09+00:00",
             "type": "library",
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "psr-4": {
                     "Bolt\\": "src/"
@@ -809,7 +883,11 @@
                     "url": "https://github.com/symfony/polyfill"
                 }
             },
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "files": [
                     "bootstrap.php"
@@ -892,7 +970,11 @@
                     "url": "https://github.com/symfony/polyfill"
                 }
             },
+<<<<<<< HEAD
             "installation-source": "dist",
+=======
+            "installation-source": "source",
+>>>>>>> alvin
             "autoload": {
                 "files": [
                     "bootstrap.php"

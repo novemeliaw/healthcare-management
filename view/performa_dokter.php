@@ -1,5 +1,7 @@
 <?php
 require '../vendor/autoload.php';
+require 'navbar.php';
+require 'connect.php';
 
 // Neo4j connection
 use Laudis\Neo4j\Authentication\Authenticate;
@@ -13,6 +15,7 @@ $neo4j = ClientBuilder::create()
 // MongoDB connection
 $mongoClient = new MongoDB\Client("mongodb://localhost:27017");
 $doctorCollection = $mongoClient->proyek->dokter;
+$igdCollection = $mongoClient->proyek->igd;
 
 // Pagination parameters
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
@@ -84,6 +87,75 @@ $totalDoctorsQuery = "
 $totalDoctorsResult = $neo4j->run($totalDoctorsQuery);
 $totalDoctors = $totalDoctorsResult->first()->get('total');
 $totalPages = ceil($totalDoctors / $limit);
+
+$selectedYear = $_POST['year'] ?? date("Y");
+$isAllYears = $selectedYear === 'All';
+$startOfYear = $isAllYears ? "1900-01-01 00:00:00" : $selectedYear . "-01-01 00:00:00";
+$endOfYear = $isAllYears ? "2100-12-31 23:59:59" : $selectedYear . "-12-31 23:59:59";
+
+function getReturnWithinOneWeekInstances($igdCollection, $nama_pasien, $startOfYear, $endOfYear) {
+    $cursor = $igdCollection->find([
+        'nama_pasien' => $nama_pasien,
+        'tanggal_jam' => [
+            '$gte' => $startOfYear,
+            '$lt' => $endOfYear
+        ]
+    ]);
+
+    $dates = [];
+    foreach ($cursor as $document) {
+        $dates[] = [
+            'date' => new DateTime($document['tanggal_jam']),
+            'doctor' => $document['doctor_in_charge'],
+            'type' => $document['type'] ?? '',
+            'diagnosa' => json_decode(json_encode($document['diagnosa'] ?? []), true),
+            'resep_obat' => json_decode(json_encode($document['resep_obat'] ?? []), true)
+        ];
+    }
+
+    if (count($dates) < 2) {
+        return [];
+    }
+
+    sort($dates);
+    $instances = [];
+
+    for ($i = 0; $i < count($dates) - 1; $i++) {
+        $interval = $dates[$i]['date']->diff($dates[$i + 1]['date']);
+        if ($interval->days < 7) {
+            $instances[] = [
+                'nama_pasien' => $nama_pasien,
+                'doctor_in_charge' => $dates[$i]['doctor'],
+                'tanggal_jam' => $dates[$i]['date']->format('Y-m-d H:i:s'),
+                'type' => $dates[$i]['type'],
+                'diagnosa' => $dates[$i]['diagnosa'],
+                'resep_obat' => $dates[$i]['resep_obat']
+            ];
+            $instances[] = [
+                'nama_pasien' => $nama_pasien,
+                'doctor_in_charge' => $dates[$i + 1]['doctor'],
+                'tanggal_jam' => $dates[$i + 1]['date']->format('Y-m-d H:i:s'),
+                'type' => $dates[$i + 1]['type'],
+                'diagnosa' => $dates[$i + 1]['diagnosa'],
+                'resep_obat' => $dates[$i + 1]['resep_obat']
+            ];
+        }
+    }
+
+    return $instances;
+}
+
+// Count distinct readmissions
+$results = [];
+$readmissionCount = 0;
+$distinctPatients = $igdCollection->distinct('nama_pasien');
+foreach ($distinctPatients as $nama_pasien) {
+    $instances = getReturnWithinOneWeekInstances($igdCollection, $nama_pasien, $startOfYear, $endOfYear);
+    if (!empty($instances)) {
+        $readmissionCount++;
+        $results = array_merge($results, $instances);
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -91,11 +163,15 @@ $totalPages = ceil($totalDoctors / $limit);
     <meta charset="UTF-8">
     <title>Doctors</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body class="bg-gray-100 p-4">
-    <div class="container mx-10">
+<body class="bg-gray-100">
+    <div class="container mx-10 p-4">
         <h2 class="text-2xl font-bold mb-6">Doctors</h2>
         <div class="my-3">
             <label for="yearSelect" class="block text-sm font-medium text-gray-700">Select Year:</label>
@@ -168,22 +244,85 @@ $totalPages = ceil($totalDoctors / $limit);
             </div>
         </div>
 
+        <!-- Readmission Section -->
+
+        <div class="container mt-5">
+        <h2 class="mb-4">Patients Returning Within One Week in Year <span id="displayYear"></span></h2>
+            <p id="patientReadmissionInfo"></p>
+            <table class="table table-bordered mb-5">
+                <thead>
+                    <tr>
+                        <th>Nama Pasien</th>
+                        <th>Doctor in Charge</th>
+                        <th>Tanggal Jam</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody id="readmissionTableBody"></tbody>
+            </table>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="infoModalLabel">Patient Information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Type:</strong> <span id="modalType"></span></p>
+                <p><strong>Diagnosa:</strong> <br> <span id="modalDiagnosa"></span></p>
+                <p><strong>Resep Obat:</strong> <br> <span id="modalResepObat"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
     <script>
-        document.getElementById('yearSelect').addEventListener('change', function () {
-            var selectedYear = this.value;
-            if (selectedYear) {
-                fetch('yearly_dokter.php?year=' + selectedYear)
-                    .then(response => response.json())
-                    .then(data => {
-                        var topDoctors = data.slice(0, 5);
-                        updateChart(topDoctors);
-                        updateTable(data);
-                    });
-            } else {
-                updateChart([]);
-                updateTable([]);
-            }
+       document.getElementById('yearSelect').addEventListener('change', function () {
+    var selectedYear = this.value;
+    var displayYear = document.getElementById('displayYear');
+
+    if (selectedYear) {
+        // Fetch both datasets simultaneously
+        displayYear.textContent = selectedYear;
+        Promise.all([
+            fetch(`yearly_dokter.php?year=${selectedYear}`).then(response => response.json()),
+            fetch(`read.php?year=${selectedYear}`).then(response => response.json())
+        ]).then(([yearlyData, readmissionData]) => {
+            // Handle yearly doctor data
+            var topDoctors = yearlyData.slice(0, 5);
+            updateChart(topDoctors);
+            updateTable(yearlyData);
+
+            // Handle readmission data
+            updateReadmissionTable(readmissionData);
+            updateReadmissionInfo(readmissionData);
+        }).catch(error => {
+            console.error('Error fetching data:', error);
+            document.getElementById('readmissionInfo').innerHTML = '<p>Error loading data.</p>';
         });
+    } else {
+        updateChart([]);
+        updateTable([]);
+        document.getElementById('readmissionInfo').innerHTML = '<p>Please select a year.</p>';
+        document.getElementById('readmissionTableBody').innerHTML = '';
+    }
+});
+
+function updateReadmissionInfo(data) {
+    const container = document.getElementById('patientReadmissionInfo');
+    if (data.length === 0) {
+        container.innerHTML = '<p>No patients returned within one week for this year.</p>';
+    } else {
+        container.innerHTML = `<p><strong>Number of Patients Readmitted within One Week: </strong>${data.length}</p>`;
+    }
+}
 
         function updateTable(doctors) {
             var tableBody = document.getElementById('doctorTableBody');
@@ -351,6 +490,57 @@ $totalPages = ceil($totalDoctors / $limit);
 
         // Initial table load
         updateTable(<?= json_encode($doctors) ?>);
+
+        function updateReadmissionTable(readmissions) {
+    var tableBody = document.getElementById('readmissionTableBody');
+    tableBody.innerHTML = '';
+    readmissions.forEach(patient => {
+        var tr = document.createElement('tr');
+        tr.innerHTML = `<td>${patient.nama_pasien}</td>
+                        <td>${patient.doctor_in_charge}</td>
+                        <td>${patient.tanggal_jam}</td>
+                         <td><button class="btn btn-info" data-toggle="modal" data-target="#infoModal"
+                                data-type="Type Example" 
+                                data-diagnosa='{"code1":"Diagnosis 1", "code2":"Diagnosis 2"}' 
+                                data-resep_obat='[{"kode_obat":"001", "nama_obat":"Obat 1", "dosis":"2x", "signatura":"Sign 1"}, {"kode_obat":"002", "nama_obat":"Obat 2", "dosis":"3x", "signatura":"Sign 2"}]'>Details</button></td>`;
+        tableBody.appendChild(tr);
+    });
+}
     </script>
+    <script>
+         $(document).ready(function() {
+            $('#readmissionTableBody').on('click', '.btn-info', function(event){
+                var button = $(event.currentTarget);
+                console.log(button)
+                
+                // Retrieve data attributes from the button
+                var type = button.data('type');
+                var diagnosa = button.data('diagnosa');
+                var resep_obat = button.data('resep_obat');
+
+                // Prepare HTML content for modal
+                var diagnosaStr = "";
+                for (var key in diagnosa) {
+                    if (diagnosa.hasOwnProperty(key)) {
+                        diagnosaStr += key + ": " + diagnosa[key] + "<br>";
+                    }
+                }
+
+                var resepObatStr = "";
+                resep_obat.forEach(function(obat) {
+                    resepObatStr += "Kode Obat: " + obat.kode_obat + "<br>";
+                    resepObatStr += "Nama Obat: " + obat.nama_obat + "<br>";
+                    resepObatStr += "Dosis: " + obat.dosis + "<br>";
+                    resepObatStr += "Signatura: " + obat.signatura + "<br><br>";
+                });
+
+                // Update modal content
+                var modal =$('#infoModal'); ;
+                modal.find('#modalType').html(type);
+                modal.find('#modalDiagnosa').html(diagnosaStr);
+                modal.find('#modalResepObat').html(resepObatStr);
+            });
+        });
+        </script>
 </body>
 </html>
