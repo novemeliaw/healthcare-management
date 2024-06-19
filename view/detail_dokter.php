@@ -16,6 +16,8 @@ $doctorCollection = $mongoClient->proyek->dokter;
 
 // Get doctor ID from query parameters
 $doctorId = isset($_GET['doctor_id']) ? $_GET['doctor_id'] : '';
+$year = isset($_GET['year']) ? $_GET['year'] : date('Y');
+error_log("Year: " . $year);
 
 if (empty($doctorId)) {
     echo json_encode(['error' => 'Doctor ID is required']);
@@ -35,9 +37,11 @@ $caseIds = [];
 
 $caseCollections = [$mongoClient->proyek->igd, $mongoClient->proyek->ri, $mongoClient->proyek->rj];
 foreach ($caseCollections as $collection) {
-    $cases = $collection->find(['doctor_in_charge' => $doctorDetails['nama']], ['projection' => ['document_id' => 1]])->toArray();
+    $cases = $collection->find(['doctor_in_charge' => $doctorDetails['nama']], ['projection' => ['document_id' => 1, 'tanggal_jam' => 1]])->toArray();
     foreach ($cases as $case) {
-        $caseIds[] = $case['document_id'];
+        if (strpos($case['tanggal_jam'], $year) === 0) {
+            $caseIds[] = $case['document_id'];
+        }
     }
 }
 
@@ -83,10 +87,11 @@ foreach ($caseIds as $case) {
 }
 
 // Now $queryResults contains the combined results of all queries
-var_dump($queryResults);
+
 
 $allCases = [];
 $allCaseIdsArray = array_values($queryResults);
+// var_dump($allCaseIdsArray);
 
 $allCaseCollections = [$mongoClient->proyek->igd, $mongoClient->proyek->ri, $mongoClient->proyek->rj];
 foreach ($allCaseCollections as $collection) {
@@ -105,26 +110,51 @@ usort($allCases, function ($a, $b) {
     return strtotime($b['tanggal_jam']) - strtotime($a['tanggal_jam']);
 });
 
-var_dump($allCases);
+// var_dump($allCases);
 
-// Determine if each case is a follow-up case
-foreach ($allCases as &$case) {
-    if (in_array($case['document_id'], $currentCaseIds)) {
-        $case['is_follow_up'] = 'Bukan'; // Current case is not follow-up
-    } elseif (in_array($case['document_id'], $futureCaseIds)) {
-        $case['is_follow_up'] = 'Ada Lanjutan'; // Related case has follow-up
-    } elseif (in_array($case['document_id'], $pastCaseIds)) {
-        $case['is_follow_up'] = 'Merupakan Lanjutan'; // Related case is follow-up
+$formattedCases = [];
+foreach ($allCases as $case) {
+    $followUpCase = [];
+    // Check if the case ID exists in $queryResults
+    if (isset($queryResults[$case['document_id']])) {
+        $relatedCaseId = $queryResults[$case['document_id']];
+        if (in_array($relatedCaseId, $caseIds) && (substr($relatedCaseId, 0, 2) == 'RI' || substr($relatedCaseId, 0, 2) == 'RJ')) {
+            $isFollowUp = 'has_follow_up'; 
+            $followUpCase = $relatedCaseId;// Case has a follow-up
+        } elseif (in_array($relatedCaseId, $caseIds) && (substr($relatedCaseId, 0, 3) == 'IGD')){
+            $isFollowUp = 'no_follow_up';
+        } else {
+            $isFollowUp = 'is_follow_up';
+            $followUpCase = $relatedCaseId; // Case is a follow-up
+        }
+    } else {
+        $isFollowUp = 'Bukan'; // Case is not related to any follow-up
     }
+
+    // Format the case data as required
+    $formattedCase = [
+        'document_id' => $case['document_id'],
+        'type' => $case['type'],
+        'tanggal_jam' => $case['tanggal_jam'],
+        'nama_pasien' => $case['nama_pasien'],
+        'doctor_in_charge' => $case['doctor_in_charge'],
+        'diagnosa' => $case['diagnosa'],
+        'resep_obat' => $case['resep_obat'],
+        'is_follow_up' => $isFollowUp,
+        'x' => $followUpCase
+    ];
+
+    // Add the formatted case to the results array
+    $formattedCases[] = $formattedCase;
 }
 
-// Prepare response
+// Prepare the final response
 $response = [
     'no_lisensi_praktek' => $doctorDetails['no_lisensi_praktek'],
     'nama' => $doctorDetails['nama'],
     'spesialis' => $doctorDetails['spesialis'],
     'gender' => $doctorDetails['gender'],
-    'cases' => $allCases
+    'cases' => $formattedCases
 ];
 
 // Send response as JSON
