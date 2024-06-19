@@ -14,13 +14,12 @@
     <?php
     include 'connect.php';
 
-    // Get the selected year from dropdown or default to current year
+    //Selected year from dropdown
     $selectedYear = $_GET['year'] ?? date("Y");
     $isAllYears = $selectedYear === 'All';
-
     if ($isAllYears) {
-        $startOfYear = "1900-01-01 00:00:00"; // Assuming no data before 1900
-        $endOfYear = "2100-12-31 23:59:59"; // Assuming no data after 2100
+        $startOfYear = "1900-01-01 00:00:00";
+        $endOfYear = "2100-12-31 23:59:59";
     } else {
         $startOfYear = $selectedYear . "-01-01 00:00:00";
         $endOfYear = $selectedYear . "-12-31 23:59:59";
@@ -42,10 +41,8 @@
         ['$sort' => ['count' => -1]],
         ['$limit' => 5]
     ]);
-
     $topMedications = iterator_to_array($medicationsCursor);
-
-    // Calculate total medications count
+    // Calculate total medications
     $totalMedications = array_sum(array_column($topMedications, 'count'));
 
     $diagnosesCursor = $igdCollection->aggregate([
@@ -81,11 +78,11 @@
         return $diagnosis['_id'];
     }, $topDiagnoses);
 
-    // Fetch monthly data for top diagnoses
+    // Fetch monthly top diagnoses
     $monthlyData = [];
     $top5DiagnosisNames = [];
     foreach ($topDiagnosisNames as $diagnosis) {
-        $top5DiagnosisNames[] = $diagnosis['value']; // Store the diagnosis value in the new array
+        $top5DiagnosisNames[] = $diagnosis['value'];
         $monthlyDataCursor = $igdCollection->aggregate([
             ['$match' => [
                 'tanggal_jam' => [
@@ -110,7 +107,7 @@
         $monthlyData[$diagnosis['value']] = $monthlyDataArray;
     }
 
-    // Fetch all records for the selected year
+    // Fetch all records for selected year
     $recordsCursor = $igdCollection->find([
         'tanggal_jam' => [
             '$gte' => $startOfYear,

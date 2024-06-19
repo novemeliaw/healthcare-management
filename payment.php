@@ -50,7 +50,7 @@ function getCountsAndMonthlySumsByYear($collection, $year)
         }
     }
 
-    // Calculate total sums for each month
+    // Calculate total each month
     $totalSumsPerMonth = [];
     for ($i = 1; $i <= 12; $i++) {
         $totalSumsPerMonth[$i] = $monthlySums['obat'][$i] + $monthlySums['jasa_visit_dokter'][$i] + $monthlySums['tes_tambahan'][$i];
@@ -84,19 +84,15 @@ $highestValueAmount = $data['highestValueAmount'];
 $highestTotalMonth = $data['highestTotalMonth'];
 $highestTotalPaymentMonth = $data['highestTotalPaymentMonth'];
 $totalPatientsPerMonth = $data['totalPatientsPerMonth'];
-
 $totalPaymentMethodSums = array_sum($paymentMethodSums['Mandiri']) + array_sum($paymentMethodSums['Asuransi']) + array_sum($paymentMethodSums['Mandiri + Asuransi']);
 $totalMonthlySums = array_sum($monthlySums['obat']) + array_sum($monthlySums['jasa_visit_dokter']) + array_sum($monthlySums['tes_tambahan']);
-
-// Determine the payment method with the highest value
+//Payment method with the highest value
 $highestPaymentMethodValue = array_keys($paymentMethodSums, max($paymentMethodSums))[0];
 $highestPaymentMethodValueSum = max(array_sum($paymentMethodSums['Mandiri']), array_sum($paymentMethodSums['Asuransi']), array_sum($paymentMethodSums['Mandiri + Asuransi']));
-
-// Determine the payment method with the most frequency
+//Payment method with the most frequency
 $highestPaymentMethodFrequency = array_keys($counts, max($counts))[0];
 $highestPaymentMethodFrequencyCount = max(array_sum($counts['Mandiri']), array_sum($counts['Asuransi']), array_sum($counts['Mandiri + Asuransi']));
-
-// Determine the highest total payment
+//Highest total payment
 $highestTotalPayment = max(array_sum($monthlySums['obat']), array_sum($monthlySums['jasa_visit_dokter']), array_sum($monthlySums['tes_tambahan']));
 ?>
 
