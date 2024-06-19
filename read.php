@@ -72,26 +72,31 @@ if ($isAllYears) {
     $endOfYear = $selectedYear . "-12-31 23:59:59";
 }
 
-// Get all unique patient names
-$distinctPatients = $igdCollection->distinct('nama_pasien');
-
+// Initialize $results as an empty array
 $results = [];
+
+// Get all unique patient names and count distinct readmissions
+$distinctPatients = $igdCollection->distinct('nama_pasien');
+$readmissionCount = 0;
+
 foreach ($distinctPatients as $nama_pasien) {
     $instances = getReturnWithinOneWeekInstances($igdCollection, $nama_pasien, $startOfYear, $endOfYear);
+    if (!empty($instances)) {
+        $readmissionCount++;
+    }
+    // Merge $instances into $results
     $results = array_merge($results, $instances);
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient Return Check</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
     <div class="container mt-5">
         <h2 class="mb-4">Patients Returning Within One Week in Year <?php echo htmlspecialchars($selectedYear, ENT_QUOTES, 'UTF-8'); ?></h2>
@@ -112,6 +117,7 @@ foreach ($distinctPatients as $nama_pasien) {
         <?php if (empty($results)) : ?>
             <p>No patients returned within one week for this year.</p>
         <?php else : ?>
+            <p><strong>Number of Patients Readmitted within One Week: </strong><?php echo $readmissionCount; ?></p>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -128,12 +134,12 @@ foreach ($distinctPatients as $nama_pasien) {
                             <td><?php echo htmlspecialchars($result['doctor_in_charge'], ENT_QUOTES, 'UTF-8'); ?></td>
                             <td><?php echo htmlspecialchars($result['tanggal_jam'], ENT_QUOTES, 'UTF-8'); ?></td>
                             <td>
-                            <button class="btn btn-info" data-toggle="modal" data-target="#infoModal" 
-                                data-type='<?php echo json_encode($result['type']); ?>' 
-                                data-diagnosa='<?php echo json_encode($result['diagnosa']); ?>' 
-                                data-resep_obat='<?php echo json_encode($result['resep_obat']); ?>'>
-                                Details
-                            </button>
+                                <button class="btn btn-info" data-toggle="modal" data-target="#infoModal" 
+                                    data-type='<?php echo json_encode($result['type']); ?>' 
+                                    data-diagnosa='<?php echo json_encode($result['diagnosa']); ?>' 
+                                    data-resep_obat='<?php echo json_encode($result['resep_obat']); ?>'>
+                                    Details
+                                </button>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -201,5 +207,4 @@ foreach ($distinctPatients as $nama_pasien) {
         });
     </script>
 </body>
-
 </html>
