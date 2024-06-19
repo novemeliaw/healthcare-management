@@ -1,8 +1,8 @@
 <?php
 require 'connect.php';
 
-// Function to check if the same person comes back within one week
-function checkReturnWithinOneWeek($igdCollection, $nama_pasien, $startOfYear, $endOfYear)
+// Function to check if the same person comes back within one week and return all instances
+function getReturnWithinOneWeekInstances($igdCollection, $nama_pasien, $startOfYear, $endOfYear)
 {
     $cursor = $igdCollection->find([
         'nama_pasien' => $nama_pasien,
@@ -14,23 +14,36 @@ function checkReturnWithinOneWeek($igdCollection, $nama_pasien, $startOfYear, $e
 
     $dates = [];
     foreach ($cursor as $document) {
-        $dates[] = new DateTime($document['tanggal_jam']);
+        $dates[] = [
+            'date' => new DateTime($document['tanggal_jam']),
+            'doctor' => $document['doctor_in_charge']
+        ];
     }
 
     if (count($dates) < 2) {
-        return false;
+        return [];
     }
 
     sort($dates);
+    $instances = [];
 
     for ($i = 0; $i < count($dates) - 1; $i++) {
-        $interval = $dates[$i]->diff($dates[$i + 1]);
+        $interval = $dates[$i]['date']->diff($dates[$i + 1]['date']);
         if ($interval->days < 7) {
-            return true;
+            $instances[] = [
+                'nama_pasien' => $nama_pasien,
+                'doctor_in_charge' => $dates[$i]['doctor'],
+                'tanggal_jam' => $dates[$i]['date']->format('Y-m-d H:i:s')
+            ];
+            $instances[] = [
+                'nama_pasien' => $nama_pasien,
+                'doctor_in_charge' => $dates[$i + 1]['doctor'],
+                'tanggal_jam' => $dates[$i + 1]['date']->format('Y-m-d H:i:s')
+            ];
         }
     }
 
-    return false;
+    return $instances;
 }
 
 // Get the selected year from the form submission
@@ -50,25 +63,8 @@ $distinctPatients = $igdCollection->distinct('nama_pasien');
 
 $results = [];
 foreach ($distinctPatients as $nama_pasien) {
-    if (checkReturnWithinOneWeek($igdCollection, $nama_pasien, $startOfYear, $endOfYear)) {
-        // Find the doctor in charge for the patient in the selected year
-        $cursor = $igdCollection->find([
-            'nama_pasien' => $nama_pasien,
-            'tanggal_jam' => [
-                '$gte' => $startOfYear,
-                '$lt' => $endOfYear
-            ]
-        ]);
-
-        foreach ($cursor as $document) {
-            $results[] = [
-                'nama_pasien' => $nama_pasien,
-                'doctor_in_charge' => $document['doctor_in_charge'],
-                'tanggal_jam' => $document['tanggal_jam']
-            ];
-            break;
-        }
-    }
+    $instances = getReturnWithinOneWeekInstances($igdCollection, $nama_pasien, $startOfYear, $endOfYear);
+    $results = array_merge($results, $instances);
 }
 ?>
 
