@@ -242,22 +242,46 @@ $totalPages = ceil($totalDoctors / $limit);
                                            <p><strong>Name:</strong> ${data.nama}</p> 
                                            <p><strong>Spesialis:</strong> ${data.spesialis}</p> 
                                            <p><strong>Jenis Kelamin:</strong> ${data.gender}</p>`;
-                            var casesDetails = '<h4 class="text-lg font-medium mt-4">Cases:</h4>';
+                            var casesDetails = '<h4 class="text-lg font-medium mt-4">3 Kasus Terakhir yang Ditangani:</h4>';
                             if (data.cases.length > 0) {
-                                data.cases.forEach(function (caseItem) {
+                                data.cases.sort(function(a, b) {
+                                    return new Date(b.tanggal_jam) - new Date(a.tanggal_jam);
+                                });
+
+                                // Get the 3 most recent cases
+                                var recentCases = data.cases.slice(0, 3);
+
+                                // Create casesDetails for the 3 most recent cases
+                                recentCases.forEach(function(caseItem) {
                                     casesDetails += `<div class="border rounded-lg p-2 my-2">
                                                         <p><strong>ID:</strong> ${caseItem.document_id}</p>
                                                         <p><strong>Type:</strong> ${caseItem.type}</p>
+                                                        <p><strong>Merupakan Kasus Lanjutan?</strong> ${caseItem.is_follow_up}</p>
                                                         <p><strong>Date and Time:</strong> ${caseItem.tanggal_jam}</p>
                                                         <p><strong>Patient Name:</strong> ${caseItem.nama_pasien}</p>
-                                                        <p><strong>Initial Condition:</strong> ${caseItem.kondisi_awal}</p>
-                                                        <p><strong>Final Result:</strong> ${caseItem.hasil_akhir}</p>
-                                                        <p><strong>Payment Method:</strong> ${caseItem.cara_pembayaran}</p>
+                                                        <p><strong>Diagnosis:</strong> ${JSON.stringify(caseItem.diagnosa)}</p>
+                                                        <p><strong>Prescription:</strong> ${JSON.stringify(caseItem.resep_obat)}</p>
                                                     </div>`;
+
+                                    if (caseItem.preceding_cases && caseItem.preceding_cases.length > 0) {
+                                        casesDetails += `<div class="ml-4 border-l-2 border-gray-300 pl-4">`;
+                                        casesItem.preceding_cases.forEach(function(precedingCase) {
+                                            casesDetails += `<div class="border rounded-lg p-2 my-2">
+                                                                <p><strong>Preceding Case ID:</strong> ${precedingCase.document_id}</p>
+                                                                <p><strong>Type:</strong> ${precedingCase.type}</p>
+                                                                <p><strong>Date and Time:</strong> ${precedingCase.tanggal_jam}</p>
+                                                                <p><strong>Patient Name:</strong> ${precedingCase.nama_pasien}</p>
+                                                                <p><strong>Diagnosis:</strong> ${JSON.stringify(precedingCase.diagnosa)}</p>
+                                                                <p><strong>Prescription:</strong> ${JSON.stringify(precedingCase.resep_obat)}</p>
+                                                            </div>`;
+                                        });
+                                        casesDetails += `</div>`;
+                                    }
                                 });
                             } else {
                                 casesDetails += '<p>No cases found.</p>';
                             }
+
                             document.getElementById('doctorDetails').innerHTML = details + casesDetails;
                             document.getElementById('doctorModal').classList.remove('hidden');
                         });
