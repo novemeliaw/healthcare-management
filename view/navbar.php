@@ -9,25 +9,25 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light px-3 py-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-b-md">
-  <div class="container-fluid">
-    <a class="navbar-brand " href="#">Healthcare Management</a>
+<nav class="navbar navbar-expand-lg navbar-light px-3 py-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-b-md text-white relative fixed inset-x-0 top-0 z-50">
+  <div class="container-fluid text-white">
+    <a class="navbar-brand text-white font-bold" href="#">Healthcare Management</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="top5.php">Top 5 Medicine</a>
+          <a class="nav-link text-white font-regular" href="top5.php">Top 5 Medicine</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="performa_dokter.php">Doctors Performance</a>
+          <a class="nav-link text-white font-regular" href="performa_dokter.php">Doctors Performance</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="rating.php">Rating Analysis</a>
+          <a class="nav-link text-white font-regular" href="rating.php">Rating Analysis</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="payment.php">Payment Analysis</a>
+          <a class="nav-link text-white font-regular" href="payment.php">Payment Analysis</a>
         </li>
       </ul>
     </div>

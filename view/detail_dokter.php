@@ -110,7 +110,7 @@ usort($allCases, function ($a, $b) {
     return strtotime($b['tanggal_jam']) - strtotime($a['tanggal_jam']);
 });
 
-// var_dump($allCases);
+// var_dump($caseIds);
 
 $formattedCases = [];
 foreach ($allCases as $case) {
@@ -118,19 +118,24 @@ foreach ($allCases as $case) {
     // Check if the case ID exists in $queryResults
     if (isset($queryResults[$case['document_id']])) {
         $relatedCaseId = $queryResults[$case['document_id']];
-        if (in_array($relatedCaseId, $caseIds) && (substr($relatedCaseId, 0, 2) == 'RI' || substr($relatedCaseId, 0, 2) == 'RJ')) {
-            $isFollowUp = 'has_follow_up'; 
-            $followUpCase = $relatedCaseId;// Case has a follow-up
-        } elseif (in_array($relatedCaseId, $caseIds) && (substr($relatedCaseId, 0, 3) == 'IGD')){
-            $isFollowUp = 'no_follow_up';
+
+        // Check if the key (case ID) differs from its associated value (related case ID)
+        if ($case['document_id'] !== $relatedCaseId) {
+            // Check if the related case ID starts with 'RJ'
+            if (substr($relatedCaseId, 0, 2) === 'RJ' || substr($relatedCaseId, 0, 2) === 'RI') {
+                $isFollowUp = 'Has a Follow Up';
+            } else {
+                $isFollowUp = 'Is Follow Up';
+            }
+            $followUpCase[] = $relatedCaseId;
         } else {
-            $isFollowUp = 'is_follow_up';
-            $followUpCase = $relatedCaseId; // Case is a follow-up
+            // No follow-up if the key is the same as the value
+            $isFollowUp = 'No Follow Up';
         }
     } else {
-        $isFollowUp = 'Bukan'; // Case is not related to any follow-up
+        // Case is not related to any follow-up in $queryResults
+        $isFollowUp = 'Not Applicable';
     }
-
     // Format the case data as required
     $formattedCase = [
         'document_id' => $case['document_id'],
@@ -141,7 +146,7 @@ foreach ($allCases as $case) {
         'diagnosa' => $case['diagnosa'],
         'resep_obat' => $case['resep_obat'],
         'is_follow_up' => $isFollowUp,
-        'x' => $followUpCase
+        'follow_up_cases' => $followUpCase
     ];
 
     // Add the formatted case to the results array

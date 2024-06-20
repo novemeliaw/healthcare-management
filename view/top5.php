@@ -7,10 +7,11 @@
     <title>Medical Data Analysis</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="bg-purple-100">
     <?php
     include 'connect.php';
     require 'navbar.php';
@@ -158,8 +159,8 @@
     arsort($diagnosisCounts);
     ?>
 
-    <div class="container mt-5">
-        <h1 class="mb-3">Medical Data Analysis for Year: <?php echo htmlspecialchars($selectedYear); ?></h1>
+    <div class="container mt-4">
+        <h1 class="mb-3 text-3xl font-semibold">Medical Data Analysis for Year: <?php echo htmlspecialchars($selectedYear); ?></h1>
 
         <form action="" method="get">
             <div class="mb-3">

@@ -89,73 +89,7 @@ $totalDoctors = $totalDoctorsResult->first()->get('total');
 $totalPages = ceil($totalDoctors / $limit);
 
 $selectedYear = $_POST['year'] ?? date("Y");
-$isAllYears = $selectedYear === 'All';
-$startOfYear = $isAllYears ? "1900-01-01 00:00:00" : $selectedYear . "-01-01 00:00:00";
-$endOfYear = $isAllYears ? "2100-12-31 23:59:59" : $selectedYear . "-12-31 23:59:59";
 
-function getReturnWithinOneWeekInstances($igdCollection, $nama_pasien, $startOfYear, $endOfYear) {
-    $cursor = $igdCollection->find([
-        'nama_pasien' => $nama_pasien,
-        'tanggal_jam' => [
-            '$gte' => $startOfYear,
-            '$lt' => $endOfYear
-        ]
-    ]);
-
-    $dates = [];
-    foreach ($cursor as $document) {
-        $dates[] = [
-            'date' => new DateTime($document['tanggal_jam']),
-            'doctor' => $document['doctor_in_charge'],
-            'type' => $document['type'] ?? '',
-            'diagnosa' => json_decode(json_encode($document['diagnosa'] ?? []), true),
-            'resep_obat' => json_decode(json_encode($document['resep_obat'] ?? []), true)
-        ];
-    }
-
-    if (count($dates) < 2) {
-        return [];
-    }
-
-    sort($dates);
-    $instances = [];
-
-    for ($i = 0; $i < count($dates) - 1; $i++) {
-        $interval = $dates[$i]['date']->diff($dates[$i + 1]['date']);
-        if ($interval->days < 7) {
-            $instances[] = [
-                'nama_pasien' => $nama_pasien,
-                'doctor_in_charge' => $dates[$i]['doctor'],
-                'tanggal_jam' => $dates[$i]['date']->format('Y-m-d H:i:s'),
-                'type' => $dates[$i]['type'],
-                'diagnosa' => $dates[$i]['diagnosa'],
-                'resep_obat' => $dates[$i]['resep_obat']
-            ];
-            $instances[] = [
-                'nama_pasien' => $nama_pasien,
-                'doctor_in_charge' => $dates[$i + 1]['doctor'],
-                'tanggal_jam' => $dates[$i + 1]['date']->format('Y-m-d H:i:s'),
-                'type' => $dates[$i + 1]['type'],
-                'diagnosa' => $dates[$i + 1]['diagnosa'],
-                'resep_obat' => $dates[$i + 1]['resep_obat']
-            ];
-        }
-    }
-
-    return $instances;
-}
-
-// Count distinct readmissions
-$results = [];
-$readmissionCount = 0;
-$distinctPatients = $igdCollection->distinct('nama_pasien');
-foreach ($distinctPatients as $nama_pasien) {
-    $instances = getReturnWithinOneWeekInstances($igdCollection, $nama_pasien, $startOfYear, $endOfYear);
-    if (!empty($instances)) {
-        $readmissionCount++;
-        $results = array_merge($results, $instances);
-    }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -170,9 +104,12 @@ foreach ($distinctPatients as $nama_pasien) {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body class="bg-gray-100">
-    <div class="container mx-10 p-4">
-        <h2 class="text-2xl font-bold mb-6">Doctors</h2>
+<body class="bg-purple-100">
+<div id="loader" class="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75 z-50 hidden">
+        <div class="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900"></div>
+    </div>
+    <div class="container py-4 w-full justify-items-center">
+        <h2 class="text-3xl font-semibold mb-6">Doctors Performance Analysis Year <span id="displayYear"></span></h2>
         <div class="my-3">
             <label for="yearSelect" class="block text-sm font-medium text-gray-700">Select Year:</label>
             <select id="yearSelect" name="yearSelect" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
@@ -185,14 +122,16 @@ foreach ($distinctPatients as $nama_pasien) {
                 ?>
             </select>
         </div>
-        <div class="flex">
+        <div class="flex justify-center">
             <!-- Chart Section -->
-            <div class="border rounded-lg shadow-md w-full md:w-1/2 px-4 mb-6 md:mb-0">
-                <canvas id="doctorChart" width="400" height="200"></canvas>
+            <div class="border rounded-lg shadow-md w-full md:w-1/2 px-4 mb-6 md:mb-0 bg-white justify-self-center">
+        
+                <canvas id="doctorChart" width="400" height="200" class="inline-block align-middle"></canvas>
+                
             </div>
             <!-- Table Section -->
-            <div class="border rounded-lg shadow-md w-full md:w-1/2 px-2 py-2 ml-3">
-                <h3 class="text-xl font-semibold mb-4">All Doctors</h3>
+            <div class="border rounded-lg shadow-md w-full md:w-1/2 px-2 py-2 ml-3 bg-white">
+                <h3 class="text-xl font-semibold p-3">All Doctors</h3>
                 <div class="bg-white overflow-y-auto shadow-md rounded-lg">
                     <table class="min-w-full bg-white text-center" id="doctorTable">
                         <thead>
@@ -221,13 +160,13 @@ foreach ($distinctPatients as $nama_pasien) {
                 </div>
                 <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">​</span>
                 <div class="inline-block  align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:max-w-6xl sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
-                    <div class="sm:flex sm:items-start">
-                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                            <h3 class="text-lg leading-6 font-medium text-gray-900" id="doctorModalLabel">Doctor Details</h3>
+                    <div class="w-auto">
+                        <div class="mt-3 text-left sm:mt-0 sm:ml-4 sm:text-left">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900 mb-2" id="doctorModalLabel">Doctor Details</h3>
                             <div class="mt-2" id="doctorDetails">
                                 <!-- Doctor details will be loaded here -->
                             </div>
-                            <div class="mt-4 w-full">
+                            <div class="mt-4 w-full max-h-screen overflow-y-scroll">
                                 <h4 class="text-md font-semibold"></h4>
                                 <div id="doctorCases">
                                     <!-- Doctor cases will be loaded here -->
@@ -244,10 +183,35 @@ foreach ($distinctPatients as $nama_pasien) {
             </div>
         </div>
 
+        <!-- Follow-up Case Modal -->
+        <div class="fixed z-10 inset-0 overflow-y-auto hidden" id="followUpModal" aria-labelledby="followUpModalLabel" aria-hidden="true">
+            <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                    <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+                </div>
+                <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+                <div class="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+                    <div class="w-auto">
+                        <div class="mt-3 text-left sm:mt-0 sm:ml-4 sm:text-left">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900 mb-2" id="followUpModalLabel">Follow-Up Case Details</h3>
+                            <div class="mt-2" id="followUpDetails">
+                                <!-- Follow-up case details will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
+                        <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm" id="closeFollowUpModal">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Readmission Section -->
 
-        <div class="container mt-5">
-        <h2 class="mb-4">Patients Returning Within One Week in Year <span id="displayYear"></span></h2>
+        <div class="container mt-3 p-3 border rounded-lg shadow-md w-full bg-white">
+        <h2 class="mb-4">Patients Returning Within One Week</h2>
             <p id="patientReadmissionInfo"></p>
             <table class="table table-bordered mb-5">
                 <thead>
@@ -282,46 +246,53 @@ foreach ($distinctPatients as $nama_pasien) {
             </div>
         </div>
     </div>
+    
 </div>
     <script>
        document.getElementById('yearSelect').addEventListener('change', function () {
-    var selectedYear = this.value;
-    var displayYear = document.getElementById('displayYear');
+        var selectedYear = this.value;
+        var displayYear = document.getElementById('displayYear');
+        document.getElementById('loader').classList.remove('hidden');
 
-    if (selectedYear) {
-        // Fetch both datasets simultaneously
-        displayYear.textContent = selectedYear;
-        Promise.all([
-            fetch(`yearly_dokter.php?year=${selectedYear}`).then(response => response.json()),
-            fetch(`read.php?year=${selectedYear}`).then(response => response.json())
-        ]).then(([yearlyData, readmissionData]) => {
-            // Handle yearly doctor data
-            var topDoctors = yearlyData.slice(0, 5);
-            updateChart(topDoctors);
-            updateTable(yearlyData);
+        if (selectedYear) {
+            // Fetch both datasets simultaneously
+            displayYear.textContent = selectedYear;
+            Promise.all([
+                fetch(`yearly_dokter.php?year=${selectedYear}`).then(response => response.json()),
+                fetch(`read.php?year=${selectedYear}`).then(response => response.json())
+            ]).then(([yearlyData, readmissionData]) => {
+                document.getElementById('loader').classList.add('hidden');
+                // Handle yearly doctor data
+                var topDoctors = yearlyData.slice(0, 5);
+                console.log(topDoctors)
+                console.log(readmissionData)
+                updateChart(topDoctors);
+                updateTable(yearlyData);
 
-            // Handle readmission data
-            updateReadmissionTable(readmissionData);
-            updateReadmissionInfo(readmissionData);
-        }).catch(error => {
-            console.error('Error fetching data:', error);
-            document.getElementById('readmissionInfo').innerHTML = '<p>Error loading data.</p>';
-        });
-    } else {
-        updateChart([]);
-        updateTable([]);
-        document.getElementById('readmissionInfo').innerHTML = '<p>Please select a year.</p>';
-        document.getElementById('readmissionTableBody').innerHTML = '';
-    }
-});
+                // Handle readmission data
+                updateReadmissionTable(readmissionData);
+                updateReadmissionInfo(readmissionData);
+            }).catch(error => {
+                console.error('Error fetching data:', error);
+                document.getElementById('readmissionInfo').innerHTML = '<p>Error loading data.</p>';
+            });
+        } else {
+            updateChart([]);
+            updateTable([]);
+            document.getElementById('readmissionInfo').innerHTML = '<p>Please select a year.</p>';
+            document.getElementById('readmissionTableBody').innerHTML = '';
+        }
+    });
 
-function updateReadmissionInfo(data) {
-    const container = document.getElementById('patientReadmissionInfo');
-    if (data.length === 0) {
-        container.innerHTML = '<p>No patients returned within one week for this year.</p>';
-    } else {
-        container.innerHTML = `<p><strong>Number of Patients Readmitted within One Week: </strong>${data.length}</p>`;
-    }
+        function updateReadmissionInfo(data) {
+        const container = document.getElementById('patientReadmissionInfo');
+        if (!data.instances || data.instances.length === 0) {
+            container.innerHTML = '<p>No patients returned within one week for this year.</p>';
+        } else {
+            // Display the number of patients readmitted
+            const readmissionCount = data.readmissionCount || 0; // Fallback to 0 if undefined
+            container.innerHTML = `<p><strong>Number of Patients Readmitted within One Week: </strong>${readmissionCount}</p>`;
+        }
 }
 
         function updateTable(doctors) {
@@ -392,10 +363,9 @@ function updateReadmissionInfo(data) {
 
                                 // Create casesDetails for the 3 most recent cases
                                 recentCases.forEach(function(caseItem) {
-                                    casesDetails += `<div class="w-full max-w-screen-md mx-auto border rounded-lg p-4 my-4 bg-white">
+                                    casesDetails += `<div class="w-full max-w-screen mx-auto border rounded-lg p-4 my-4 bg-white">
                                         <p class="font-bold">ID: ${caseItem.document_id}</p>
-                                            <p class="font-bold">Type: </p>
-                                            <p class="font-bold">Merupakan Kasus Lanjutan? ${caseItem.is_follow_up}</p>
+                                            <p class="font-bold">Type: ${caseItem.type}</p>
                                             <p class="font-bold">Date and Time: ${caseItem.tanggal_jam}</p>
                                             <p class="font-bold">Patient Name:</p>
                                             <p>${caseItem.nama_pasien}</p>
@@ -410,17 +380,35 @@ function updateReadmissionInfo(data) {
                                             <p class="font-bold">Follow-up Status:</p>
                                             <p>${caseItem.is_follow_up}</p>
                                             <p class="font-bold">Follow-up Cases:</p>
-                                            <p>${Array.isArray(caseItem.follow_up_cases) ? caseItem.follow_up_cases.join(', ') : caseItem.follow_up_cases}</p>
+                                             ${Array.isArray(caseItem.follow_up_cases) ?
+                                            (caseItem.follow_up_cases.length > 0 ?
+                                                caseItem.follow_up_cases.map(followUpCase => `<a class="follow-up-case-link cursor-pointer" data-document-id="${followUpCase}">${followUpCase} &#128269;</a>`).join('') :
+                                                'No Follow Up Cases Available') :
+                                            (caseItem.follow_up_cases || 'No Follow Up Cases Available')}
+                                           
                                     </div>`;
                             })
-            
 
                             } else {
                                 casesDetails += '<p>No cases found.</p>';
                             }
 
+                            
+
                             document.getElementById('doctorDetails').innerHTML = details + casesDetails;
                             document.getElementById('doctorModal').classList.remove('hidden');
+                
+                                document.querySelectorAll('.follow-up-case-link').forEach(link => {
+                                    link.addEventListener('click', function(event) {
+                                        console.log('Follow-up case link clicked:', this.getAttribute('data-document-id'));
+                                        event.preventDefault();
+                                        var documentId = this.getAttribute('data-document-id');
+                                        fetchFollowUpDetails(documentId);
+                                    });
+                                });
+                         
+
+                            
                         });
                 });
             });
@@ -431,6 +419,48 @@ function updateReadmissionInfo(data) {
             });
         }
 
+        // Function to fetch follow-up case details
+            function fetchFollowUpDetails(documentId) {
+                fetch('fetch_follow_up.php?document_id=' + documentId)
+                    .then(response => response.json())
+                    .then(data => {
+                        var followUpDetails = '<p><strong></strong></p>';
+                        if (data.status === 'success') {
+                            data.data.forEach(caseItem => {
+                                followUpDetails += `<div class="w-full max-w-screen-md mx-auto border rounded-lg p-4 my-4 bg-white">
+                                     <p class="font-bold">ID: ${caseItem.document_id}</p>
+                                        <p class="font-bold">Type: ${caseItem.type}</p>
+                                        <p class="font-bold">Date and Time: ${caseItem.tanggal_jam}</p>
+                                        <p class="font-bold">Patient Name:</p>
+                                        <p>${caseItem.nama_pasien}</p>
+                                        <p class="font-bold">Diagnosis:</p>
+                                        <ul class="list-disc pl-4">
+                                            ${Object.entries(caseItem.diagnosa).map(([code, diagnosis]) => `<li>${code} - ${diagnosis}</li>`).join('')}
+                                        </ul>
+                                        <p class="font-bold">Prescription:</p>
+                                        <ul class="list-disc pl-4">
+                                            ${caseItem.resep_obat.map(prescription => `<li>${prescription.nama_obat} - ${prescription.dosis} (${prescription.signatura})</li>`).join('')}
+                                        </ul>
+                                   
+                                </div>`;
+                            });
+                        } else {
+                            followUpDetails += '<p>No follow-up case details found.</p>';
+                        }
+                        document.getElementById('followUpDetails').innerHTML = followUpDetails;
+                        document.getElementById('followUpModal').classList.remove('hidden');
+                    })
+                    .catch(error => {
+                        console.error('Error fetching follow-up case details:', error);
+                        // Handle error if needed
+                    });
+            }
+
+        // Event listener for closing follow-up case modal
+        document.getElementById('closeFollowUpModal').addEventListener('click', function () {
+            document.getElementById('followUpModal').classList.add('hidden');
+        });
+
         function updateChart(data) {
             if (data.length === 0) {
                 doctorChart.data.labels = ['No Data'];
@@ -439,6 +469,17 @@ function updateReadmissionInfo(data) {
                 doctorChart.data.labels = data.map(doc => doc.doctor_name);
                 doctorChart.data.datasets[0].data = data.map(doc => doc.total_count);
             }
+
+             // Update chart tooltip labels
+             doctorChart.options.plugins.tooltip.callbacks.label = function(tooltipItem) {
+                var doc = data[tooltipItem.dataIndex];
+                return [
+                    'Total Count: ' + doc.total_count,
+                    'IGD Count: ' + doc.igd_count,
+                    'Rawat Inap Count: ' + doc.rawat_inap_count,
+                    'Rawat Jalan Count: ' + doc.rawat_jalan_count
+                ];
+            };
             doctorChart.update();
         }
 
@@ -492,19 +533,21 @@ function updateReadmissionInfo(data) {
         updateTable(<?= json_encode($doctors) ?>);
 
         function updateReadmissionTable(readmissions) {
-    var tableBody = document.getElementById('readmissionTableBody');
-    tableBody.innerHTML = '';
-    readmissions.forEach(patient => {
-        var tr = document.createElement('tr');
-        tr.innerHTML = `<td>${patient.nama_pasien}</td>
-                        <td>${patient.doctor_in_charge}</td>
-                        <td>${patient.tanggal_jam}</td>
-                         <td><button class="btn btn-info" data-toggle="modal" data-target="#infoModal"
-                                data-type="Type Example" 
-                                data-diagnosa='{"code1":"Diagnosis 1", "code2":"Diagnosis 2"}' 
-                                data-resep_obat='[{"kode_obat":"001", "nama_obat":"Obat 1", "dosis":"2x", "signatura":"Sign 1"}, {"kode_obat":"002", "nama_obat":"Obat 2", "dosis":"3x", "signatura":"Sign 2"}]'>Details</button></td>`;
-        tableBody.appendChild(tr);
-    });
+            var tableBody = document.getElementById('readmissionTableBody');
+            tableBody.innerHTML = ''; // Clear existing table entries
+
+            // Assuming 'data' is the object containing 'instances'
+            readmissions.instances.forEach(patient => {
+                var tr = document.createElement('tr'); // Create a new row
+                tr.innerHTML = `<td>${patient.nama_pasien}</td>
+                                <td>${patient.doctor_in_charge}</td>
+                                <td>${patient.tanggal_jam}</td>
+                                <td><button class="btn btn-info" data-toggle="modal" data-target="#infoModal"
+                                            data-type='${JSON.stringify(patient.type)}' 
+                                            data-diagnosa='${JSON.stringify(patient.diagnosa)}' 
+                                            data-resep_obat='${JSON.stringify(patient.resep_obat)}'>Details</button></td>`;
+                tableBody.appendChild(tr); // Append the row to the table body
+});
 }
     </script>
     <script>

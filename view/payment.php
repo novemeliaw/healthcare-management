@@ -105,6 +105,7 @@ $highestTotalPayment = max(array_sum($monthlySums['obat']), array_sum($monthlySu
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Data Analysis for Year: <?php echo htmlspecialchars($selectedYear); ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         function submitForm() {
@@ -241,9 +242,9 @@ $highestTotalPayment = max(array_sum($monthlySums['obat']), array_sum($monthlySu
     </script>
 </head>
 
-<body>
+<body class = "bg-purple-100">
     <div class="container">
-        <h1 class="my-4">Payment Method Counts and Sums for Year: <?php echo htmlspecialchars($selectedYear); ?></h1>
+        <h1 class="my-4 text-3xl font-medium">Payment Method Counts and Sums for Year: <?php echo htmlspecialchars($selectedYear); ?></h1>
         <form method="get" id="yearForm" class="mb-4">
             <div class="mb-3">
                 <label for="yearSelect" class="form-label">Select Year:</label>
@@ -349,7 +350,7 @@ $highestTotalPayment = max(array_sum($monthlySums['obat']), array_sum($monthlySu
                     <div class="col-md-6">
                         <div class="card text-white bg-info mb-3">
                             <div class="card-body">
-                                <h5 class="card-title">Total Patients Per Month</h5>
+                                <h5 class="card-title">Total Payments Per Month (Per Patients)</h5>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <p class="card-text">

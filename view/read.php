@@ -73,7 +73,10 @@ if ($isAllYears) {
 }
 
 // Initialize $results as an empty array
-$results = [];
+$results = [
+    'readmissionCount' => 0,  // Initialize the readmission count
+    'instances' => []         // Initialize an array to hold patient instances
+];
 
 // Get all unique patient names and count distinct readmissions
 $distinctPatients = $igdCollection->distinct('nama_pasien');
@@ -82,10 +85,10 @@ $readmissionCount = 0;
 foreach ($distinctPatients as $nama_pasien) {
     $instances = getReturnWithinOneWeekInstances($igdCollection, $nama_pasien, $startOfYear, $endOfYear);
     if (!empty($instances)) {
-        $readmissionCount++;
+        $results['readmissionCount']++;
     }
     // Merge $instances into $results
-    $results = array_merge($results, $instances);
+    $results['instances'] = array_merge($results['instances'], $instances);
 }
 
 // Send JSON response

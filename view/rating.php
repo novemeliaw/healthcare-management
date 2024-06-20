@@ -170,6 +170,7 @@ try {
 <html>
 <head>
     <title>Average Rating</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
@@ -179,24 +180,11 @@ try {
         }
     </style>
 </head>
-<body>
+<body class = "bg-purple-100">
     <div class="container">
-        <h1 class="my-4">Average Rating</h1>
+        <h2 class="my-4 ">Average Rating</h2>
         <form method="POST">
-            <div class="form-group">
-                <label for="ratingCategory">Rating Category</label>
-                <div class="p-3" style="border: 1px solid #ccc; border-radius: 4px; padding-right: 10px;">
-                    <div class="row">
-                        <?php foreach ($ratings as $rating): ?>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="ratingCategory_<?php echo htmlspecialchars($rating, ENT_QUOTES, 'UTF-8'); ?>" name="ratingCategory[]" value="<?php echo htmlspecialchars($rating, ENT_QUOTES, 'UTF-8'); ?>" <?php echo in_array($rating, $selectedRatingCategory) ? 'checked' : ''; ?>>
-                                <label class="form-check-label" for="ratingCategory_<?php echo htmlspecialchars($rating, ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($rating, ENT_QUOTES, 'UTF-8');                ?></label>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
+        <div class="form-group">
                 <label for="documentType">Document Type</label>
                 <select class="form-control" id="documentType" name="documentType">
                     <?php foreach ($documentTypes as $type): ?>
@@ -213,6 +201,20 @@ try {
                     <?php endfor; ?>
                 </select>
             </div>
+            <div class="form-group">
+                <label for="ratingCategory">Rating Category</label>
+                <div class="p-3 bg-white" style="border: 1px solid #ccc; border-radius: 4px; padding-right: 10px;">
+
+                        <?php foreach ($ratings as $rating): ?>
+                            <div class="form-check form-check-inline p-3">
+                                <input class="form-check-input" type="checkbox" id="ratingCategory_<?php echo htmlspecialchars($rating, ENT_QUOTES, 'UTF-8'); ?>" name="ratingCategory[]" value="<?php echo htmlspecialchars($rating, ENT_QUOTES, 'UTF-8'); ?>" <?php echo in_array($rating, $selectedRatingCategory) ? 'checked' : ''; ?>>
+                                <label class="form-check-label" for="ratingCategory_<?php echo htmlspecialchars($rating, ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($rating, ENT_QUOTES, 'UTF-8');                ?></label>
+                            </div>
+                        <?php endforeach; ?>
+                  
+                </div>
+            </div>
+            
             <button type="submit" class="btn btn-primary">Filter</button>
         </form>
 
